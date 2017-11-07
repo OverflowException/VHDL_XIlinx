@@ -1,0 +1,5 @@
+[Inputs]
+=number[3:0]=
+[Outputs]
+=segs[7:0]=
+[BiDir]

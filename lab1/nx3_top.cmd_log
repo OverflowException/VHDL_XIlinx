@@ -1,0 +1,60 @@
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nx3.ucf -p xc6slx16-csg324-2 nx3_top.ngc nx3_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_top_map.ncd nx3_top.ngd nx3_top.pcf 
+par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf nx3.ucf 
+bitgen -intstyle ise -f nx3_top.ut nx3_top.ncd 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nx3.ucf -p xc6slx16-csg324-2 nx3_top.ngc nx3_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_top_map.ncd nx3_top.ngd nx3_top.pcf 
+par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf nx3.ucf 
+bitgen -intstyle ise -f nx3_top.ut nx3_top.ncd 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nx3.ucf -p xc6slx16-csg324-2 nx3_top.ngc nx3_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_top_map.ncd nx3_top.ngd nx3_top.pcf 
+par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf nx3.ucf 
+bitgen -intstyle ise -f nx3_top.ut nx3_top.ncd 
+bitgen -intstyle ise -f nx3_top.ut nx3_top.ncd 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nx3.ucf -p xc6slx16-csg324-2 nx3_top.ngc nx3_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_top_map.ncd nx3_top.ngd nx3_top.pcf 
+par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf nx3.ucf 
+bitgen -intstyle ise -f nx3_top.ut nx3_top.ncd 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nx3.ucf -p xc6slx16-csg324-2 nx3_top.ngc nx3_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_top_map.ncd nx3_top.ngd nx3_top.pcf 
+par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf nx3.ucf 
+bitgen -intstyle ise -f nx3_top.ut nx3_top.ncd 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nx3.ucf -p xc6slx16-csg324-2 nx3_top.ngc nx3_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_top_map.ncd nx3_top.ngd nx3_top.pcf 
+par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf nx3.ucf 
+bitgen -intstyle ise -f nx3_top.ut nx3_top.ncd 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nx3.ucf -p xc6slx16-csg324-2 nx3_top.ngc nx3_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_top_map.ncd nx3_top.ngd nx3_top.pcf 
+par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf nx3.ucf 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nx3.ucf -p xc6slx16-csg324-2 nx3_top.ngc nx3_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_top_map.ncd nx3_top.ngd nx3_top.pcf 
+par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf nx3.ucf 
+bitgen -intstyle ise -f nx3_top.ut nx3_top.ncd 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+xst -intstyle ise -ifn "C:/cdimage/lab1/nx3_top.xst" -ofn "C:/cdimage/lab1/nx3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nx3.ucf -p xc6slx16-csg324-2 nx3_top.ngc nx3_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nx3_top_map.ncd nx3_top.ngd nx3_top.pcf 
+par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf nx3.ucf 

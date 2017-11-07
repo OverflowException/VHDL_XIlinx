@@ -1,0 +1,7 @@
+vhdtdtfi -prj lab1 -o C:/cdimage/lab1/display.vhi -module display -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd 
+vhdtdtfi -prj lab1 -o C:/cdimage/lab1/display.vhi -module display -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd 
+vhdtdtfi -lib work display.vhd -prj lab1 -o display.spl -module display -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 display.spl C:/cdimage/lab1/display.sym 
+vhdtdtfi -prj lab1 -o C:/cdimage/lab1/display.vhi -module display -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd 
+vhdtdtfi -prj lab1 -o C:/cdimage/lab1/display.vhi -module display -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd 
+vhdtdtfi -prj lab1 -o C:/cdimage/lab1/display.vhi -module display -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd 
