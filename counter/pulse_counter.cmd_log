@@ -1,0 +1,2 @@
+vhdtdtfi -prj counter -o E:/projects/VHDL_XIlinx/counter/pulse_counter.vhi -module pulse_counter -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work pulse_counter.vhd 
+vhdtdtfi -prj counter -o E:/projects/VHDL_XIlinx/counter/pulse_counter.vhi -module pulse_counter -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work pulse_counter.vhd 

@@ -1,0 +1,1 @@
+vhdtdtfi -prj counter -o E:/projects/VHDL_XIlinx/counter/pulse_generator.vhi -module pulse_generator -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work pulse_generator.vhd 
