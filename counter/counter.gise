@@ -86,6 +86,7 @@
     <transform xil_pn:end_ts="1510241404" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1510241404">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1510241404" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2000352852145363476" xil_pn:start_ts="1510241404">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -176,6 +177,7 @@
     <transform xil_pn:end_ts="1510241685" xil_pn:in_ck="174118996387849294" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1510241673">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="nx3_top.bgn"/>
       <outfile xil_pn:name="nx3_top.bit"/>
@@ -188,6 +190,7 @@
     <transform xil_pn:end_ts="1510241689" xil_pn:in_ck="174118996387836440" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1510241688">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1510241668" xil_pn:in_ck="2800016565510830995" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1510241662">
       <status xil_pn:value="SuccessfullyRun"/>
