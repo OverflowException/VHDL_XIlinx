@@ -1,0 +1,3 @@
+vhdl work "display.vhd"
+vhdl work "led_4_display.vhd"
+vhdl work "full_displa_tb.vhd"

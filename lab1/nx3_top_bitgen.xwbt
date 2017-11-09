@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\cdimage\lab1\nx3_top.ncd
-OUTFILE=C:\cdimage\lab1\nx3_top.bit
+INFILE=E:\projects\VHDL_XIlinx\lab1\nx3_top.ncd
+OUTFILE=E:\projects\VHDL_XIlinx\lab1\nx3_top.bit
 FAMILY=Spartan6
 PART=xc6slx16-2csg324
-WORKINGDIR=C:\cdimage\lab1
-LICENSE=ISE
-USER_INFO=174114381_174166710_210593002_067
+WORKINGDIR=E:\projects\VHDL_XIlinx\lab1
+LICENSE=WebPack
+USER_INFO=211436108_0_0_674

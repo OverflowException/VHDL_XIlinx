@@ -1,0 +1,17 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\projects\VHDL_XIlinx\lab1
+#Date/Time:
+#:T   Wed Nov 08 00:14:08 2017
+#------------------------------
+	#Reading nx3_top.ncd...
+	#Loading device for application Rf_Device from file '6slx16.nph' in environment D:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "nx3_top" is an NCD, version 3.2, device xc6slx16, package csg324, speed -2
+	#Design creation date: 2017.11.08.00.13.17
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes

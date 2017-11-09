@@ -1,0 +1,6 @@
+vhdtdtfi -prj led_4_display -o E:/projects/VHDL_XIlinx/led_4_display/led_4_display.vhi -module led_4_display -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work led_4_display.vhd 
+vhdtdtfi -prj led_4_display -o E:/projects/VHDL_XIlinx/led_4_display/led_4_display.vhi -module led_4_display -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd -lib work led_4_display.vhd 
+vhdtdtfi -prj led_4_display -o E:/projects/VHDL_XIlinx/led_4_display/led_4_display.vhi -module led_4_display -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd -lib work led_4_display.vhd 
+vhdtdtfi -prj led_4_display -o E:/projects/VHDL_XIlinx/led_4_display/led_4_display.vhi -module led_4_display -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd -lib work led_4_display.vhd 
+vhdtdtfi -prj led_4_display -o E:/projects/VHDL_XIlinx/led_4_display/led_4_display.vhi -module led_4_display -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd -lib work led_4_display.vhd 
+vhdtdtfi -prj led_4_display -o E:/projects/VHDL_XIlinx/led_4_display/led_4_display.vhi -module led_4_display -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd -lib work led_4_display.vhd 

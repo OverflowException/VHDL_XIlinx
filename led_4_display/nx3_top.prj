@@ -1,0 +1,4 @@
+vhdl work "display.vhd"
+vhdl work "pulse_generator.vhd"
+vhdl work "led_4_display.vhd"
+vhdl work "nx3_top.vhd"

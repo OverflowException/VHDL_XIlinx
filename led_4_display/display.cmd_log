@@ -1,0 +1,2 @@
+vhdtdtfi -prj led_4_display -o E:/projects/VHDL_XIlinx/led_4_display/display.vhi -module display -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd 
+vhdtdtfi -prj led_4_display -o E:/projects/VHDL_XIlinx/led_4_display/display.vhi -module display -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd 

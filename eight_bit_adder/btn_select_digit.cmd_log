@@ -1,0 +1,1 @@
+vhdtdtfi -prj eight_bit_adder -o E:/projects/VHDL_XIlinx/eight_bit_adder/btn_select_digit.vhi -module btn_select_digit -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work btn_select_digit.vhd 

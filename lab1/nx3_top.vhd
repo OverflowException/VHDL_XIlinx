@@ -33,16 +33,45 @@ entity nx3_top is
 end nx3_top;  
 
 architecture Behavioral of nx3_top is
-	signal sum: std_logic_vector(3 downto 0);
+	signal product: std_logic_vector(7 downto 0);
+	signal partial_product: std_logic_vector(3 downto 0);
+	--Display driver
+	COMPONENT display
+		PORT(
+			number : IN std_logic_vector(3 downto 0);          
+			segs : OUT std_logic_vector(7 downto 0)
+			);
+	END COMPONENT;
+	
+	--Button select
+   COMPONENT btn_select_digit
+	PORT(
+		btn : IN std_logic_vector(4 downto 0);
+		p : IN std_logic_vector(7 downto 0);          
+		p_selected : OUT std_logic_vector(3 downto 0);
+		d_select : OUT std_logic_vector(3 downto 0)
+		);
+	END COMPONENT;
+
 begin
 
-  -- Add numbers on input switches and display on LED outputs
-  sum <= switches(7 downto 4) + switches(3 downto 0);
-
-  dd: entity work.display(Behavioral) port map (number=>sum, segs=>segments);
-  
-  -- (The tools will complain if these lines are left out, as all outputs must be assigned a value)
-  digit <= "1110";           -- Address the rightmost 7-segment display
-  --segments <= "11111100";    -- Switch off the 7 segment display addressed by "digit" 
+	--
+	product <= switches(7 downto 4) * switches(3 downto 0);
+	
+	--Btn driver
+	Inst_btn_select_digit: btn_select_digit port map(
+		btn => buttons, 
+		p => product,
+		p_selected => partial_product,
+		d_select => digit);
+	--display driver
+	d_d: display port map (
+		number=>partial_product, 
+		segs=>segments);
+	
+	leds(7 downto 0) <= "00000000";
+	
+	-- (The tools will complain if these lines are left out, as all outputs must be assigned a value)
+	--digit <= "1110";           -- Address the rightmost 7-segment display
 
 end Behavioral;   

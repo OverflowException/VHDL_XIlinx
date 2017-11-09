@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt64)
+Release 14.7 Trace  (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
--n 3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf
 nx3.ucf
 
 Design file:              nx3_top.ncd
@@ -36,78 +36,118 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-buttons<0>     |leds<0>        |   12.604|
-buttons<1>     |leds<1>        |   12.325|
-buttons<2>     |leds<2>        |   12.327|
-buttons<3>     |leds<3>        |   13.451|
-buttons<4>     |leds<4>        |   11.966|
-switches<0>    |segments<0>    |   11.824|
-switches<0>    |segments<1>    |   11.656|
-switches<0>    |segments<2>    |   11.801|
-switches<0>    |segments<3>    |   11.786|
-switches<0>    |segments<4>    |   11.581|
-switches<0>    |segments<5>    |   11.602|
-switches<0>    |segments<6>    |   11.622|
-switches<1>    |segments<0>    |   11.157|
-switches<1>    |segments<1>    |   10.922|
-switches<1>    |segments<2>    |   11.127|
-switches<1>    |segments<3>    |   11.052|
-switches<1>    |segments<4>    |   11.238|
-switches<1>    |segments<5>    |   11.228|
-switches<1>    |segments<6>    |   10.939|
-switches<2>    |segments<0>    |   11.009|
-switches<2>    |segments<1>    |   10.787|
-switches<2>    |segments<2>    |   10.932|
-switches<2>    |segments<3>    |   10.917|
-switches<2>    |segments<4>    |   10.712|
-switches<2>    |segments<5>    |   10.733|
-switches<2>    |segments<6>    |   10.797|
-switches<3>    |segments<0>    |   10.837|
-switches<3>    |segments<1>    |   10.669|
-switches<3>    |segments<2>    |   10.814|
-switches<3>    |segments<3>    |   10.799|
-switches<3>    |segments<4>    |   10.594|
-switches<3>    |segments<5>    |   10.615|
-switches<3>    |segments<6>    |   10.635|
-switches<4>    |segments<0>    |   11.494|
-switches<4>    |segments<1>    |   11.326|
-switches<4>    |segments<2>    |   11.471|
-switches<4>    |segments<3>    |   11.456|
-switches<4>    |segments<4>    |   11.251|
-switches<4>    |segments<5>    |   11.272|
-switches<4>    |segments<6>    |   11.292|
-switches<5>    |segments<0>    |   11.238|
-switches<5>    |segments<1>    |   11.035|
-switches<5>    |segments<2>    |   11.208|
-switches<5>    |segments<3>    |   11.165|
-switches<5>    |segments<4>    |   11.319|
-switches<5>    |segments<5>    |   11.309|
-switches<5>    |segments<6>    |   11.020|
-switches<6>    |segments<0>    |   11.753|
-switches<6>    |segments<1>    |   11.585|
-switches<6>    |segments<2>    |   11.730|
-switches<6>    |segments<3>    |   11.715|
-switches<6>    |segments<4>    |   11.510|
-switches<6>    |segments<5>    |   11.531|
-switches<6>    |segments<6>    |   11.551|
-switches<7>    |segments<0>    |   11.047|
-switches<7>    |segments<1>    |   10.879|
-switches<7>    |segments<2>    |   11.024|
-switches<7>    |segments<3>    |   11.009|
-switches<7>    |segments<4>    |   10.804|
-switches<7>    |segments<5>    |   10.825|
-switches<7>    |segments<6>    |   10.845|
+buttons<0>     |digit<0>       |   13.102|
+buttons<0>     |digit<1>       |   12.776|
+buttons<0>     |segments<0>    |   14.964|
+buttons<0>     |segments<1>    |   14.922|
+buttons<0>     |segments<2>    |   15.256|
+buttons<0>     |segments<3>    |   15.288|
+buttons<0>     |segments<4>    |   15.509|
+buttons<0>     |segments<5>    |   15.369|
+buttons<0>     |segments<6>    |   15.607|
+buttons<1>     |digit<0>       |   13.017|
+buttons<1>     |digit<1>       |   12.691|
+buttons<1>     |segments<0>    |   14.879|
+buttons<1>     |segments<1>    |   14.837|
+buttons<1>     |segments<2>    |   15.171|
+buttons<1>     |segments<3>    |   15.203|
+buttons<1>     |segments<4>    |   15.424|
+buttons<1>     |segments<5>    |   15.284|
+buttons<1>     |segments<6>    |   15.522|
+buttons<2>     |digit<0>       |   13.369|
+buttons<2>     |digit<1>       |   13.043|
+buttons<2>     |segments<0>    |   15.231|
+buttons<2>     |segments<1>    |   15.189|
+buttons<2>     |segments<2>    |   15.523|
+buttons<2>     |segments<3>    |   15.555|
+buttons<2>     |segments<4>    |   15.776|
+buttons<2>     |segments<5>    |   15.636|
+buttons<2>     |segments<6>    |   15.874|
+buttons<3>     |digit<0>       |   13.835|
+buttons<3>     |digit<1>       |   13.509|
+buttons<3>     |segments<0>    |   15.697|
+buttons<3>     |segments<1>    |   15.655|
+buttons<3>     |segments<2>    |   15.989|
+buttons<3>     |segments<3>    |   16.021|
+buttons<3>     |segments<4>    |   16.242|
+buttons<3>     |segments<5>    |   16.102|
+buttons<3>     |segments<6>    |   16.340|
+buttons<4>     |digit<0>       |   13.263|
+buttons<4>     |digit<1>       |   12.937|
+buttons<4>     |segments<0>    |   15.125|
+buttons<4>     |segments<1>    |   15.083|
+buttons<4>     |segments<2>    |   15.417|
+buttons<4>     |segments<3>    |   15.449|
+buttons<4>     |segments<4>    |   15.670|
+buttons<4>     |segments<5>    |   15.530|
+buttons<4>     |segments<6>    |   15.768|
+switches<0>    |segments<0>    |   16.346|
+switches<0>    |segments<1>    |   16.837|
+switches<0>    |segments<2>    |   16.766|
+switches<0>    |segments<3>    |   16.670|
+switches<0>    |segments<4>    |   16.761|
+switches<0>    |segments<5>    |   16.879|
+switches<0>    |segments<6>    |   16.859|
+switches<1>    |segments<0>    |   16.172|
+switches<1>    |segments<1>    |   16.663|
+switches<1>    |segments<2>    |   16.592|
+switches<1>    |segments<3>    |   16.496|
+switches<1>    |segments<4>    |   16.587|
+switches<1>    |segments<5>    |   16.705|
+switches<1>    |segments<6>    |   16.685|
+switches<2>    |segments<0>    |   16.243|
+switches<2>    |segments<1>    |   16.734|
+switches<2>    |segments<2>    |   16.663|
+switches<2>    |segments<3>    |   16.567|
+switches<2>    |segments<4>    |   16.658|
+switches<2>    |segments<5>    |   16.776|
+switches<2>    |segments<6>    |   16.756|
+switches<3>    |segments<0>    |   15.606|
+switches<3>    |segments<1>    |   16.097|
+switches<3>    |segments<2>    |   16.026|
+switches<3>    |segments<3>    |   15.930|
+switches<3>    |segments<4>    |   16.021|
+switches<3>    |segments<5>    |   16.139|
+switches<3>    |segments<6>    |   16.119|
+switches<4>    |segments<0>    |   16.627|
+switches<4>    |segments<1>    |   17.118|
+switches<4>    |segments<2>    |   17.047|
+switches<4>    |segments<3>    |   16.951|
+switches<4>    |segments<4>    |   17.042|
+switches<4>    |segments<5>    |   17.160|
+switches<4>    |segments<6>    |   17.140|
+switches<5>    |segments<0>    |   16.311|
+switches<5>    |segments<1>    |   16.802|
+switches<5>    |segments<2>    |   16.731|
+switches<5>    |segments<3>    |   16.635|
+switches<5>    |segments<4>    |   16.726|
+switches<5>    |segments<5>    |   16.844|
+switches<5>    |segments<6>    |   16.824|
+switches<6>    |segments<0>    |   16.779|
+switches<6>    |segments<1>    |   17.270|
+switches<6>    |segments<2>    |   17.199|
+switches<6>    |segments<3>    |   17.103|
+switches<6>    |segments<4>    |   17.194|
+switches<6>    |segments<5>    |   17.312|
+switches<6>    |segments<6>    |   17.292|
+switches<7>    |segments<0>    |   16.891|
+switches<7>    |segments<1>    |   17.382|
+switches<7>    |segments<2>    |   17.311|
+switches<7>    |segments<3>    |   17.215|
+switches<7>    |segments<4>    |   17.306|
+switches<7>    |segments<5>    |   17.424|
+switches<7>    |segments<6>    |   17.404|
 ---------------+---------------+---------+
 
 
-Analysis completed Tue Nov 07 12:35:02 2017 
+Analysis completed Wed Nov 08 20:47:28 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 243 MB
+Peak Memory Usage: 167 MB
 
 
 

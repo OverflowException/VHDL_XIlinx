@@ -1,16 +1,16 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: nx3_top.prj
 
@@ -105,10 +105,13 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\cdimage\lab1\display.vhd" into library work
+Parsing VHDL file "E:\projects\VHDL_XIlinx\lab1\display.vhd" into library work
 Parsing entity <display>.
 Parsing architecture <Behavioral> of entity <display>.
-Parsing VHDL file "C:\cdimage\lab1\nx3_top.vhd" into library work
+Parsing VHDL file "E:\projects\VHDL_XIlinx\lab1\btn_select_digit.vhd" into library work
+Parsing entity <btn_select_digit>.
+Parsing architecture <Behavioral> of entity <btn_select_digit>.
+Parsing VHDL file "E:\projects\VHDL_XIlinx\lab1\nx3_top.vhd" into library work
 Parsing entity <nx3_top>.
 Parsing architecture <Behavioral> of entity <nx3_top>.
 
@@ -118,6 +121,8 @@ Parsing architecture <Behavioral> of entity <nx3_top>.
 
 Elaborating entity <nx3_top> (architecture <Behavioral>) from library <work>.
 
+Elaborating entity <btn_select_digit> (architecture <Behavioral>) from library <work>.
+
 Elaborating entity <display> (architecture <Behavioral>) from library <work>.
 
 =========================================================================
@@ -125,24 +130,28 @@ Elaborating entity <display> (architecture <Behavioral>) from library <work>.
 =========================================================================
 
 Synthesizing Unit <nx3_top>.
-    Related source file is "C:\cdimage\lab1\nx3_top.vhd".
+    Related source file is "E:\projects\VHDL_XIlinx\lab1\nx3_top.vhd".
     Set property "LOC = B8,C4,A8,D9,C9" for signal <buttons>.
     Set property "LOC = T5,V8,U8,N8,M8,V9,T9,T10" for signal <switches>.
-    Set property "LOC = T11,R11,N11,M11,V15,U15,V16,U16" for signal <leds<7:5>>.
-    Set property "LOC = T11,R11,N11,M11,V15,U15,V16,U16" for signal <leds<4:0>>.
+    Set property "LOC = T11,R11,N11,M11,V15,U15,V16,U16" for signal <leds>.
     Set property "LOC = P17,P18,N15,N16" for signal <digit>.
     Set property "LOC = M13,L14,N14,M14,U18,U17,T18,T17" for signal <segments>.
     Set property "LOC = V10" for signal <clk>.
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 4-bit adder for signal <sum> created at line 40.
-INFO:Xst:2774 - HDL ADVISOR - LOC property attached to signal leds<7:5> may hinder XST clustering optimizations.
+    Found 4x4-bit multiplier for signal <product> created at line 59.
     Summary:
-	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
 Unit <nx3_top> synthesized.
 
+Synthesizing Unit <btn_select_digit>.
+    Related source file is "E:\projects\VHDL_XIlinx\lab1\btn_select_digit.vhd".
+    Summary:
+	no macro.
+Unit <btn_select_digit> synthesized.
+
 Synthesizing Unit <display>.
-    Related source file is "C:\cdimage\lab1\display.vhd".
-    Found 16x7-bit Read Only RAM for signal <segs<6:0>>
+    Related source file is "E:\projects\VHDL_XIlinx\lab1\display.vhd".
+    Found 16x8-bit Read Only RAM for signal <segs>
     Summary:
 	inferred   1 RAM(s).
 Unit <display> synthesized.
@@ -152,9 +161,9 @@ HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
- 16x7-bit single-port Read Only RAM                    : 1
-# Adders/Subtractors                                   : 1
- 4-bit adder                                           : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+# Multipliers                                          : 1
+ 4x4-bit multiplier                                    : 1
 
 =========================================================================
 
@@ -164,12 +173,12 @@ Macro Statistics
 
 
 Synthesizing (advanced) Unit <display>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segs<6:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segs> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <number>        |          |
     |     diA            | connected to signal <GND>           |          |
@@ -182,9 +191,9 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
- 16x7-bit single-port distributed Read Only RAM        : 1
-# Adders/Subtractors                                   : 1
- 4-bit adder                                           : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+# Multipliers                                          : 1
+ 4x4-bit multiplier                                    : 1
 
 =========================================================================
 
@@ -225,12 +234,15 @@ Top Level Output File Name         : nx3_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 14
+# BELS                             : 47
 #      GND                         : 1
-#      LUT2                        : 3
-#      LUT3                        : 1
-#      LUT6                        : 8
+#      LUT2                        : 2
+#      LUT4                        : 16
+#      LUT5                        : 5
+#      LUT6                        : 9
+#      MUXCY                       : 6
 #      VCC                         : 1
+#      XORCY                       : 7
 # IO Buffers                       : 33
 #      IBUF                        : 13
 #      OBUF                        : 20
@@ -242,14 +254,14 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   12  out of   9112     0%  
-    Number used as Logic:                12  out of   9112     0%  
+ Number of Slice LUTs:                   32  out of   9112     0%  
+    Number used as Logic:                32  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     12
-   Number with an unused Flip Flop:      12  out of     12   100%  
-   Number with an unused LUT:             0  out of     12     0%  
-   Number of fully used LUT-FF pairs:     0  out of     12     0%  
+ Number of LUT Flip Flop pairs used:     32
+   Number with an unused Flip Flop:      32  out of     32   100%  
+   Number with an unused LUT:             0  out of     32     0%  
+   Number of fully used LUT-FF pairs:     0  out of     32     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
@@ -289,7 +301,7 @@ Speed Grade: -2
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 8.982ns
+   Maximum combinational path delay: 12.392ns
 
 Timing Details:
 ---------------
@@ -297,24 +309,30 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 111 / 12
+  Total number of paths / destination ports: 3027 / 9
 -------------------------------------------------------------------------
-Delay:               8.982ns (Levels of Logic = 5)
-  Source:            switches<5> (PAD)
-  Destination:       segments<6> (PAD)
+Delay:               12.392ns (Levels of Logic = 11)
+  Source:            switches<7> (PAD)
+  Destination:       segments<5> (PAD)
 
-  Data Path: switches<5> to segments<6>
+  Data Path: switches<7> to segments<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             9   1.328   1.252  switches_5_IBUF (switches_5_IBUF)
-     LUT6:I2->O            1   0.254   0.682  Madd_sum_cy<2>11 (Madd_sum_cy<2>)
-     LUT3:I2->O            7   0.254   1.365  Madd_sum_xor<3>11 (sum<3>)
-     LUT6:I0->O            1   0.254   0.681  dd/Mram_segs<6:0>61 (segments_6_OBUF)
-     OBUF:I->O                 2.912          segments_6_OBUF (segments<6>)
+     IBUF:I->O            11   1.328   1.315  switches_7_IBUF (switches_7_IBUF)
+     LUT4:I0->O            1   0.254   1.137  Mmult_product_Madd1_lut<4>1 (Mmult_product_Madd1_lut<4>)
+     LUT6:I0->O            1   0.254   1.137  Mmult_product_Madd1_xor<4>11 (Mmult_product_Madd_41)
+     LUT6:I0->O            1   0.254   0.000  Mmult_product_Madd2_lut<4> (Mmult_product_Madd2_lut<4>)
+     MUXCY:S->O            1   0.215   0.000  Mmult_product_Madd2_cy<4> (Mmult_product_Madd2_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mmult_product_Madd2_cy<5> (Mmult_product_Madd2_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  Mmult_product_Madd2_cy<6> (Mmult_product_Madd2_cy<6>)
+     XORCY:CI->O           1   0.206   0.958  Mmult_product_Madd2_xor<7> (product<7>)
+     LUT4:I0->O            7   0.254   1.186  Inst_btn_select_digit/p_selected<1>1 (partial_product<3>)
+     LUT4:I0->O            1   0.254   0.681  d_d/Mram_segs51 (segments_5_OBUF)
+     OBUF:I->O                 2.912          segments_5_OBUF (segments<5>)
     ----------------------------------------
-    Total                      8.982ns (5.002ns logic, 3.980ns route)
-                                       (55.7% logic, 44.3% route)
+    Total                     12.392ns (5.978ns logic, 6.414ns route)
+                                       (48.2% logic, 51.8% route)
 
 =========================================================================
 
@@ -325,13 +343,13 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.36 secs
+Total CPU time to Xst completion: 4.67 secs
  
 --> 
 
-Total memory usage is 279232 kilobytes
+Total memory usage is 244836 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

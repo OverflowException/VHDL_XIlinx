@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="display">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-11-7T12:33:51</timestamp>
+    <timestamp>2017-11-8T0:53:28</timestamp>
     <pin polarity="Input" x="0" y="-32" name="number(3:0)" />
     <pin polarity="Output" x="384" y="-32" name="segs(7:0)" />
     <graph>

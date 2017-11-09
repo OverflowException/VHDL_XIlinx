@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf
+nx3.ucf
+
+Design file:              nx3_top.ncd
+Physical constraint file: nx3_top.pcf
+Device,package,speed:     xc6slx16,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.241|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+switches<0>    |segments<0>    |   11.503|
+switches<0>    |segments<1>    |   11.018|
+switches<0>    |segments<2>    |   11.457|
+switches<0>    |segments<3>    |   11.532|
+switches<0>    |segments<4>    |   11.180|
+switches<0>    |segments<5>    |   11.232|
+switches<0>    |segments<6>    |   10.942|
+switches<1>    |segments<0>    |   11.485|
+switches<1>    |segments<1>    |   11.266|
+switches<1>    |segments<2>    |   11.722|
+switches<1>    |segments<3>    |   11.514|
+switches<1>    |segments<4>    |   11.485|
+switches<1>    |segments<5>    |   11.497|
+switches<1>    |segments<6>    |   11.247|
+switches<2>    |segments<0>    |   11.080|
+switches<2>    |segments<1>    |   10.949|
+switches<2>    |segments<2>    |   11.317|
+switches<2>    |segments<3>    |   11.109|
+switches<2>    |segments<4>    |   11.080|
+switches<2>    |segments<5>    |   11.092|
+switches<2>    |segments<6>    |   10.842|
+switches<3>    |segments<0>    |   10.920|
+switches<3>    |segments<1>    |   10.625|
+switches<3>    |segments<2>    |   11.157|
+switches<3>    |segments<3>    |   10.949|
+switches<3>    |segments<4>    |   10.823|
+switches<3>    |segments<5>    |   10.932|
+switches<3>    |segments<6>    |   10.585|
+switches<4>    |segments<0>    |   12.315|
+switches<4>    |segments<1>    |   11.830|
+switches<4>    |segments<2>    |   12.269|
+switches<4>    |segments<3>    |   12.344|
+switches<4>    |segments<4>    |   11.992|
+switches<4>    |segments<5>    |   12.044|
+switches<4>    |segments<6>    |   11.754|
+switches<5>    |segments<0>    |   11.371|
+switches<5>    |segments<1>    |   11.111|
+switches<5>    |segments<2>    |   11.567|
+switches<5>    |segments<3>    |   11.400|
+switches<5>    |segments<4>    |   11.330|
+switches<5>    |segments<5>    |   11.342|
+switches<5>    |segments<6>    |   11.092|
+switches<6>    |segments<0>    |   10.806|
+switches<6>    |segments<1>    |   10.761|
+switches<6>    |segments<2>    |   11.036|
+switches<6>    |segments<3>    |   10.835|
+switches<6>    |segments<4>    |   10.799|
+switches<6>    |segments<5>    |   10.811|
+switches<6>    |segments<6>    |   10.561|
+switches<7>    |segments<0>    |   11.554|
+switches<7>    |segments<1>    |   11.259|
+switches<7>    |segments<2>    |   11.791|
+switches<7>    |segments<3>    |   11.583|
+switches<7>    |segments<4>    |   11.457|
+switches<7>    |segments<5>    |   11.566|
+switches<7>    |segments<6>    |   11.219|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Nov 09 10:50:41 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 167 MB
+
+
+

@@ -1,0 +1,2 @@
+vhdtdtfi -prj lab1 -o E:/projects/VHDL_XIlinx/lab1/btn_select_digit.vhi -module btn_select_digit -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work btn_select_digit.vhd 
+vhdtdtfi -prj lab1 -o E:/projects/VHDL_XIlinx/lab1/btn_select_digit.vhi -module btn_select_digit -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work btn_select_digit.vhd 

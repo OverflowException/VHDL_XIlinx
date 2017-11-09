@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\projects\VHDL_XIlinx\lab1\impact.xsl
+OUTFILE=E:\projects\VHDL_XIlinx\lab1\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\projects\VHDL_XIlinx\lab1
+LICENSE=iMPACT
+USER_INFO=iMPACT

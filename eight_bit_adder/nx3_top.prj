@@ -1,0 +1,3 @@
+vhdl work "display.vhd"
+vhdl work "btn_select_digit.vhd"
+vhdl work "nx3_top.vhd"
