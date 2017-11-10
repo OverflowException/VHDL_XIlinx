@@ -1,0 +1,2 @@
+vhdtdtfi -prj combination_lock -o E:/projects/VHDL_XIlinx/combination_lock/pulse_generator.vhi -module pulse_generator -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work pulse_generator.vhd 
+vhdtdtfi -prj combination_lock -o E:/projects/VHDL_XIlinx/combination_lock/pulse_generator.vhi -module pulse_generator -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work pulse_generator.vhd 

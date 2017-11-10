@@ -1,0 +1,2 @@
+vhdtdtfi -prj combination_lock -o E:/projects/VHDL_XIlinx/combination_lock/bit4_cycle_generator.vhi -module bit4_cycle_generator -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work bit4_cycle_generator.vhd 
+vhdtdtfi -prj combination_lock -o E:/projects/VHDL_XIlinx/combination_lock/bit4_cycle_generator.vhi -module bit4_cycle_generator -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work bit4_cycle_generator.vhd 

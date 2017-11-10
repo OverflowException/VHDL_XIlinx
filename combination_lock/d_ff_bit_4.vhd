@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    15:01:58 11/09/2017 
+-- Create Date:    17:47:44 11/10/2017 
 -- Design Name: 
--- Module Name:    pulse_counter - Behavioral 
+-- Module Name:    d_ff_bit_4 - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -19,7 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -29,21 +29,30 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity pulse_counter is
-    port ( inclk : in  STD_LOGIC;
-           count : out  STD_LOGIC_VECTOR (31 downto 0));
-end pulse_counter;
+entity d_ff_bit_4 is
+    Port ( in_clk : in  STD_LOGIC;
+           d : in  STD_LOGIC_VECTOR (3 downto 0);
+           q : out  STD_LOGIC_VECTOR (3 downto 0));
+end d_ff_bit_4;
 
-architecture Behavioral of pulse_counter is
-	signal count_buf: std_logic_vector(31 downto 0);
+architecture Behavioral of d_ff_bit_4 is
+	component d_ff_bit_1 port 
+	(
+		clk : in std_logic;
+		d : in std_logic;
+		q: out std_logic
+	);
+	end component;
 begin
-	--count_buf <= (others => '0');
-	process
-	begin
-		if(rising_edge(inclk)) then
-			count_buf <= count_buf + 1;
-			count <= count_buf;
-		end if;
-	end process;
-end architecture Behavioral;
+		
+		gen_d_ff_bit_4 : for i in 3 downto 0 generate
+		inst_d_ff_bit_1 : d_ff_bit_1 port map
+		(
+			clk => in_clk,
+			d => d(i),
+			q => q(i)
+		);
+		end generate gen_d_ff_bit_4;
+
+end Behavioral;
 

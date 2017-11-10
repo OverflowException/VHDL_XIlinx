@@ -1,0 +1,1 @@
+vhdtdtfi -prj combination_lock -o E:/projects/VHDL_XIlinx/combination_lock/d_ff_bit_1.vhi -module d_ff_bit_1 -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work d_ff_bit_1.vhd 

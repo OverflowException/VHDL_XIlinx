@@ -42,10 +42,11 @@ end led_4_display;
 
 architecture Behavioral of led_4_display is
 	--4 types of finite state machine
-	type state_type is (st_0, st_1, st_2, st_3);
-	signal state: state_type;
+	--type state_type is (st_0, st_1, st_2, st_3);
+	--signal state: state_type;
 	
 	signal single_number: std_logic_vector(3 downto 0);
+	signal inverted_digit_select: std_logic_vector(3 downto 0);
 
 	--single display driver component
 	COMPONENT display
@@ -55,40 +56,36 @@ architecture Behavioral of led_4_display is
 		);
 	END COMPONENT;
 	
+	--cycle generator
+	COMPONENT bit4_cycle_generator
+	PORT(
+		in_clk : IN std_logic;          
+		out_cycle : OUT std_logic_vector(3 downto 0)
+		);
+	END COMPONENT;
+
+
+	
 begin
 
 	single_display: display port map(
-	number => single_number,
-	segs => seg
+		number => single_number,
+		segs => seg
 	);
-
-	process(d_clk)
-	begin
-		if rising_edge(d_clk) then
-			case state is
-				when st_0 => state <= st_1;
-				when st_1 => state <= st_2;
-				when st_2 => state <= st_3;
-				when st_3 => state <= st_0;
-				when others => state <= st_0;
-			end case;
-		end if;
-	end process;
-
-
-	with state select 
-	digit_select <= "1110" when st_0,
-						"1101" when st_1,
-						"1011" when st_2,
-						"0111" when st_3;
 	
-	with state select 
-		single_number <= full_number(3 downto 0) when st_0,
-						full_number(7 downto 4) when st_1,
-						full_number(11 downto 8) when st_2,
-						full_number(15 downto 12) when st_3;
+	Inst_bit4_cycle_generator: bit4_cycle_generator port map(
+		in_clk => d_clk,
+		out_cycle => inverted_digit_select
+	);
 	
-
+	with inverted_digit_select select 
+		single_number <= full_number(3 downto 0) when "0001",
+						full_number(7 downto 4) when "0010",
+						full_number(11 downto 8) when "0100",
+						full_number(15 downto 12) when "1000",
+						"0000" when others;
+	
+	digit_select <= not inverted_digit_select;
 	
 	
 end Behavioral;

@@ -1,0 +1,2 @@
+vhdl work "pulse_generator.vhd"
+vhdl work "debouncer.vhd"

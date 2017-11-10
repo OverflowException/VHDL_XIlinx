@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;switches&lt;0&gt;&quot; LOC = T10&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;switches&lt;1&gt;&quot; LOC = T9&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;switches&lt;2&gt;&quot; LOC = V9&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;switches&lt;3&gt;&quot; LOC = M8&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;switches&lt;4&gt;&quot; LOC = N8&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;switches&lt;5&gt;&quot; LOC = U8&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;switches&lt;6&gt;&quot; LOC = V8&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;switches&lt;7&gt;&quot; LOC = T5&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;buttons&lt;0&gt;&quot; LOC = C9&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;buttons&lt;1&gt;&quot; LOC = D9&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;buttons&lt;2&gt;&quot; LOC = A8&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;buttons&lt;3&gt;&quot; LOC = C4&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;segments&lt;0&gt;&quot; LOC = T17&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;segments&lt;1&gt;&quot; LOC = T18&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;segments&lt;2&gt;&quot; LOC = U17&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;segments&lt;3&gt;&quot; LOC = U18&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;segments&lt;4&gt;&quot; LOC = M14&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;segments&lt;5&gt;&quot; LOC = N14&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;segments&lt;6&gt;&quot; LOC = L14&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;segments&lt;7&gt;&quot; LOC = M13&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;digit&lt;0&gt;&quot; LOC = N16&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;digit&lt;1&gt;&quot; LOC = N15&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;digit&lt;2&gt;&quot; LOC = P18&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;digit&lt;3&gt;&quot; LOC = P17&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;leds&lt;0&gt;&quot; LOC = U16&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;leds&lt;1&gt;&quot; LOC = V16&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;leds&lt;2&gt;&quot; LOC = U15&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;leds&lt;3&gt;&quot; LOC = V15&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;leds&lt;4&gt;&quot; LOC = M11&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;leds&lt;5&gt;&quot; LOC = N11&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;leds&lt;6&gt;&quot; LOC = R11&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;leds&lt;7&gt;&quot; LOC = T11&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;buttons&lt;4&gt;&quot; LOC = B8&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;clk&quot; LOC = V10&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;switches&lt;0&gt;&quot; LOC = T10&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">switches&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;switches&lt;0&gt;&quot; LOC= &quot;T10&quot;;&gt; [nx3.ucf(18)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;switches&lt;1&gt;&quot; LOC = T9&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">switches&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;switches&lt;1&gt;&quot; LOC= &quot;T9&quot;;&gt; [nx3.ucf(19)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;switches&lt;2&gt;&quot; LOC = V9&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">switches&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;switches&lt;2&gt;&quot; LOC= &quot;V9&quot;;&gt; [nx3.ucf(20)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;switches&lt;3&gt;&quot; LOC = M8&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">switches&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;switches&lt;3&gt;&quot; LOC= &quot;M8&quot;;&gt; [nx3.ucf(21)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;switches&lt;4&gt;&quot; LOC = N8&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">switches&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;switches&lt;4&gt;&quot; LOC= &quot;N8&quot;;&gt; [nx3.ucf(22)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;switches&lt;5&gt;&quot; LOC = U8&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">switches&lt;5&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;switches&lt;5&gt;&quot; LOC= &quot;U8&quot;;&gt; [nx3.ucf(23)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;switches&lt;6&gt;&quot; LOC = V8&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">switches&lt;6&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;switches&lt;6&gt;&quot; LOC= &quot;V8&quot;;&gt; [nx3.ucf(24)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;switches&lt;7&gt;&quot; LOC = T5&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">switches&lt;7&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;switches&lt;7&gt;&quot; LOC= &quot;T5&quot;;&gt; [nx3.ucf(25)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;buttons&lt;0&gt;&quot; LOC = C9&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">buttons&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;buttons&lt;0&gt;&quot; LOC= &quot;C9&quot;;&gt; [nx3.ucf(27)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;buttons&lt;1&gt;&quot; LOC = D9&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">buttons&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;buttons&lt;1&gt;&quot; LOC= &quot;D9&quot;;&gt; [nx3.ucf(28)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;buttons&lt;2&gt;&quot; LOC = A8&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">buttons&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;buttons&lt;2&gt;&quot; LOC= &quot;A8&quot;;&gt; [nx3.ucf(29)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;buttons&lt;3&gt;&quot; LOC = C4&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">buttons&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;buttons&lt;3&gt;&quot; LOC= &quot;C4&quot;;&gt; [nx3.ucf(30)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;segments&lt;0&gt;&quot; LOC = T17&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">segments&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;segments&lt;0&gt;&quot; LOC= &quot;T17&quot;;&gt; [nx3.ucf(4)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;segments&lt;1&gt;&quot; LOC = T18&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">segments&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;segments&lt;1&gt;&quot; LOC= &quot;T18&quot;;&gt; [nx3.ucf(5)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;segments&lt;2&gt;&quot; LOC = U17&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">segments&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;segments&lt;2&gt;&quot; LOC= &quot;U17&quot;;&gt; [nx3.ucf(6)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;segments&lt;3&gt;&quot; LOC = U18&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">segments&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;segments&lt;3&gt;&quot; LOC= &quot;U18&quot;;&gt; [nx3.ucf(7)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;segments&lt;4&gt;&quot; LOC = M14&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">segments&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;segments&lt;4&gt;&quot; LOC= &quot;M14&quot;;&gt; [nx3.ucf(8)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;segments&lt;5&gt;&quot; LOC = N14&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">segments&lt;5&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;segments&lt;5&gt;&quot; LOC= &quot;N14&quot;;&gt; [nx3.ucf(9)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;segments&lt;6&gt;&quot; LOC = L14&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">segments&lt;6&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;segments&lt;6&gt;&quot; LOC= &quot;L14&quot;;&gt; [nx3.ucf(10)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;segments&lt;7&gt;&quot; LOC = M13&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">segments&lt;7&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;segments&lt;7&gt;&quot; LOC= &quot;M13&quot;;&gt; [nx3.ucf(11)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;digit&lt;0&gt;&quot; LOC = N16&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">digit&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;digit&lt;0&gt;&quot; LOC= &quot;N16&quot;;&gt; [nx3.ucf(13)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;digit&lt;1&gt;&quot; LOC = N15&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">digit&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;digit&lt;1&gt;&quot; LOC= &quot;N15&quot;;&gt; [nx3.ucf(14)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;digit&lt;2&gt;&quot; LOC = P18&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">digit&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;digit&lt;2&gt;&quot; LOC= &quot;P18&quot;;&gt; [nx3.ucf(15)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;digit&lt;3&gt;&quot; LOC = P17&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">digit&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;digit&lt;3&gt;&quot; LOC= &quot;P17&quot;;&gt; [nx3.ucf(16)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;leds&lt;0&gt;&quot; LOC = U16&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">leds&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;leds&lt;0&gt;&quot; LOC= &quot;U16&quot;;&gt; [nx3.ucf(33)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;leds&lt;1&gt;&quot; LOC = V16&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">leds&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;leds&lt;1&gt;&quot; LOC= &quot;V16&quot;;&gt; [nx3.ucf(34)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;leds&lt;2&gt;&quot; LOC = U15&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">leds&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;leds&lt;2&gt;&quot; LOC= &quot;U15&quot;;&gt; [nx3.ucf(35)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;leds&lt;3&gt;&quot; LOC = V15&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">leds&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;leds&lt;3&gt;&quot; LOC= &quot;V15&quot;;&gt; [nx3.ucf(36)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;leds&lt;4&gt;&quot; LOC = M11&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">leds&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;leds&lt;4&gt;&quot; LOC= &quot;M11&quot;;&gt; [nx3.ucf(37)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;leds&lt;5&gt;&quot; LOC = N11&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">leds&lt;5&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;leds&lt;5&gt;&quot; LOC= &quot;N11&quot;;&gt; [nx3.ucf(38)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;leds&lt;6&gt;&quot; LOC = R11&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">leds&lt;6&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;leds&lt;6&gt;&quot; LOC= &quot;R11&quot;;&gt; [nx3.ucf(39)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;leds&lt;7&gt;&quot; LOC = T11&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">leds&lt;7&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;leds&lt;7&gt;&quot; LOC= &quot;T11&quot;;&gt; [nx3.ucf(40)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;buttons&lt;4&gt;&quot; LOC = B8&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">buttons&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;buttons&lt;4&gt;&quot; LOC= &quot;B8&quot;;&gt; [nx3.ucf(31)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;clk&quot; LOC = V10&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">clk</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;clk&quot; LOC= &quot;V10&quot;;&gt; [nx3.ucf(2)]</arg>.
+</msg>
+
+</messages>
+

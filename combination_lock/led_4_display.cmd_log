@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "E:/projects/VHDL_XIlinx/combination_lock/led_4_display.xst" -ofn "E:/projects/VHDL_XIlinx/combination_lock/led_4_display.syr" 
+xst -intstyle ise -ifn "E:/projects/VHDL_XIlinx/combination_lock/led_4_display.xst" -ofn "E:/projects/VHDL_XIlinx/combination_lock/led_4_display.syr" 
+xst -intstyle ise -ifn "E:/projects/VHDL_XIlinx/combination_lock/led_4_display.xst" -ofn "E:/projects/VHDL_XIlinx/combination_lock/led_4_display.syr" 
+vhdtdtfi -prj combination_lock -o E:/projects/VHDL_XIlinx/combination_lock/led_4_display.vhi -module led_4_display -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work display.vhd -lib work bit4_cycle_generator.vhd -lib work led_4_display.vhd 

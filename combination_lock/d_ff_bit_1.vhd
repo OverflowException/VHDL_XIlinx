@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    11:02:48 11/08/2017 
+-- Create Date:    17:39:31 11/10/2017 
 -- Design Name: 
--- Module Name:    btn_select_digit - Behavioral 
+-- Module Name:    d_ff_bit_1 - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,25 +29,21 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity btn_select_digit is
-	port( btn: in std_logic_vector(4 downto 0);
-			p: in std_logic_vector(7 downto 0);
-			p_selected: out std_logic_vector(3 downto 0);
-			d_select: out std_logic_vector(3 downto 0));
-end btn_select_digit;
+entity d_ff_bit_1 is
+    Port ( clk : in  STD_LOGIC;
+           d : in  STD_LOGIC;
+           q : out  STD_LOGIC);
+end d_ff_bit_1;
 
-architecture Behavioral of btn_select_digit is
+architecture Behavioral of d_ff_bit_1 is
+
 begin
-
-		with btn select
-			d_select(3 downto 0) <= "1110" when "00001",
-			"1101" when "00010",
-			"1111" when others;
-			
-		with btn select
-			p_selected(3 downto 0) <= p(3 downto 0) when "00001",
-			p(7 downto 4) when "00010",
-			"0000" when others;
+	process(clk)
+	begin
+		if rising_edge(clk) then
+			q <= d;
+		end if;
+	end process;
 
 end Behavioral;
 
