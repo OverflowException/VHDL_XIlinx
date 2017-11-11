@@ -36,7 +36,7 @@ end bit4_cycle_generator;
 
 architecture Behavioral of bit4_cycle_generator is
 		type state_type is(st_0, st_1, st_2, st_3);
-		signal state: state_type;
+		signal state: state_type := st_0;
 begin
 	process(in_clk)
 	begin

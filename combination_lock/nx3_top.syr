@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.37 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.00 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.37 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.00 secs
  
 --> Reading design: nx3_top.prj
 
@@ -129,6 +129,7 @@ Parsing architecture <Behavioral> of entity <debouncer>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\nx3_top.vhd" into library work
 Parsing entity <nx3_top>.
 Parsing architecture <Behavioral> of entity <nx3_top>.
+WARNING:HDLCompiler:946 - "E:\projects\VHDL_XIlinx\combination_lock\nx3_top.vhd" Line 125: Actual for formal port in_clk is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -358,9 +359,9 @@ Top Level Output File Name         : nx3_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 159
+# BELS                             : 163
 #      GND                         : 1
-#      INV                         : 8
+#      INV                         : 12
 #      LUT1                        : 30
 #      LUT2                        : 32
 #      LUT4                        : 12
@@ -386,14 +387,14 @@ Selected Device : 6slx16csg324-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:              62  out of  18224     0%  
- Number of Slice LUTs:                   95  out of   9112     1%  
-    Number used as Logic:                95  out of   9112     1%  
+ Number of Slice LUTs:                   99  out of   9112     1%  
+    Number used as Logic:                99  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    106
-   Number with an unused Flip Flop:      44  out of    106    41%  
-   Number with an unused LUT:            11  out of    106    10%  
-   Number of fully used LUT-FF pairs:    51  out of    106    48%  
+ Number of LUT Flip Flop pairs used:    107
+   Number with an unused Flip Flop:      45  out of    107    42%  
+   Number with an unused LUT:             8  out of    107     7%  
+   Number of fully used LUT-FF pairs:    54  out of    107    50%  
    Number of unique control sets:        10
 
 IO Utilization: 
@@ -479,10 +480,10 @@ Delay:               4.563ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'inst_debouncer/outbtn_0'
-  Clock period: 1.439ns (frequency: 694.927MHz)
+  Clock period: 1.324ns (frequency: 755.287MHz)
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Delay:               1.439ns (Levels of Logic = 0)
+Delay:               1.324ns (Levels of Logic = 0)
   Source:            inst_bit4_cycle_generator/state_FSM_FFd4 (FF)
   Destination:       inst_bit4_cycle_generator/state_FSM_FFd3 (FF)
   Source Clock:      inst_debouncer/outbtn_0 rising
@@ -492,11 +493,11 @@ Delay:               1.439ns (Levels of Logic = 0)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               5   0.525   0.840  inst_bit4_cycle_generator/state_FSM_FFd4 (inst_bit4_cycle_generator/state_FSM_FFd4)
+     FD:C->Q               2   0.525   0.725  inst_bit4_cycle_generator/state_FSM_FFd4 (inst_bit4_cycle_generator/state_FSM_FFd4)
      FD:D                      0.074          inst_bit4_cycle_generator/state_FSM_FFd3
     ----------------------------------------
-    Total                      1.439ns (0.599ns logic, 0.840ns route)
-                                       (41.6% logic, 58.4% route)
+    Total                      1.324ns (0.599ns logic, 0.725ns route)
+                                       (45.2% logic, 54.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'inst_pulse_generator/oclk'
@@ -545,7 +546,7 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'inst_bit4_cycle_generator
 Offset:              2.205ns (Levels of Logic = 1)
   Source:            switches<0> (PAD)
   Destination:       gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q (FF)
-  Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd1 rising
+  Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd1 falling
 
   Data Path: switches<0> to gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
                                 Gate     Net
@@ -564,7 +565,7 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'inst_bit4_cycle_generator
 Offset:              2.205ns (Levels of Logic = 1)
   Source:            switches<0> (PAD)
   Destination:       gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q (FF)
-  Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd2 rising
+  Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd2 falling
 
   Data Path: switches<0> to gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
                                 Gate     Net
@@ -583,7 +584,7 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'inst_bit4_cycle_generator
 Offset:              2.205ns (Levels of Logic = 1)
   Source:            switches<0> (PAD)
   Destination:       gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q (FF)
-  Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd3 rising
+  Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd3 falling
 
   Data Path: switches<0> to gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
                                 Gate     Net
@@ -602,7 +603,7 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'inst_bit4_cycle_generator
 Offset:              2.205ns (Levels of Logic = 1)
   Source:            switches<0> (PAD)
   Destination:       gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q (FF)
-  Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd4 rising
+  Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd4 falling
 
   Data Path: switches<0> to gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
                                 Gate     Net
@@ -662,7 +663,7 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_bit4_cycle_generator
 Offset:              6.968ns (Levels of Logic = 3)
   Source:            gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q (FF)
   Destination:       segments<6> (PAD)
-  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd2 rising
+  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd2 falling
 
   Data Path: gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q to segments<6>
                                 Gate     Net
@@ -683,7 +684,7 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_bit4_cycle_generator
 Offset:              7.892ns (Levels of Logic = 4)
   Source:            gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q (FF)
   Destination:       segments<6> (PAD)
-  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd4 rising
+  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd4 falling
 
   Data Path: gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q to segments<6>
                                 Gate     Net
@@ -705,7 +706,7 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_bit4_cycle_generator
 Offset:              7.683ns (Levels of Logic = 4)
   Source:            gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q (FF)
   Destination:       segments<6> (PAD)
-  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd1 rising
+  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd1 falling
 
   Data Path: gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q to segments<6>
                                 Gate     Net
@@ -727,7 +728,7 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_bit4_cycle_generator
 Offset:              6.814ns (Levels of Logic = 3)
   Source:            gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[3].inst_d_ff_bit_1/q (FF)
   Destination:       segments<5> (PAD)
-  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd3 rising
+  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd3 falling
 
   Data Path: gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[3].inst_d_ff_bit_1/q to segments<5>
                                 Gate     Net
@@ -752,10 +753,10 @@ Clock to Setup on destination clock clk
 Source Clock                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------+---------+---------+---------+---------+
 clk                                     |    4.563|         |         |         |
-inst_bit4_cycle_generator/state_FSM_FFd1|    2.945|         |         |         |
-inst_bit4_cycle_generator/state_FSM_FFd2|    3.764|         |         |         |
-inst_bit4_cycle_generator/state_FSM_FFd3|    5.376|         |         |         |
-inst_bit4_cycle_generator/state_FSM_FFd4|    5.401|         |         |         |
+inst_bit4_cycle_generator/state_FSM_FFd1|         |    2.945|         |         |
+inst_bit4_cycle_generator/state_FSM_FFd2|         |    3.764|         |         |
+inst_bit4_cycle_generator/state_FSM_FFd3|         |    5.376|         |         |
+inst_bit4_cycle_generator/state_FSM_FFd4|         |    5.401|         |         |
 inst_debouncer/inst_pulse_generator/oclk|    1.788|         |         |         |
 ----------------------------------------+---------+---------+---------+---------+
 
@@ -764,7 +765,7 @@ Clock to Setup on destination clock inst_debouncer/outbtn_0
                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------+---------+---------+---------+---------+
-inst_debouncer/outbtn_0|    1.439|         |         |         |
+inst_debouncer/outbtn_0|    1.324|         |         |         |
 -----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock inst_pulse_generator/oclk
@@ -778,14 +779,14 @@ inst_pulse_generator/oclk|    1.474|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.38 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.81 secs
  
 --> 
 
-Total memory usage is 244836 kilobytes
+Total memory usage is 247668 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    8 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

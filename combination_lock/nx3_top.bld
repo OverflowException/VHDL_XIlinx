@@ -264,10 +264,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  68
 
-Total memory usage is 152200 kilobytes
+Total memory usage is 154392 kilobytes
 
 Writing NGD file "nx3_top.ngd" ...
-Total REAL time to NGDBUILD completion:  2 sec
-Total CPU time to NGDBUILD completion:   2 sec
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "nx3_top.bld"...

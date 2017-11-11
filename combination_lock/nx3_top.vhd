@@ -122,7 +122,7 @@ begin
 	gen_input_select : for i in 3 downto 0 generate
 	inst_d_ff_bit_4 : d_ff_bit_4 port map
 	(
-		in_clk => d_ff_clk_bus(i),
+		in_clk => not d_ff_clk_bus(i),
 		d => switches(3 downto 0),
 		q => display_buf(4 * (i + 1) - 1 downto 4 * i)
 	);
