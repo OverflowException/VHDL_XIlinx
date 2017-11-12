@@ -1,0 +1,685 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Sun Nov 12 19:56:00 2017
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: 'E:\projects\VHDL_XIlinx\lab1\\auto_project.ipf' already exists.
+Original project has been renamed to'E:\projects\VHDL_XIlinx\lab1\\auto_project_1.ipf'.
+Project: E:\projects\VHDL_XIlinx\lab1\\auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: no JTAG device was found.
+AutoDetecting cable. Please wait.
+*** WARNING ***: When port is set to auto detect mode, cable speed is set todefault 6 MHz regardless of explicit arguments supplied for setting the baudrates
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "Nexys3", SN:210182556020
+INFO:iMPACT - Digilent Plugin: User Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Product Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Serial Number: 210182556020
+INFO:iMPACT - Digilent Plugin: Product ID: 00D0010D
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0306
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 2017/11/12 19:56:16
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx16, Version : 4
+INFO:iMPACT:1777 - 
+   Reading D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/xc6slx16.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file"E:/projects/VHDL_XIlinx/latch_test/nx3_top.bit"
+'1': Loading file 'E:/projects/VHDL_XIlinx/latch_test/nx3_top.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 2017/11/12 19:56:38
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 2017/11/12 20:03:00
+Updating config file E:/projects/VHDL_XIlinx/latch_test/nx3_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - Current time: 2017/11/12 20:05:50
+Updating config file E:/projects/VHDL_XIlinx/latch_test/nx3_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - Current time: 2017/11/12 20:24:11
+Updating config file E:/projects/VHDL_XIlinx/latch_test/nx3_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+// *** BATCH CMD : assignFile -p 1 -file"E:/projects/VHDL_XIlinx/combination_lock/nx3_top.bit"
+'1': Loading file 'E:/projects/VHDL_XIlinx/combination_lock/nx3_top.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 2017/11/12 20:34:16
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 2017/11/12 20:39:17
+Updating config file E:/projects/VHDL_XIlinx/combination_lock/nx3_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 2017/11/12 20:42:04
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - Current time: 2017/11/12 21:23:31
+Updating config file E:/projects/VHDL_XIlinx/combination_lock/nx3_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - Current time: 2017/11/12 21:40:48
+Updating config file E:/projects/VHDL_XIlinx/combination_lock/nx3_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 2017/11/12 21:46:09
+Updating config file E:/projects/VHDL_XIlinx/combination_lock/nx3_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - Current time: 2017/11/12 22:08:29
+Updating config file E:/projects/VHDL_XIlinx/combination_lock/nx3_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 2017/11/12 22:28:18
+Updating config file E:/projects/VHDL_XIlinx/combination_lock/nx3_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - Current time: 2017/11/12 22:30:08
+Updating config file E:/projects/VHDL_XIlinx/combination_lock/nx3_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - Current time: 2017/11/12 22:32:31
+Updating config file E:/projects/VHDL_XIlinx/combination_lock/nx3_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+Project: 'E:\projects\VHDL_XIlinx\lab1\\auto_project.ipf' created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file"E:\projects\VHDL_XIlinx\lab1\\auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   E:\projects\VHDL_XIlinx\lab1\webtalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff

@@ -37,80 +37,80 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.241|         |         |         |
+clk            |    3.921|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-switches<0>    |segments<0>    |   11.503|
-switches<0>    |segments<1>    |   11.018|
-switches<0>    |segments<2>    |   11.457|
-switches<0>    |segments<3>    |   11.532|
-switches<0>    |segments<4>    |   11.180|
-switches<0>    |segments<5>    |   11.232|
-switches<0>    |segments<6>    |   10.942|
-switches<1>    |segments<0>    |   11.485|
-switches<1>    |segments<1>    |   11.266|
-switches<1>    |segments<2>    |   11.722|
-switches<1>    |segments<3>    |   11.514|
-switches<1>    |segments<4>    |   11.485|
-switches<1>    |segments<5>    |   11.497|
-switches<1>    |segments<6>    |   11.247|
-switches<2>    |segments<0>    |   11.080|
-switches<2>    |segments<1>    |   10.949|
-switches<2>    |segments<2>    |   11.317|
-switches<2>    |segments<3>    |   11.109|
-switches<2>    |segments<4>    |   11.080|
-switches<2>    |segments<5>    |   11.092|
-switches<2>    |segments<6>    |   10.842|
-switches<3>    |segments<0>    |   10.920|
-switches<3>    |segments<1>    |   10.625|
-switches<3>    |segments<2>    |   11.157|
-switches<3>    |segments<3>    |   10.949|
-switches<3>    |segments<4>    |   10.823|
-switches<3>    |segments<5>    |   10.932|
-switches<3>    |segments<6>    |   10.585|
-switches<4>    |segments<0>    |   12.315|
-switches<4>    |segments<1>    |   11.830|
-switches<4>    |segments<2>    |   12.269|
-switches<4>    |segments<3>    |   12.344|
-switches<4>    |segments<4>    |   11.992|
-switches<4>    |segments<5>    |   12.044|
-switches<4>    |segments<6>    |   11.754|
-switches<5>    |segments<0>    |   11.371|
-switches<5>    |segments<1>    |   11.111|
-switches<5>    |segments<2>    |   11.567|
-switches<5>    |segments<3>    |   11.400|
-switches<5>    |segments<4>    |   11.330|
-switches<5>    |segments<5>    |   11.342|
-switches<5>    |segments<6>    |   11.092|
-switches<6>    |segments<0>    |   10.806|
-switches<6>    |segments<1>    |   10.761|
-switches<6>    |segments<2>    |   11.036|
-switches<6>    |segments<3>    |   10.835|
-switches<6>    |segments<4>    |   10.799|
-switches<6>    |segments<5>    |   10.811|
-switches<6>    |segments<6>    |   10.561|
-switches<7>    |segments<0>    |   11.554|
-switches<7>    |segments<1>    |   11.259|
-switches<7>    |segments<2>    |   11.791|
-switches<7>    |segments<3>    |   11.583|
-switches<7>    |segments<4>    |   11.457|
-switches<7>    |segments<5>    |   11.566|
-switches<7>    |segments<6>    |   11.219|
+switches<0>    |segments<0>    |   11.614|
+switches<0>    |segments<1>    |   11.354|
+switches<0>    |segments<2>    |   11.939|
+switches<0>    |segments<3>    |   11.643|
+switches<0>    |segments<4>    |   11.602|
+switches<0>    |segments<5>    |   11.663|
+switches<0>    |segments<6>    |   11.364|
+switches<1>    |segments<0>    |   11.530|
+switches<1>    |segments<1>    |   11.458|
+switches<1>    |segments<2>    |   11.817|
+switches<1>    |segments<3>    |   11.559|
+switches<1>    |segments<4>    |   11.480|
+switches<1>    |segments<5>    |   11.541|
+switches<1>    |segments<6>    |   11.242|
+switches<2>    |segments<0>    |   11.629|
+switches<2>    |segments<1>    |   11.557|
+switches<2>    |segments<2>    |   12.028|
+switches<2>    |segments<3>    |   11.658|
+switches<2>    |segments<4>    |   11.691|
+switches<2>    |segments<5>    |   11.752|
+switches<2>    |segments<6>    |   11.453|
+switches<3>    |segments<0>    |   11.120|
+switches<3>    |segments<1>    |   11.033|
+switches<3>    |segments<2>    |   11.522|
+switches<3>    |segments<3>    |   11.149|
+switches<3>    |segments<4>    |   11.185|
+switches<3>    |segments<5>    |   11.246|
+switches<3>    |segments<6>    |   10.947|
+switches<4>    |segments<0>    |   12.294|
+switches<4>    |segments<1>    |   12.034|
+switches<4>    |segments<2>    |   12.619|
+switches<4>    |segments<3>    |   12.323|
+switches<4>    |segments<4>    |   12.282|
+switches<4>    |segments<5>    |   12.343|
+switches<4>    |segments<6>    |   12.044|
+switches<5>    |segments<0>    |   11.553|
+switches<5>    |segments<1>    |   11.434|
+switches<5>    |segments<2>    |   11.955|
+switches<5>    |segments<3>    |   11.582|
+switches<5>    |segments<4>    |   11.618|
+switches<5>    |segments<5>    |   11.679|
+switches<5>    |segments<6>    |   11.380|
+switches<6>    |segments<0>    |   11.802|
+switches<6>    |segments<1>    |   11.730|
+switches<6>    |segments<2>    |   11.754|
+switches<6>    |segments<3>    |   11.831|
+switches<6>    |segments<4>    |   11.704|
+switches<6>    |segments<5>    |   11.478|
+switches<6>    |segments<6>    |   11.466|
+switches<7>    |segments<0>    |   11.537|
+switches<7>    |segments<1>    |   11.492|
+switches<7>    |segments<2>    |   11.684|
+switches<7>    |segments<3>    |   11.566|
+switches<7>    |segments<4>    |   11.348|
+switches<7>    |segments<5>    |   11.408|
+switches<7>    |segments<6>    |   11.110|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Nov 09 10:50:41 2017 
+Analysis completed Sun Nov 12 09:33:07 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 167 MB
+Peak Memory Usage: 171 MB
 
 
 

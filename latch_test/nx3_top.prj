@@ -1,0 +1,3 @@
+vhdl work "d_latch_bit_1.vhd"
+vhdl work "d_latch_bit_4.vhd"
+vhdl work "nx3_top.vhd"

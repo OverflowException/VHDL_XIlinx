@@ -1,0 +1,7 @@
+vhdl work "freq_divider.vhd"
+vhdl work "pulse_generator_2hz.vhd"
+vhdl work "pulse_generator_100hz.vhd"
+vhdl work "display.vhd"
+vhdl work "bit4_cycle_generator.vhd"
+vhdl work "led_4_display.vhd"
+vhdl work "nx3_top.vhd"

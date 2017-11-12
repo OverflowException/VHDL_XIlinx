@@ -39,18 +39,18 @@ end debouncer;
 
 architecture Behavioral of debouncer is
 	signal debounce_clk : std_logic := '0';
-	component pulse_generator port
+	component pulse_generator_1khz port
 	(
-		inclk : in std_logic;
-		oclk : out std_logic
+		in_clk : in std_logic;
+		out_clk : out std_logic
 	);
 	end component;
 begin
 
-	inst_pulse_generator : pulse_generator port map
+	inst_pulse_generator_1khz : pulse_generator_1khz port map
 	(
-		inclk => clk,
-		oclk => debounce_clk
+		in_clk => clk,
+		out_clk => debounce_clk
 	);
 	process(debounce_clk)
 	begin

@@ -39,7 +39,7 @@ architecture Behavioral of nx3_top is
 	signal adder_1: std_logic_vector(7 downto 0);
 	signal adder_2: std_logic_vector(7 downto 0);
 	
-	--Full display driver
+--	--Full display driver
 	COMPONENT led_4_display
 	PORT(
 		d_clk : IN std_logic;
@@ -78,11 +78,10 @@ begin
 		digit_select => digit,
 		seg => segments
 	);
-
-
-
 	
-	leds(7 downto 0) <= "00000000";
+	
+	
+	leds(7 downto 0) <= (others => '0');
 	
 	-- (The tools will complain if these lines are left out, as all outputs must be assigned a value)
 	--digit <= "1110";           -- Address the rightmost 7-segment display

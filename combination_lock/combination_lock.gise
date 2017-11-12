@@ -45,6 +45,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="debouncer.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="debouncer.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="debouncer.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="freq_divider.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="freq_divider.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="freq_divider.xst"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="led_4_display.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="led_4_display.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="led_4_display.ngc"/>
@@ -98,7 +101,19 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="nx3_top_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="nx3_top_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="nx3_top_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pulse_generator.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pulse_generator.stx"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="pulse_generator.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="pulse_generator.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pulse_generator_100hz.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pulse_generator_100hz.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="pulse_generator_100hz.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pulse_generator_1khz.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pulse_generator_1khz.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="pulse_generator_1khz.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pulse_generator_2hz.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pulse_generator_2hz.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="pulse_generator_2hz.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -135,7 +150,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1510434229" xil_pn:in_ck="7073997255651824105" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2323249354481608653" xil_pn:start_ts="1510434216">
+    <transform xil_pn:end_ts="1510525898" xil_pn:in_ck="-4319520946744177523" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2323249354481608653" xil_pn:start_ts="1510525890">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -154,11 +169,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1510353094" xil_pn:in_ck="146819989605" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="2792144553778287523" xil_pn:start_ts="1510353094">
+    <transform xil_pn:end_ts="1510442397" xil_pn:in_ck="146819989605" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="2792144553778287523" xil_pn:start_ts="1510442397">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1510434238" xil_pn:in_ck="-8910329872071675751" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1068380566188416507" xil_pn:start_ts="1510434230">
+    <transform xil_pn:end_ts="1510525911" xil_pn:in_ck="-8910329872071675751" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1068380566188416507" xil_pn:start_ts="1510525905">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -168,7 +183,7 @@
       <outfile xil_pn:name="nx3_top.ngd"/>
       <outfile xil_pn:name="nx3_top_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1510434254" xil_pn:in_ck="2800016565510831127" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3180699873896808002" xil_pn:start_ts="1510434238">
+    <transform xil_pn:end_ts="1510525919" xil_pn:in_ck="2800016565510831127" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3180699873896808002" xil_pn:start_ts="1510525911">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -183,7 +198,7 @@
       <outfile xil_pn:name="nx3_top_summary.xml"/>
       <outfile xil_pn:name="nx3_top_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1510434271" xil_pn:in_ck="44680800767999664" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1510434254">
+    <transform xil_pn:end_ts="1510525932" xil_pn:in_ck="44680800767999664" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1510525919">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -198,7 +213,7 @@
       <outfile xil_pn:name="nx3_top_pad.txt"/>
       <outfile xil_pn:name="nx3_top_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1510434291" xil_pn:in_ck="174118996387849294" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1510434275">
+    <transform xil_pn:end_ts="1510525944" xil_pn:in_ck="174118996387849294" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1510525933">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -210,17 +225,18 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1510433987" xil_pn:in_ck="174118996387836440" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1510433984">
+    <transform xil_pn:end_ts="1510448348" xil_pn:in_ck="174118996387836440" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1510448347">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_impact.cmd"/>
-      <outfile xil_pn:name="_impact.log"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1510434271" xil_pn:in_ck="2800016565510830995" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1510434264">
+    <transform xil_pn:end_ts="1510525932" xil_pn:in_ck="2800016565510830995" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1510525927">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
@@ -231,10 +247,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="netgen"/>
-      <outfile xil_pn:name="netgen/synthesis/nx3_top_synthesis.nlf"/>
-      <outfile xil_pn:name="netgen/synthesis/nx3_top_synthesis.vhd"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

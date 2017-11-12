@@ -1,0 +1,2 @@
+vhdl work "freq_divider.vhd"
+vhdl work "pulse_generator_2hz.vhd"

@@ -1,9 +1,6 @@
-set -tmpdir "xst/projnav.tmp"
-set -xsthdpdir "xst"
-run
--ifn led_4_display.prj
--ofn led_4_display
--ofmt NGC
+set -tmpdir "E:/projects/VHDL_XIlinx/combination_lock/xst/projnav.tmp"
+set -xsthdpdir "E:/projects/VHDL_XIlinx/combination_lock/xst"
+run -compileonly yes
 -p xc6slx16-2-csg324
 -top led_4_display
 -opt_mode Speed
@@ -50,3 +47,4 @@ run
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
+-ifn led_4_display.prj

@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat Nov 11 21:04:41 2017
+Sun Nov 12 22:32:17 2017
 
 drc -z nx3_top.ncd nx3_top.pcf
 

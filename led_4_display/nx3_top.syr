@@ -153,11 +153,11 @@ Synthesizing Unit <pulse_generator>.
     Related source file is "E:\projects\VHDL_XIlinx\led_4_display\pulse_generator.vhd".
     Found 1-bit register for signal <oclk>.
     Found 1-bit register for signal <state>.
-    Found 16-bit register for signal <count>.
-    Found 16-bit adder for signal <count[15]_GND_6_o_add_0_OUT> created at line 45.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_7_o_add_0_OUT> created at line 45.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  18 D-type flip-flop(s).
+	inferred  34 D-type flip-flop(s).
 Unit <pulse_generator> synthesized.
 
 Synthesizing Unit <led_4_display>.
@@ -194,11 +194,11 @@ Macro Statistics
 # RAMs                                                 : 1
  16x8-bit single-port Read Only RAM                    : 1
 # Adders/Subtractors                                   : 2
- 16-bit adder                                          : 1
+ 32-bit adder                                          : 1
  8-bit adder                                           : 1
 # Registers                                            : 3
  1-bit register                                        : 2
- 16-bit register                                       : 1
+ 32-bit register                                       : 1
 # Multiplexers                                         : 1
  4-bit 4-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
@@ -237,7 +237,7 @@ Macro Statistics
 # Adders/Subtractors                                   : 1
  8-bit adder                                           : 1
 # Counters                                             : 1
- 16-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
 # Registers                                            : 2
  Flip-Flops                                            : 2
 # Multiplexers                                         : 1
@@ -272,8 +272,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 22
- Flip-Flops                                            : 22
+# Registers                                            : 38
+ Flip-Flops                                            : 38
 
 =========================================================================
 
@@ -296,20 +296,21 @@ Top Level Output File Name         : nx3_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 88
+# BELS                             : 159
 #      GND                         : 1
-#      INV                         : 6
-#      LUT1                        : 15
-#      LUT2                        : 17
+#      INV                         : 5
+#      LUT1                        : 31
+#      LUT2                        : 34
+#      LUT3                        : 2
 #      LUT4                        : 7
-#      LUT5                        : 2
-#      LUT6                        : 8
-#      MUXCY                       : 15
+#      LUT5                        : 4
+#      LUT6                        : 11
+#      MUXCY                       : 31
 #      VCC                         : 1
-#      XORCY                       : 16
-# FlipFlops/Latches                : 22
-#      FD                          : 20
-#      FDE                         : 2
+#      XORCY                       : 32
+# FlipFlops/Latches                : 38
+#      FD                          : 37
+#      FDE                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 28
@@ -323,15 +324,15 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              22  out of  18224     0%  
- Number of Slice LUTs:                   55  out of   9112     0%  
-    Number used as Logic:                55  out of   9112     0%  
+ Number of Slice Registers:              38  out of  18224     0%  
+ Number of Slice LUTs:                   94  out of   9112     1%  
+    Number used as Logic:                94  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     58
-   Number with an unused Flip Flop:      36  out of     58    62%  
-   Number with an unused LUT:             3  out of     58     5%  
-   Number of fully used LUT-FF pairs:    19  out of     58    32%  
+ Number of LUT Flip Flop pairs used:     96
+   Number with an unused Flip Flop:      58  out of     96    60%  
+   Number with an unused LUT:             2  out of     96     2%  
+   Number of fully used LUT-FF pairs:    36  out of     96    37%  
    Number of unique control sets:         3
 
 IO Utilization: 
@@ -362,7 +363,7 @@ Clock Information:
 -----------------------------------+----------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                  | Load  |
 -----------------------------------+----------------------------------------+-------+
-clk                                | BUFGP                                  | 18    |
+clk                                | BUFGP                                  | 34    |
 Inst_pulse_generator/oclk          | NONE(Inst_led_4_display/state_FSM_FFd3)| 4     |
 -----------------------------------+----------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -375,7 +376,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.563ns (Maximum Frequency: 219.154MHz)
+   Minimum period: 4.922ns (Maximum Frequency: 203.169MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 8.054ns
    Maximum combinational path delay: 9.025ns
@@ -386,27 +387,27 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.563ns (frequency: 219.154MHz)
-  Total number of paths / destination ports: 426 / 20
+  Clock period: 4.922ns (frequency: 203.169MHz)
+  Total number of paths / destination ports: 1619 / 35
 -------------------------------------------------------------------------
-Delay:               4.563ns (Levels of Logic = 3)
-  Source:            Inst_pulse_generator/count_1 (FF)
+Delay:               4.922ns (Levels of Logic = 3)
+  Source:            Inst_pulse_generator/count_14 (FF)
   Destination:       Inst_pulse_generator/count_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: Inst_pulse_generator/count_1 to Inst_pulse_generator/count_0
+  Data Path: Inst_pulse_generator/count_14 to Inst_pulse_generator/count_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   1.181  Inst_pulse_generator/count_1 (Inst_pulse_generator/count_1)
-     LUT6:I0->O            1   0.254   0.790  Inst_pulse_generator/count[15]_GND_6_o_equal_2_o<15>2 (Inst_pulse_generator/count[15]_GND_6_o_equal_2_o<15>1)
-     LUT6:I4->O           18   0.250   1.235  Inst_pulse_generator/count[15]_GND_6_o_equal_2_o<15>3 (Inst_pulse_generator/count[15]_GND_6_o_equal_2_o)
+     FD:C->Q               2   0.525   1.156  Inst_pulse_generator/count_14 (Inst_pulse_generator/count_14)
+     LUT5:I0->O            3   0.254   1.196  Inst_pulse_generator/count[31]_GND_7_o_equal_2_o<31>2 (Inst_pulse_generator/count[31]_GND_7_o_equal_2_o<31>1)
+     LUT6:I1->O           17   0.254   1.209  Inst_pulse_generator/count[31]_GND_7_o_equal_2_o<31>7 (Inst_pulse_generator/count[31]_GND_7_o_equal_2_o)
      LUT2:I1->O            1   0.254   0.000  Inst_pulse_generator/count_0_rstpot (Inst_pulse_generator/count_0_rstpot)
      FD:D                      0.074          Inst_pulse_generator/count_0
     ----------------------------------------
-    Total                      4.563ns (1.357ns logic, 3.206ns route)
-                                       (29.7% logic, 70.3% route)
+    Total                      4.922ns (1.361ns logic, 3.561ns route)
+                                       (27.7% logic, 72.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_pulse_generator/oclk'
@@ -490,18 +491,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.563|         |         |         |
+clk            |    4.922|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.73 secs
+Total CPU time to Xst completion: 5.75 secs
  
 --> 
 
-Total memory usage is 244836 kilobytes
+Total memory usage is 248244 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

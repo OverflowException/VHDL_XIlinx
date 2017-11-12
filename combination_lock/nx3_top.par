@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-LYPC::  Sat Nov 11 21:04:15 2017
+LYPC::  Sun Nov 12 22:32:00 2017
 
 par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
 
@@ -26,30 +26,30 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                    62 out of  18,224    1%
-    Number used as Flip Flops:                  62
-    Number used as Latches:                      0
+  Number of Slice Registers:                   127 out of  18,224    1%
+    Number used as Flip Flops:                 111
+    Number used as Latches:                     16
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         96 out of   9,112    1%
-    Number used as logic:                       90 out of   9,112    1%
-      Number using O6 output only:              57
-      Number using O5 output only:              28
-      Number using O5 and O6:                    5
+  Number of Slice LUTs:                        234 out of   9,112    2%
+    Number used as logic:                      231 out of   9,112    2%
+      Number using O6 output only:             128
+      Number using O5 output only:              91
+      Number using O5 and O6:                   12
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:      6
-      Number with same-slice register load:      4
-      Number with same-slice carry load:         2
+    Number used exclusively as route-thrus:      3
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         3
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    45 out of   2,278    1%
-  Number of MUXCYs used:                        32 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          113
-    Number with an unused Flip Flop:            56 out of     113   49%
-    Number with an unused LUT:                  17 out of     113   15%
-    Number of fully used LUT-FF pairs:          40 out of     113   35%
+  Number of occupied Slices:                    80 out of   2,278    3%
+  Number of MUXCYs used:                       120 out of   4,556    2%
+  Number of LUT Flip Flop pairs used:          253
+    Number with an unused Flip Flop:           129 out of     253   50%
+    Number with an unused LUT:                  19 out of     253    7%
+    Number of fully used LUT-FF pairs:         105 out of     253   41%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -62,7 +62,7 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                        34 out of     232   14%
     Number of LOCed IOBs:                       34 out of      34  100%
-    IOB Flip Flops:                              2
+    IOB Flip Flops:                             10
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -77,7 +77,9 @@ Specific Feature Utilization:
     Number used as ILOGIC2s:                     2
     Number used as ISERDES2s:                    0
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
-  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   8 out of     248    3%
+    Number used as OLOGIC2s:                     8
+    Number used as OSERDES2s:                    0
   Number of BSCANs:                              0 out of       4    0%
   Number of BUFHs:                               0 out of     128    0%
   Number of BUFPLLs:                             0 out of       8    0%
@@ -95,8 +97,8 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 4 secs 
-Finished initial Timing Analysis.  REAL time: 4 secs 
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
 
 WARNING:Par:288 - The signal switches<4>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal switches<5>_IBUF has no load.  PAR will not attempt to route this signal.
@@ -108,28 +110,28 @@ WARNING:Par:288 - The signal buttons<3>_IBUF has no load.  PAR will not attempt 
 Starting Router
 
 
-Phase  1  : 333 unrouted;      REAL time: 4 secs 
+Phase  1  : 729 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 281 unrouted;      REAL time: 5 secs 
+Phase  2  : 571 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 26 unrouted;      REAL time: 5 secs 
+Phase  3  : 92 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 26 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  4  : 92 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
 Updating file: nx3_top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
-Total REAL time to Router completion: 6 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Total REAL time to Router completion: 5 secs 
 Total CPU time to Router completion: 5 secs 
 
 Partition Implementation Status
@@ -150,14 +152,15 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.641ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.416ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.404ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.429ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net ins | SETUP       |         N/A|     1.454ns|     N/A|           0
-  t_pulse_generator/oclk                    | HOLD        |     0.548ns|            |       0|           0
+  Autotimespec constraint for clock net ins | SETUP       |         N/A|     1.647ns|     N/A|           0
+  t_led_4_display/inst_pulse_generator_100h | HOLD        |     0.548ns|            |       0|           0
+  z/inst_freq_divider/out_pulse_state       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net ins | SETUP       |         N/A|     1.392ns|     N/A|           0
-  t_debouncer/outbtn<0>                     | HOLD        |     0.521ns|            |       0|           0
+  Autotimespec constraint for clock net ins | SETUP       |         N/A|     1.639ns|     N/A|           0
+  t_debouncer/outbtn<0>                     | HOLD        |     0.539ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -175,10 +178,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 7 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 7 secs 
-Total CPU time to PAR completion: 6 secs 
+Total REAL time to PAR completion: 5 secs 
+Total CPU time to PAR completion: 5 secs 
 
-Peak Memory Usage:  283 MB
+Peak Memory Usage:  285 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

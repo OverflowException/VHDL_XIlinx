@@ -8,16 +8,18 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/d_ff_bit_4 - Behavioral E:|projects|VHDL_XIlinx|combination_lock|d_ff_bit_4.vhd</ClosedNode>
+         <ClosedNode>/d_latch_bit_4 - Behavioral E:|projects|VHDL_XIlinx|combination_lock|d_latch_bit_4.vhd</ClosedNode>
          <ClosedNode>/nx3_top - Behavioral E:|projects|VHDL_XIlinx|combination_lock|nx3_top.vhd/inst_d_ff_bit_4 - d_ff_bit_4 - Behavioral</ClosedNode>
          <ClosedNode>/nx3_top - Behavioral E:|projects|VHDL_XIlinx|combination_lock|nx3_top.vhd/inst_debouncer - debouncer - Behavioral</ClosedNode>
-         <ClosedNode>/nx3_top - Behavioral E:|projects|VHDL_XIlinx|combination_lock|nx3_top.vhd/inst_led_4_display - led_4_display - Behavioral</ClosedNode>
+         <ClosedNode>/nx3_top - Behavioral E:|projects|VHDL_XIlinx|combination_lock|nx3_top.vhd/inst_led_4_display - led_4_display - Behavioral/inst_pulse_generator_100hz - pulse_generator_100hz - Behavioral</ClosedNode>
+         <ClosedNode>/nx3_top - Behavioral E:|projects|VHDL_XIlinx|combination_lock|nx3_top.vhd/inst_led_4_display - led_4_display - Behavioral/inst_pulse_generator_2hz - pulse_generator_2hz - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>nx3_top - Behavioral (E:/projects/VHDL_XIlinx/combination_lock/nx3_top.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000024c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000024c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000028f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000028f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>nx3_top - Behavioral (E:/projects/VHDL_XIlinx/combination_lock/nx3_top.vhd)</CurrentItem>
    </ItemView>
@@ -31,7 +33,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000019e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000019e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000175000000010000000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -42,19 +44,18 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000019e000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d0000000100000000000000240000000100000000000000780000000100000000000000c50000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a3000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d0000000100000000000000240000000100000000000000780000000100000000000002ca0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>bit4_cycle_generator.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>work</ClosedNode>
       </ClosedNodes>
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000019e000000010001000100000000000000000000000064ffffffff0000008100000000000000010000019e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000110000000010001000100000000000000000000000064ffffffff000000810000000000000001000001100000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>bit4_cycle_generator.vhd</CurrentItem>
    </ItemView>
@@ -67,13 +68,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000019e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000019e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000175000000010000000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -85,7 +86,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000019e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000019e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000175000000010000000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -126,6 +127,6 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000012d0000011b01000000050100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000001750000012701000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
 </Project>

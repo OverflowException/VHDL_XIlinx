@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: nx3_top.prj
 
@@ -105,12 +105,21 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\pulse_generator.vhd" into library work
-Parsing entity <pulse_generator>.
-Parsing architecture <Behavioral> of entity <pulse_generator>.
-Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\d_ff_bit_1.vhd" into library work
-Parsing entity <d_ff_bit_1>.
-Parsing architecture <Behavioral> of entity <d_ff_bit_1>.
+Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\freq_divider.vhd" into library work
+Parsing entity <freq_divider>.
+Parsing architecture <Behavioral> of entity <freq_divider>.
+Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\pulse_generator_2hz.vhd" into library work
+Parsing entity <pulse_generator_2hz>.
+Parsing architecture <Behavioral> of entity <pulse_generator_2hz>.
+Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\pulse_generator_1khz.vhd" into library work
+Parsing entity <pulse_generator_1khz>.
+Parsing architecture <Behavioral> of entity <pulse_generator_1khz>.
+Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\pulse_generator_100hz.vhd" into library work
+Parsing entity <pulse_generator_100hz>.
+Parsing architecture <Behavioral> of entity <pulse_generator_100hz>.
+Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\d_latch_bit_1.vhd" into library work
+Parsing entity <d_latch_bit_1>.
+Parsing architecture <Behavioral> of entity <d_latch_bit_1>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\display.vhd" into library work
 Parsing entity <display>.
 Parsing architecture <Behavioral> of entity <display>.
@@ -120,38 +129,43 @@ Parsing architecture <Behavioral> of entity <bit4_cycle_generator>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\led_4_display.vhd" into library work
 Parsing entity <led_4_display>.
 Parsing architecture <Behavioral> of entity <led_4_display>.
-Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\d_ff_bit_4.vhd" into library work
-Parsing entity <d_ff_bit_4>.
-Parsing architecture <Behavioral> of entity <d_ff_bit_4>.
+Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\d_latch_bit_4.vhd" into library work
+Parsing entity <d_latch_bit_4>.
+Parsing architecture <Behavioral> of entity <d_latch_bit_4>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\debouncer.vhd" into library work
 Parsing entity <debouncer>.
 Parsing architecture <Behavioral> of entity <debouncer>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock\nx3_top.vhd" into library work
 Parsing entity <nx3_top>.
 Parsing architecture <Behavioral> of entity <nx3_top>.
-WARNING:HDLCompiler:946 - "E:\projects\VHDL_XIlinx\combination_lock\nx3_top.vhd" Line 125: Actual for formal port in_clk is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
 Elaborating entity <nx3_top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "E:\projects\VHDL_XIlinx\combination_lock\nx3_top.vhd" Line 39: Using initial value "0000010000011001" for correct_pswd since it is never assigned
-
-Elaborating entity <debouncer> (architecture <Behavioral>) from library <work>.
-
-Elaborating entity <pulse_generator> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "E:\projects\VHDL_XIlinx\combination_lock\nx3_top.vhd" Line 40: Using initial value "0011000001001001" for correct_pswd since it is never assigned
 
 Elaborating entity <led_4_display> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <pulse_generator_100hz> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <freq_divider> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <pulse_generator_2hz> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <display> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <bit4_cycle_generator> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "E:\projects\VHDL_XIlinx\combination_lock\bit4_cycle_generator.vhd" Line 49. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\projects\VHDL_XIlinx\combination_lock\bit4_cycle_generator.vhd" Line 60. Case statement is complete. others clause is never selected
 
-Elaborating entity <d_ff_bit_4> (architecture <Behavioral>) from library <work>.
+Elaborating entity <debouncer> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <d_ff_bit_1> (architecture <Behavioral>) from library <work>.
+Elaborating entity <pulse_generator_1khz> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <d_latch_bit_4> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <d_latch_bit_1> (architecture <Behavioral>) from library <work>.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -166,35 +180,42 @@ Synthesizing Unit <nx3_top>.
     Set property "LOC = M13,L14,N14,M14,U18,U17,T18,T17" for signal <segments>.
     Set property "LOC = V10" for signal <clk>.
 WARNING:Xst:647 - Input <switches<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 1-bit register for signal <pswd_correct>.
     Found 1-bit register for signal <last_button4_status>.
+    Found 1-bit register for signal <display_enable>.
+    Found 1-bit register for signal <pswd_correct>.
     Summary:
-	inferred   2 D-type flip-flop(s).
+	inferred   3 D-type flip-flop(s).
 Unit <nx3_top> synthesized.
-
-Synthesizing Unit <debouncer>.
-    Related source file is "E:\projects\VHDL_XIlinx\combination_lock\debouncer.vhd".
-    Found 5-bit register for signal <outbtn>.
-    Summary:
-	inferred   5 D-type flip-flop(s).
-Unit <debouncer> synthesized.
-
-Synthesizing Unit <pulse_generator>.
-    Related source file is "E:\projects\VHDL_XIlinx\combination_lock\pulse_generator.vhd".
-    Found 1-bit register for signal <oclk>.
-    Found 1-bit register for signal <state>.
-    Found 16-bit register for signal <count>.
-    Found 16-bit adder for signal <count[15]_GND_7_o_add_0_OUT> created at line 45.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  18 D-type flip-flop(s).
-Unit <pulse_generator> synthesized.
 
 Synthesizing Unit <led_4_display>.
     Related source file is "E:\projects\VHDL_XIlinx\combination_lock\led_4_display.vhd".
     Summary:
 	inferred  10 Multiplexer(s).
 Unit <led_4_display> synthesized.
+
+Synthesizing Unit <pulse_generator_100hz>.
+    Related source file is "E:\projects\VHDL_XIlinx\combination_lock\pulse_generator_100hz.vhd".
+    Summary:
+	no macro.
+Unit <pulse_generator_100hz> synthesized.
+
+Synthesizing Unit <freq_divider>.
+    Related source file is "E:\projects\VHDL_XIlinx\combination_lock\freq_divider.vhd".
+    Found 1-bit register for signal <out_pulse_state>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_8_o_add_0_OUT> created at line 50.
+    Found 32-bit comparator equal for signal <count[31]_half_period_count[31]_equal_2_o> created at line 51
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <freq_divider> synthesized.
+
+Synthesizing Unit <pulse_generator_2hz>.
+    Related source file is "E:\projects\VHDL_XIlinx\combination_lock\pulse_generator_2hz.vhd".
+    Summary:
+	no macro.
+Unit <pulse_generator_2hz> synthesized.
 
 Synthesizing Unit <display>.
     Related source file is "E:\projects\VHDL_XIlinx\combination_lock\display.vhd".
@@ -205,14 +226,17 @@ Unit <display> synthesized.
 
 Synthesizing Unit <bit4_cycle_generator>.
     Related source file is "E:\projects\VHDL_XIlinx\combination_lock\bit4_cycle_generator.vhd".
-    Found 2-bit register for signal <state>.
+    Found 3-bit register for signal <state>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
-    | States             | 4                                              |
-    | Transitions        | 4                                              |
+    | States             | 5                                              |
+    | Transitions        | 5                                              |
     | Inputs             | 0                                              |
     | Outputs            | 4                                              |
     | Clock              | in_clk (rising_edge)                           |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st_0                                           |
     | Power Up State     | st_0                                           |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
@@ -221,18 +245,31 @@ Synthesizing Unit <bit4_cycle_generator>.
 	inferred   1 Finite State Machine(s).
 Unit <bit4_cycle_generator> synthesized.
 
-Synthesizing Unit <d_ff_bit_4>.
-    Related source file is "E:\projects\VHDL_XIlinx\combination_lock\d_ff_bit_4.vhd".
+Synthesizing Unit <debouncer>.
+    Related source file is "E:\projects\VHDL_XIlinx\combination_lock\debouncer.vhd".
+    Found 5-bit register for signal <outbtn>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <debouncer> synthesized.
+
+Synthesizing Unit <pulse_generator_1khz>.
+    Related source file is "E:\projects\VHDL_XIlinx\combination_lock\pulse_generator_1khz.vhd".
     Summary:
 	no macro.
-Unit <d_ff_bit_4> synthesized.
+Unit <pulse_generator_1khz> synthesized.
 
-Synthesizing Unit <d_ff_bit_1>.
-    Related source file is "E:\projects\VHDL_XIlinx\combination_lock\d_ff_bit_1.vhd".
-    Found 1-bit register for signal <q>.
+Synthesizing Unit <d_latch_bit_4>.
+    Related source file is "E:\projects\VHDL_XIlinx\combination_lock\d_latch_bit_4.vhd".
     Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <d_ff_bit_1> synthesized.
+	no macro.
+Unit <d_latch_bit_4> synthesized.
+
+Synthesizing Unit <d_latch_bit_1>.
+    Related source file is "E:\projects\VHDL_XIlinx\combination_lock\d_latch_bit_1.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Latch(s).
+Unit <d_latch_bit_1> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -240,12 +277,16 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  16x8-bit single-port Read Only RAM                    : 1
-# Adders/Subtractors                                   : 2
- 16-bit adder                                          : 2
-# Registers                                            : 25
- 1-bit register                                        : 22
- 16-bit register                                       : 2
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 10
+ 1-bit register                                        : 6
+ 32-bit register                                       : 3
  5-bit register                                        : 1
+# Latches                                              : 16
+ 1-bit latch                                           : 16
+# Comparators                                          : 3
+ 32-bit comparator equal                               : 3
 # Multiplexers                                         : 10
  4-bit 2-to-1 multiplexer                              : 10
 # FSMs                                                 : 2
@@ -274,9 +315,9 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segs> will be implemented on LUTs ei
     -----------------------------------------------------------------------
 Unit <display> synthesized (advanced).
 
-Synthesizing (advanced) Unit <pulse_generator>.
+Synthesizing (advanced) Unit <freq_divider>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
-Unit <pulse_generator> synthesized (advanced).
+Unit <freq_divider> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -284,10 +325,12 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  16x8-bit single-port distributed Read Only RAM        : 1
-# Counters                                             : 2
- 16-bit up counter                                     : 2
-# Registers                                            : 27
- Flip-Flops                                            : 27
+# Counters                                             : 3
+ 32-bit up counter                                     : 3
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+# Comparators                                          : 3
+ 32-bit comparator equal                               : 3
 # Multiplexers                                         : 10
  4-bit 2-to-1 multiplexer                              : 10
 # FSMs                                                 : 2
@@ -301,25 +344,29 @@ WARNING:Xst:2677 - Node <inst_debouncer/outbtn_3> of sequential type is unconnec
 WARNING:Xst:2677 - Node <inst_debouncer/outbtn_2> of sequential type is unconnected in block <nx3_top>.
 WARNING:Xst:2677 - Node <inst_debouncer/outbtn_1> of sequential type is unconnected in block <nx3_top>.
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <state[1:4]> with one-hot encoding.
+Optimizing FSM <FSM_0> on signal <state[1:5]> with one-hot encoding.
 -------------------
  State | Encoding
 -------------------
- st_0  | 0001
- st_1  | 0010
- st_2  | 0100
- st_3  | 1000
+ st_0  | 00001
+ st_1  | 00010
+ st_2  | 00100
+ st_3  | 01000
+ st_4  | 10000
 -------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <inst_led_4_display/FSM_0> on signal <state[1:4]> with one-hot encoding.
+Optimizing FSM <inst_led_4_display/FSM_0> on signal <state[1:5]> with one-hot encoding.
 -------------------
  State | Encoding
 -------------------
- st_0  | 0001
- st_1  | 0010
- st_2  | 0100
- st_3  | 1000
+ st_0  | 00001
+ st_1  | 00010
+ st_2  | 00100
+ st_3  | 01000
+ st_4  | 10000
 -------------------
+WARNING:Xst:1426 - The value init of the FF/Latch inst_bit4_cycle_generator/state_FSM_FFd5 hinder the constant cleaning in the block led_4_display.
+   You should achieve better results by setting this init to 0.
 
 Optimizing unit <nx3_top> ...
 
@@ -327,7 +374,10 @@ Optimizing unit <led_4_display> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block nx3_top, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block nx3_top, actual ratio is 1.
+WARNING:Xst:1426 - The value init of the FF/Latch inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd5 hinder the constant cleaning in the block nx3_top.
+   You should achieve better results by setting this init to 0.
+FlipFlop pswd_correct has been replicated 7 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -335,8 +385,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 64
- Flip-Flops                                            : 64
+# Registers                                            : 121
+ Flip-Flops                                            : 121
 
 =========================================================================
 
@@ -359,20 +409,23 @@ Top Level Output File Name         : nx3_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 163
+# BELS                             : 450
 #      GND                         : 1
-#      INV                         : 12
-#      LUT1                        : 30
-#      LUT2                        : 32
-#      LUT4                        : 12
+#      INV                         : 6
+#      LUT1                        : 93
+#      LUT2                        : 101
+#      LUT3                        : 4
+#      LUT4                        : 15
 #      LUT5                        : 4
-#      LUT6                        : 9
-#      MUXCY                       : 30
+#      LUT6                        : 18
+#      MUXCY                       : 111
 #      VCC                         : 1
-#      XORCY                       : 32
-# FlipFlops/Latches                : 64
-#      FD                          : 60
-#      FDE                         : 4
+#      XORCY                       : 96
+# FlipFlops/Latches                : 137
+#      FD                          : 116
+#      FDC                         : 4
+#      FDP                         : 1
+#      LD                          : 16
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 26
@@ -386,21 +439,21 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              62  out of  18224     0%  
- Number of Slice LUTs:                   99  out of   9112     1%  
-    Number used as Logic:                99  out of   9112     1%  
+ Number of Slice Registers:             127  out of  18224     0%  
+ Number of Slice LUTs:                  241  out of   9112     2%  
+    Number used as Logic:               241  out of   9112     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    107
-   Number with an unused Flip Flop:      45  out of    107    42%  
-   Number with an unused LUT:             8  out of    107     7%  
-   Number of fully used LUT-FF pairs:    54  out of    107    50%  
-   Number of unique control sets:        10
+ Number of LUT Flip Flop pairs used:    252
+   Number with an unused Flip Flop:     125  out of    252    49%  
+   Number with an unused LUT:            11  out of    252     4%  
+   Number of fully used LUT-FF pairs:   116  out of    252    46%  
+   Number of unique control sets:         8
 
 IO Utilization: 
  Number of IOs:                          34
  Number of bonded IOBs:                  27  out of    232    11%  
-    IOB Flip Flops/Latches:               2
+    IOB Flip Flops/Latches:              10
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -423,18 +476,18 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------+------------------------------------------------------------------------------+-------+
-Clock Signal                            | Clock buffer(FF name)                                                        | Load  |
-----------------------------------------+------------------------------------------------------------------------------+-------+
-clk                                     | BUFGP                                                                        | 38    |
-inst_debouncer/inst_pulse_generator/oclk| NONE(inst_debouncer/outbtn_4)                                                | 2     |
-inst_bit4_cycle_generator/state_FSM_FFd1| NONE(gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q)| 4     |
-inst_bit4_cycle_generator/state_FSM_FFd2| NONE(gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q)| 4     |
-inst_bit4_cycle_generator/state_FSM_FFd3| NONE(gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q)| 4     |
-inst_bit4_cycle_generator/state_FSM_FFd4| NONE(gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q)| 4     |
-inst_debouncer/outbtn_0                 | NONE(inst_bit4_cycle_generator/state_FSM_FFd3)                               | 4     |
-inst_pulse_generator/oclk               | NONE(inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd4)            | 4     |
-----------------------------------------+------------------------------------------------------------------------------+-------+
+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                   | Clock buffer(FF name)                                                                 | Load  |
+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+-------+
+clk                                                                            | BUFGP                                                                                 | 109   |
+inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state     | NONE(inst_debouncer/outbtn_4)                                                         | 2     |
+inst_bit4_cycle_generator/state_FSM_FFd1                                       | NONE(gen_input_select[3].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q)| 4     |
+inst_bit4_cycle_generator/state_FSM_FFd2                                       | NONE(gen_input_select[2].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q)| 4     |
+inst_bit4_cycle_generator/state_FSM_FFd3                                       | NONE(gen_input_select[1].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q)| 4     |
+inst_bit4_cycle_generator/state_FSM_FFd4                                       | NONE(gen_input_select[0].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q)| 4     |
+inst_debouncer/outbtn_0                                                        | NONE(inst_bit4_cycle_generator/state_FSM_FFd5)                                        | 5     |
+inst_led_4_display/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state| NONE(inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd1)                     | 5     |
+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -445,9 +498,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.563ns (Maximum Frequency: 219.154MHz)
-   Minimum input arrival time before clock: 2.205ns
-   Maximum output required time after clock: 8.109ns
+   Minimum period: 4.368ns (Maximum Frequency: 228.937MHz)
+   Minimum input arrival time before clock: 2.167ns
+   Maximum output required time after clock: 8.042ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -455,79 +508,86 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.563ns (frequency: 219.154MHz)
-  Total number of paths / destination ports: 854 / 41
--------------------------------------------------------------------------
-Delay:               4.563ns (Levels of Logic = 3)
-  Source:            inst_debouncer/inst_pulse_generator/count_5 (FF)
-  Destination:       inst_debouncer/inst_pulse_generator/count_0 (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk rising
-
-  Data Path: inst_debouncer/inst_pulse_generator/count_5 to inst_debouncer/inst_pulse_generator/count_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               2   0.525   1.181  inst_debouncer/inst_pulse_generator/count_5 (inst_debouncer/inst_pulse_generator/count_5)
-     LUT6:I0->O            1   0.254   0.790  inst_debouncer/inst_pulse_generator/count[15]_GND_7_o_equal_2_o<15>1 (inst_debouncer/inst_pulse_generator/count[15]_GND_7_o_equal_2_o<15>)
-     LUT6:I4->O           18   0.250   1.235  inst_debouncer/inst_pulse_generator/count[15]_GND_7_o_equal_2_o<15>3 (inst_debouncer/inst_pulse_generator/count[15]_GND_7_o_equal_2_o)
-     LUT2:I1->O            1   0.254   0.000  inst_debouncer/inst_pulse_generator/count_0_rstpot (inst_debouncer/inst_pulse_generator/count_0_rstpot)
-     FD:D                      0.074          inst_debouncer/inst_pulse_generator/count_0
-    ----------------------------------------
-    Total                      4.563ns (1.357ns logic, 3.206ns route)
-                                       (29.7% logic, 70.3% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'inst_debouncer/outbtn_0'
-  Clock period: 1.324ns (frequency: 755.287MHz)
-  Total number of paths / destination ports: 4 / 4
+  Clock period: 1.833ns (frequency: 545.554MHz)
+  Total number of paths / destination ports: 5 / 4
 -------------------------------------------------------------------------
-Delay:               1.324ns (Levels of Logic = 0)
-  Source:            inst_bit4_cycle_generator/state_FSM_FFd4 (FF)
-  Destination:       inst_bit4_cycle_generator/state_FSM_FFd3 (FF)
+Delay:               1.833ns (Levels of Logic = 1)
+  Source:            inst_bit4_cycle_generator/state_FSM_FFd1 (FF)
+  Destination:       inst_bit4_cycle_generator/state_FSM_FFd4 (FF)
   Source Clock:      inst_debouncer/outbtn_0 rising
   Destination Clock: inst_debouncer/outbtn_0 rising
 
-  Data Path: inst_bit4_cycle_generator/state_FSM_FFd4 to inst_bit4_cycle_generator/state_FSM_FFd3
+  Data Path: inst_bit4_cycle_generator/state_FSM_FFd1 to inst_bit4_cycle_generator/state_FSM_FFd4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   0.725  inst_bit4_cycle_generator/state_FSM_FFd4 (inst_bit4_cycle_generator/state_FSM_FFd4)
-     FD:D                      0.074          inst_bit4_cycle_generator/state_FSM_FFd3
+     FDC:C->Q              6   0.525   0.984  inst_bit4_cycle_generator/state_FSM_FFd1 (inst_bit4_cycle_generator/state_FSM_FFd1)
+     LUT2:I0->O            1   0.250   0.000  inst_bit4_cycle_generator/state_FSM_FFd4-In1 (inst_bit4_cycle_generator/state_FSM_FFd4-In)
+     FDC:D                     0.074          inst_bit4_cycle_generator/state_FSM_FFd4
     ----------------------------------------
-    Total                      1.324ns (0.599ns logic, 0.725ns route)
-                                       (45.2% logic, 54.8% route)
+    Total                      1.833ns (0.849ns logic, 0.984ns route)
+                                       (46.3% logic, 53.7% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'inst_pulse_generator/oclk'
-  Clock period: 1.474ns (frequency: 678.426MHz)
-  Total number of paths / destination ports: 4 / 4
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.368ns (frequency: 228.937MHz)
+  Total number of paths / destination ports: 4760 / 100
 -------------------------------------------------------------------------
-Delay:               1.474ns (Levels of Logic = 0)
-  Source:            inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd1 (FF)
-  Destination:       inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd4 (FF)
-  Source Clock:      inst_pulse_generator/oclk rising
-  Destination Clock: inst_pulse_generator/oclk rising
+Delay:               4.368ns (Levels of Logic = 8)
+  Source:            inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/count_5 (FF)
+  Destination:       inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
 
-  Data Path: inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd1 to inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd4
+  Data Path: inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/count_5 to inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.525   0.875  inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd1 (inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd1)
-     FD:D                      0.074          inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd4
+     FD:C->Q               2   0.525   1.181  inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/count_5 (inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/count_5)
+     LUT6:I0->O            1   0.254   0.000  inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_lut<0> (inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_cy<0> (inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_cy<1> (inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_cy<2> (inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_cy<3> (inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_cy<4> (inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_cy<4>)
+     MUXCY:CI->O          33   0.235   1.537  inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/Mcompar_count[31]_half_period_count[31]_equal_2_o_cy<5> (inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/count[31]_half_period_count[31]_equal_2_o)
+     LUT3:I2->O            1   0.254   0.000  inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state_rstpot (inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state_rstpot)
+     FD:D                      0.074          inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state
     ----------------------------------------
-    Total                      1.474ns (0.599ns logic, 0.875ns route)
-                                       (40.6% logic, 59.4% route)
+    Total                      4.368ns (1.650ns logic, 2.718ns route)
+                                       (37.8% logic, 62.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'inst_debouncer/inst_pulse_generator/oclk'
+Timing constraint: Default period analysis for Clock 'inst_led_4_display/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state'
+  Clock period: 1.833ns (frequency: 545.554MHz)
+  Total number of paths / destination ports: 5 / 4
+-------------------------------------------------------------------------
+Delay:               1.833ns (Levels of Logic = 1)
+  Source:            inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd1 (FF)
+  Destination:       inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd4 (FF)
+  Source Clock:      inst_led_4_display/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state rising
+  Destination Clock: inst_led_4_display/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state rising
+
+  Data Path: inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd1 to inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.525   0.984  inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd1 (inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd1)
+     LUT2:I0->O            1   0.250   0.000  inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd4-In1 (inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd4-In)
+     FD:D                      0.074          inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd4
+    ----------------------------------------
+    Total                      1.833ns (0.849ns logic, 0.984ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
 Offset:              2.083ns (Levels of Logic = 1)
   Source:            buttons<4> (PAD)
   Destination:       inst_debouncer/outbtn_4 (FF)
-  Destination Clock: inst_debouncer/inst_pulse_generator/oclk rising
+  Destination Clock: inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state rising
 
   Data Path: buttons<4> to inst_debouncer/outbtn_4
                                 Gate     Net
@@ -543,204 +603,225 @@ Offset:              2.083ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'inst_bit4_cycle_generator/state_FSM_FFd1'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              2.205ns (Levels of Logic = 1)
+Offset:              2.167ns (Levels of Logic = 1)
   Source:            switches<0> (PAD)
-  Destination:       gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q (FF)
+  Destination:       gen_input_select[3].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q (LATCH)
   Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd1 falling
 
-  Data Path: switches<0> to gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
+  Data Path: switches<0> to gen_input_select[3].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             4   1.328   0.803  switches_0_IBUF (switches_0_IBUF)
-     FD:D                      0.074          gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
+     LD:D                      0.036          gen_input_select[3].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q
     ----------------------------------------
-    Total                      2.205ns (1.402ns logic, 0.803ns route)
-                                       (63.6% logic, 36.4% route)
+    Total                      2.167ns (1.364ns logic, 0.803ns route)
+                                       (62.9% logic, 37.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'inst_bit4_cycle_generator/state_FSM_FFd2'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              2.205ns (Levels of Logic = 1)
+Offset:              2.167ns (Levels of Logic = 1)
   Source:            switches<0> (PAD)
-  Destination:       gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q (FF)
+  Destination:       gen_input_select[2].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q (LATCH)
   Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd2 falling
 
-  Data Path: switches<0> to gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
+  Data Path: switches<0> to gen_input_select[2].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             4   1.328   0.803  switches_0_IBUF (switches_0_IBUF)
-     FD:D                      0.074          gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
+     LD:D                      0.036          gen_input_select[2].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q
     ----------------------------------------
-    Total                      2.205ns (1.402ns logic, 0.803ns route)
-                                       (63.6% logic, 36.4% route)
+    Total                      2.167ns (1.364ns logic, 0.803ns route)
+                                       (62.9% logic, 37.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'inst_bit4_cycle_generator/state_FSM_FFd3'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              2.205ns (Levels of Logic = 1)
+Offset:              2.167ns (Levels of Logic = 1)
   Source:            switches<0> (PAD)
-  Destination:       gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q (FF)
+  Destination:       gen_input_select[1].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q (LATCH)
   Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd3 falling
 
-  Data Path: switches<0> to gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
+  Data Path: switches<0> to gen_input_select[1].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             4   1.328   0.803  switches_0_IBUF (switches_0_IBUF)
-     FD:D                      0.074          gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
+     LD:D                      0.036          gen_input_select[1].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q
     ----------------------------------------
-    Total                      2.205ns (1.402ns logic, 0.803ns route)
-                                       (63.6% logic, 36.4% route)
+    Total                      2.167ns (1.364ns logic, 0.803ns route)
+                                       (62.9% logic, 37.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'inst_bit4_cycle_generator/state_FSM_FFd4'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              2.205ns (Levels of Logic = 1)
+Offset:              2.167ns (Levels of Logic = 1)
   Source:            switches<0> (PAD)
-  Destination:       gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q (FF)
+  Destination:       gen_input_select[0].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q (LATCH)
   Destination Clock: inst_bit4_cycle_generator/state_FSM_FFd4 falling
 
-  Data Path: switches<0> to gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
+  Data Path: switches<0> to gen_input_select[0].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             4   1.328   0.803  switches_0_IBUF (switches_0_IBUF)
-     FD:D                      0.074          gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[0].inst_d_ff_bit_1/q
+     LD:D                      0.036          gen_input_select[0].inst_d_latch_bit_4/gen_d_latch_bit_4[0].inst_d_latch_bit_1/q
     ----------------------------------------
-    Total                      2.205ns (1.402ns logic, 0.803ns route)
-                                       (63.6% logic, 36.4% route)
+    Total                      2.167ns (1.364ns logic, 0.803ns route)
+                                       (62.9% logic, 37.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 8 / 8
+  Total number of paths / destination ports: 16 / 12
 -------------------------------------------------------------------------
-Offset:              4.412ns (Levels of Logic = 1)
-  Source:            pswd_correct (FF)
-  Destination:       leds<7> (PAD)
+Offset:              5.422ns (Levels of Logic = 2)
+  Source:            display_enable (FF)
+  Destination:       digit<3> (PAD)
   Source Clock:      clk rising
 
-  Data Path: pswd_correct to leds<7>
+  Data Path: display_enable to digit<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               9   0.525   0.975  pswd_correct (pswd_correct)
-     OBUF:I->O                 2.912          leds_7_OBUF (leds<7>)
+     FD:C->Q               5   0.525   1.069  display_enable (display_enable)
+     LUT4:I1->O            1   0.235   0.681  inst_led_4_display/digit_select<0>1 (digit_0_OBUF)
+     OBUF:I->O                 2.912          digit_0_OBUF (digit<0>)
     ----------------------------------------
-    Total                      4.412ns (3.437ns logic, 0.975ns route)
-                                       (77.9% logic, 22.1% route)
+    Total                      5.422ns (3.672ns logic, 1.750ns route)
+                                       (67.7% logic, 32.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_pulse_generator/oclk'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_led_4_display/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state'
   Total number of paths / destination ports: 116 / 11
 -------------------------------------------------------------------------
-Offset:              8.109ns (Levels of Logic = 4)
-  Source:            inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd4 (FF)
+Offset:              8.042ns (Levels of Logic = 4)
+  Source:            inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd4 (FF)
   Destination:       segments<6> (PAD)
-  Source Clock:      inst_pulse_generator/oclk rising
+  Source Clock:      inst_led_4_display/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state rising
 
-  Data Path: inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd4 to segments<6>
+  Data Path: inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd4 to segments<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.525   1.152  inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd4 (inst_led_4_display/Inst_bit4_cycle_generator/state_FSM_FFd4)
-     LUT4:I0->O            1   0.254   0.910  inst_led_4_display/Mmux_single_number<3>_SW0 (N4)
+     FD:C->Q               6   0.525   1.104  inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd4 (inst_led_4_display/inst_bit4_cycle_generator/state_FSM_FFd4)
+     LUT4:I1->O            1   0.235   0.910  inst_led_4_display/Mmux_single_number<3>_SW0 (N3)
      LUT5:I2->O            7   0.235   1.186  inst_led_4_display/Mmux_single_number<3> (inst_led_4_display/single_number<3>)
-     LUT4:I0->O            1   0.254   0.681  inst_led_4_display/single_display/Mram_segs51 (segments_5_OBUF)
+     LUT4:I0->O            1   0.254   0.681  inst_led_4_display/inst_display/Mram_segs51 (segments_5_OBUF)
      OBUF:I->O                 2.912          segments_5_OBUF (segments<5>)
     ----------------------------------------
-    Total                      8.109ns (4.180ns logic, 3.929ns route)
-                                       (51.5% logic, 48.5% route)
+    Total                      8.042ns (4.161ns logic, 3.881ns route)
+                                       (51.7% logic, 48.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_bit4_cycle_generator/state_FSM_FFd2'
-  Total number of paths / destination ports: 28 / 7
+Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_debouncer/outbtn_0'
+  Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              6.968ns (Levels of Logic = 3)
-  Source:            gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q (FF)
-  Destination:       segments<6> (PAD)
-  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd2 falling
+Offset:              5.248ns (Levels of Logic = 2)
+  Source:            inst_bit4_cycle_generator/state_FSM_FFd1 (FF)
+  Destination:       digit<3> (PAD)
+  Source Clock:      inst_debouncer/outbtn_0 rising
 
-  Data Path: gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q to segments<6>
+  Data Path: inst_bit4_cycle_generator/state_FSM_FFd1 to digit<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   1.156  gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q (gen_input_select[2].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q)
-     LUT5:I0->O            7   0.254   1.186  inst_led_4_display/Mmux_single_number<1> (inst_led_4_display/single_number<1>)
-     LUT4:I0->O            1   0.254   0.681  inst_led_4_display/single_display/Mram_segs31 (segments_3_OBUF)
-     OBUF:I->O                 2.912          segments_3_OBUF (segments<3>)
+     FDC:C->Q              6   0.525   0.876  inst_bit4_cycle_generator/state_FSM_FFd1 (inst_bit4_cycle_generator/state_FSM_FFd1)
+     LUT4:I3->O            1   0.254   0.681  inst_led_4_display/digit_select<3>1 (digit_3_OBUF)
+     OBUF:I->O                 2.912          digit_3_OBUF (digit<3>)
     ----------------------------------------
-    Total                      6.968ns (3.945ns logic, 3.023ns route)
-                                       (56.6% logic, 43.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_bit4_cycle_generator/state_FSM_FFd4'
-  Total number of paths / destination ports: 28 / 7
--------------------------------------------------------------------------
-Offset:              7.892ns (Levels of Logic = 4)
-  Source:            gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q (FF)
-  Destination:       segments<6> (PAD)
-  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd4 falling
-
-  Data Path: gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q to segments<6>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               2   0.525   0.954  gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q (gen_input_select[0].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q)
-     LUT4:I1->O            1   0.235   0.910  inst_led_4_display/Mmux_single_number<1>_SW0 (N8)
-     LUT5:I2->O            7   0.235   1.186  inst_led_4_display/Mmux_single_number<1> (inst_led_4_display/single_number<1>)
-     LUT4:I0->O            1   0.254   0.681  inst_led_4_display/single_display/Mram_segs31 (segments_3_OBUF)
-     OBUF:I->O                 2.912          segments_3_OBUF (segments<3>)
-    ----------------------------------------
-    Total                      7.892ns (4.161ns logic, 3.731ns route)
-                                       (52.7% logic, 47.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_bit4_cycle_generator/state_FSM_FFd1'
-  Total number of paths / destination ports: 28 / 7
--------------------------------------------------------------------------
-Offset:              7.683ns (Levels of Logic = 4)
-  Source:            gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q (FF)
-  Destination:       segments<6> (PAD)
-  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd1 falling
-
-  Data Path: gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q to segments<6>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               2   0.525   0.726  gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q (gen_input_select[3].inst_d_ff_bit_4/gen_d_ff_bit_4[1].inst_d_ff_bit_1/q)
-     LUT4:I3->O            1   0.254   0.910  inst_led_4_display/Mmux_single_number<1>_SW0 (N8)
-     LUT5:I2->O            7   0.235   1.186  inst_led_4_display/Mmux_single_number<1> (inst_led_4_display/single_number<1>)
-     LUT4:I0->O            1   0.254   0.681  inst_led_4_display/single_display/Mram_segs31 (segments_3_OBUF)
-     OBUF:I->O                 2.912          segments_3_OBUF (segments<3>)
-    ----------------------------------------
-    Total                      7.683ns (4.180ns logic, 3.503ns route)
-                                       (54.4% logic, 45.6% route)
+    Total                      5.248ns (3.691ns logic, 1.557ns route)
+                                       (70.3% logic, 29.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_bit4_cycle_generator/state_FSM_FFd3'
   Total number of paths / destination ports: 28 / 7
 -------------------------------------------------------------------------
-Offset:              6.814ns (Levels of Logic = 3)
-  Source:            gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[3].inst_d_ff_bit_1/q (FF)
+Offset:              7.024ns (Levels of Logic = 3)
+  Source:            gen_input_select[1].inst_d_latch_bit_4/gen_d_latch_bit_4[3].inst_d_latch_bit_1/q (LATCH)
   Destination:       segments<5> (PAD)
   Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd3 falling
 
-  Data Path: gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[3].inst_d_ff_bit_1/q to segments<5>
+  Data Path: gen_input_select[1].inst_d_latch_bit_4/gen_d_latch_bit_4[3].inst_d_latch_bit_1/q to segments<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   1.002  gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[3].inst_d_ff_bit_1/q (gen_input_select[1].inst_d_ff_bit_4/gen_d_ff_bit_4[3].inst_d_ff_bit_1/q)
-     LUT5:I1->O            7   0.254   1.186  inst_led_4_display/Mmux_single_number<3> (inst_led_4_display/single_number<3>)
-     LUT4:I0->O            1   0.254   0.681  inst_led_4_display/single_display/Mram_segs51 (segments_5_OBUF)
+     LD:G->Q               2   0.581   1.156  gen_input_select[1].inst_d_latch_bit_4/gen_d_latch_bit_4[3].inst_d_latch_bit_1/q (gen_input_select[1].inst_d_latch_bit_4/gen_d_latch_bit_4[3].inst_d_latch_bit_1/q)
+     LUT5:I0->O            7   0.254   1.186  inst_led_4_display/Mmux_single_number<3> (inst_led_4_display/single_number<3>)
+     LUT4:I0->O            1   0.254   0.681  inst_led_4_display/inst_display/Mram_segs51 (segments_5_OBUF)
      OBUF:I->O                 2.912          segments_5_OBUF (segments<5>)
     ----------------------------------------
-    Total                      6.814ns (3.945ns logic, 2.869ns route)
-                                       (57.9% logic, 42.1% route)
+    Total                      7.024ns (4.001ns logic, 3.023ns route)
+                                       (57.0% logic, 43.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_bit4_cycle_generator/state_FSM_FFd4'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              8.015ns (Levels of Logic = 4)
+  Source:            gen_input_select[0].inst_d_latch_bit_4/gen_d_latch_bit_4[1].inst_d_latch_bit_1/q (LATCH)
+  Destination:       segments<6> (PAD)
+  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd4 falling
+
+  Data Path: gen_input_select[0].inst_d_latch_bit_4/gen_d_latch_bit_4[1].inst_d_latch_bit_1/q to segments<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.581   1.002  gen_input_select[0].inst_d_latch_bit_4/gen_d_latch_bit_4[1].inst_d_latch_bit_1/q (gen_input_select[0].inst_d_latch_bit_4/gen_d_latch_bit_4[1].inst_d_latch_bit_1/q)
+     LUT4:I0->O            1   0.254   0.910  inst_led_4_display/Mmux_single_number<1>_SW0 (N7)
+     LUT5:I2->O            7   0.235   1.186  inst_led_4_display/Mmux_single_number<1> (inst_led_4_display/single_number<1>)
+     LUT4:I0->O            1   0.254   0.681  inst_led_4_display/inst_display/Mram_segs31 (segments_3_OBUF)
+     OBUF:I->O                 2.912          segments_3_OBUF (segments<3>)
+    ----------------------------------------
+    Total                      8.015ns (4.236ns logic, 3.779ns route)
+                                       (52.9% logic, 47.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_bit4_cycle_generator/state_FSM_FFd1'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              7.843ns (Levels of Logic = 4)
+  Source:            gen_input_select[3].inst_d_latch_bit_4/gen_d_latch_bit_4[1].inst_d_latch_bit_1/q (LATCH)
+  Destination:       segments<6> (PAD)
+  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd1 falling
+
+  Data Path: gen_input_select[3].inst_d_latch_bit_4/gen_d_latch_bit_4[1].inst_d_latch_bit_1/q to segments<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.581   0.834  gen_input_select[3].inst_d_latch_bit_4/gen_d_latch_bit_4[1].inst_d_latch_bit_1/q (gen_input_select[3].inst_d_latch_bit_4/gen_d_latch_bit_4[1].inst_d_latch_bit_1/q)
+     LUT4:I2->O            1   0.250   0.910  inst_led_4_display/Mmux_single_number<1>_SW0 (N7)
+     LUT5:I2->O            7   0.235   1.186  inst_led_4_display/Mmux_single_number<1> (inst_led_4_display/single_number<1>)
+     LUT4:I0->O            1   0.254   0.681  inst_led_4_display/inst_display/Mram_segs31 (segments_3_OBUF)
+     OBUF:I->O                 2.912          segments_3_OBUF (segments<3>)
+    ----------------------------------------
+    Total                      7.843ns (4.232ns logic, 3.611ns route)
+                                       (54.0% logic, 46.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_bit4_cycle_generator/state_FSM_FFd2'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              6.698ns (Levels of Logic = 3)
+  Source:            gen_input_select[2].inst_d_latch_bit_4/gen_d_latch_bit_4[3].inst_d_latch_bit_1/q (LATCH)
+  Destination:       segments<5> (PAD)
+  Source Clock:      inst_bit4_cycle_generator/state_FSM_FFd2 falling
+
+  Data Path: gen_input_select[2].inst_d_latch_bit_4/gen_d_latch_bit_4[3].inst_d_latch_bit_1/q to segments<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.581   0.834  gen_input_select[2].inst_d_latch_bit_4/gen_d_latch_bit_4[3].inst_d_latch_bit_1/q (gen_input_select[2].inst_d_latch_bit_4/gen_d_latch_bit_4[3].inst_d_latch_bit_1/q)
+     LUT5:I3->O            7   0.250   1.186  inst_led_4_display/Mmux_single_number<3> (inst_led_4_display/single_number<3>)
+     LUT4:I0->O            1   0.254   0.681  inst_led_4_display/inst_display/Mram_segs51 (segments_5_OBUF)
+     OBUF:I->O                 2.912          segments_5_OBUF (segments<5>)
+    ----------------------------------------
+    Total                      6.698ns (3.997ns logic, 2.701ns route)
+                                       (59.7% logic, 40.3% route)
 
 =========================================================================
 
@@ -748,45 +829,46 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock clk
-----------------------------------------+---------+---------+---------+---------+
-                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------+---------+---------+---------+---------+
-clk                                     |    4.563|         |         |         |
-inst_bit4_cycle_generator/state_FSM_FFd1|         |    2.945|         |         |
-inst_bit4_cycle_generator/state_FSM_FFd2|         |    3.764|         |         |
-inst_bit4_cycle_generator/state_FSM_FFd3|         |    5.376|         |         |
-inst_bit4_cycle_generator/state_FSM_FFd4|         |    5.401|         |         |
-inst_debouncer/inst_pulse_generator/oclk|    1.788|         |         |         |
-----------------------------------------+---------+---------+---------+---------+
+--------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------------------+---------+---------+---------+---------+
+clk                                                                       |    4.368|         |         |         |
+inst_bit4_cycle_generator/state_FSM_FFd1                                  |         |    2.065|         |         |
+inst_bit4_cycle_generator/state_FSM_FFd2                                  |         |    3.056|         |         |
+inst_bit4_cycle_generator/state_FSM_FFd3                                  |         |    4.342|         |         |
+inst_bit4_cycle_generator/state_FSM_FFd4                                  |         |    4.693|         |         |
+inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state|    1.867|         |         |         |
+--------------------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock inst_debouncer/outbtn_0
------------------------+---------+---------+---------+---------+
-                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------+---------+---------+---------+---------+
-inst_debouncer/outbtn_0|    1.324|         |         |         |
------------------------+---------+---------+---------+---------+
+--------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------------------+---------+---------+---------+---------+
+inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state|    1.893|         |         |         |
+inst_debouncer/outbtn_0                                                   |    1.833|         |         |         |
+--------------------------------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock inst_pulse_generator/oclk
--------------------------+---------+---------+---------+---------+
-                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------------+---------+---------+---------+---------+
-inst_pulse_generator/oclk|    1.474|         |         |         |
--------------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock inst_led_4_display/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state
+-------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------------------+---------+---------+---------+---------+
+inst_led_4_display/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state|    1.833|         |         |         |
+-------------------------------------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.81 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.72 secs
  
 --> 
 
-Total memory usage is 247668 kilobytes
+Total memory usage is 248180 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    9 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Thu Nov 09 10:50:28 2017">
+<application name="pn" timeStamp="Sun Nov 12 09:32:55 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="A10FEE96A6874EBEA36E548FC4951B8D" type="project"/>
-<property name="ProjectIteration" value="10" type="project"/>
+<property name="ProjectIteration" value="20" type="project"/>
 <property name="ProjectFile" value="E:/projects/VHDL_XIlinx/led_4_display/led_4_display.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2017-11-08T20:56:56" type="project"/>
 </section>
@@ -25,12 +25,12 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2017-11-08T20:56:56" type="design"/>
 <property name="PROP_intWbtProjectID" value="A10FEE96A6874EBEA36E548FC4951B8D" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="10" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="20" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.tb" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
-<property name="PROP_AutoTop" value="true" type="design"/>
+<property name="PROP_AutoTop" value="false" type="design"/>
 <property name="PROP_DevFamily" value="Spartan6" type="design"/>
 <property name="PROP_DevDevice" value="xc6slx16" type="design"/>
 <property name="PROP_DevFamilyPMName" value="spartan6" type="design"/>

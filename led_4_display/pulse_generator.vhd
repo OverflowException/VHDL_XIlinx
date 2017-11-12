@@ -20,7 +20,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
-
+use IEEE.NUMERIC_STD.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -36,14 +36,14 @@ entity pulse_generator is
 end pulse_generator;
 
 architecture Behavioral of pulse_generator is
-	signal count: std_logic_vector(15 downto 0);
+	signal count: std_logic_vector(31 downto 0);
 	signal state: std_logic;
 begin
 	process(inclk)
 	begin
 		if rising_edge(inclk) then
 			count <= count + 1;
-			if count = B"0110_0001_1010_1000" then --count to 25k
+			if count =  X"3D090" then --count to 250k, which makes the output period = 10 ms
 				oclk <= state;
 				state <= not state;
 				count <= (others => '0'); --reset counter
