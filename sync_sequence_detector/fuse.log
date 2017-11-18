@@ -1,0 +1,34 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/projects/VHDL_XIlinx/sync_sequence_detector/testbench_isim_beh.exe -prj E:/projects/VHDL_XIlinx/sync_sequence_detector/testbench_beh.prj work.testbench 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/projects/VHDL_XIlinx/sync_sequence_detector/schematic.vhf" into library work
+Parsing VHDL file "E:/projects/VHDL_XIlinx/sync_sequence_detector/nx3_top.vhf" into library work
+Parsing VHDL file "E:/projects/VHDL_XIlinx/sync_sequence_detector/stimuli.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 163764 KB
+Fuse CPU Usage: 452 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling architecture fd_v of entity FD [\FD('0')\]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture and4b2_v of entity AND4B2 [and4b2_default]
+Compiling architecture and3b2_v of entity AND3B2 [and3b2_default]
+Compiling architecture and3b1_v of entity AND3B1 [and3b1_default]
+Compiling architecture and2b1_v of entity AND2B1 [and2b1_default]
+Compiling architecture or4_v of entity OR4 [or4_default]
+Compiling architecture and3_v of entity AND3 [and3_default]
+Compiling architecture and2_v of entity AND2 [and2_default]
+Compiling architecture behavioral of entity schematic_MUSER_nx3_top [schematic_muser_nx3_top_default]
+Compiling architecture behavioral of entity nx3_top [nx3_top_default]
+Compiling architecture behavior of entity testbench
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 27 VHDL Units
+Built simulation executable E:/projects/VHDL_XIlinx/sync_sequence_detector/testbench_isim_beh.exe
+Fuse Memory Usage: 183440 KB
+Fuse CPU Usage: 718 ms

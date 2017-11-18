@@ -1,0 +1,380 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.52 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.52 secs
+ 
+--> Reading design: nx3_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "nx3_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "nx3_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : nx3_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\projects\VHDL_XIlinx\sync_sequence_detector\schematic.vhf" into library work
+Parsing entity <schematic>.
+Parsing architecture <BEHAVIORAL> of entity <schematic>.
+Parsing VHDL file "E:\projects\VHDL_XIlinx\sync_sequence_detector\nx3_top.vhf" into library work
+Parsing entity <schematic_MUSER_nx3_top>.
+Parsing architecture <BEHAVIORAL> of entity <schematic_muser_nx3_top>.
+Parsing entity <nx3_top>.
+Parsing architecture <BEHAVIORAL> of entity <nx3_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <nx3_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <schematic_MUSER_nx3_top> (architecture <BEHAVIORAL>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <nx3_top>.
+    Related source file is "E:\projects\VHDL_XIlinx\sync_sequence_detector\nx3_top.vhf".
+WARNING:Xst:647 - Input <buttons<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <buttons<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <buttons<4:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <switches<7:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <nx3_top> synthesized.
+
+Synthesizing Unit <schematic_MUSER_nx3_top>.
+    Related source file is "E:\projects\VHDL_XIlinx\sync_sequence_detector\nx3_top.vhf".
+    Summary:
+	no macro.
+Unit <schematic_MUSER_nx3_top> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit schematic_MUSER_nx3_top : the following signal(s) form a combinatorial loop: XLXN_40, XLXN_61.
+
+Optimizing unit <nx3_top> ...
+
+Optimizing unit <schematic_MUSER_nx3_top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block nx3_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : nx3_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 14
+#      AND2                        : 1
+#      AND2B1                      : 1
+#      AND3                        : 1
+#      AND3B1                      : 2
+#      AND3B2                      : 3
+#      AND4B2                      : 2
+#      OR2                         : 3
+#      OR4                         : 1
+# FlipFlops/Latches                : 3
+#      FD                          : 3
+# IO Buffers                       : 7
+#      IBUF                        : 3
+#      OBUF                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               3  out of  18224     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      3
+   Number with an unused Flip Flop:       0  out of      3     0%  
+   Number with an unused LUT:             3  out of      3   100%  
+   Number of fully used LUT-FF pairs:     0  out of      3     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                   7  out of    232     3%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+XLXI_1/XLXN_61(XLXI_1/XLXI_53:O)   | NONE(*)(XLXI_1/XLXI_3) | 3     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.699ns (Maximum Frequency: 270.369MHz)
+   Minimum input arrival time before clock: 4.361ns
+   Maximum output required time after clock: 5.021ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_1/XLXN_61'
+  Clock period: 3.699ns (frequency: 270.369MHz)
+  Total number of paths / destination ports: 19 / 3
+-------------------------------------------------------------------------
+Delay:               3.699ns (Levels of Logic = 2)
+  Source:            XLXI_1/XLXI_2 (FF)
+  Destination:       XLXI_1/XLXI_3 (FF)
+  Source Clock:      XLXI_1/XLXN_61 rising
+  Destination Clock: XLXI_1/XLXN_61 rising
+
+  Data Path: XLXI_1/XLXI_2 to XLXI_1/XLXI_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   1.085  XLXI_1/XLXI_2 (leds_1_OBUF)
+     AND4B2:I3->O          1   0.339   0.924  XLXI_1/XLXI_12 (XLXI_1/XLXN_12)
+     OR2:I1->O             1   0.223   0.579  XLXI_1/XLXI_4 (XLXI_1/XLXN_1)
+     FD:D                      0.102          XLXI_1/XLXI_1
+    ----------------------------------------
+    Total                      3.699ns (1.111ns logic, 2.588ns route)
+                                       (30.0% logic, 70.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_1/XLXN_61'
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Offset:              4.361ns (Levels of Logic = 3)
+  Source:            switches<0> (PAD)
+  Destination:       XLXI_1/XLXI_3 (FF)
+  Destination Clock: XLXI_1/XLXN_61 rising
+
+  Data Path: switches<0> to XLXI_1/XLXI_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   1.109  switches_0_IBUF (switches_0_IBUF)
+     AND4B2:I0->O          1   0.203   0.924  XLXI_1/XLXI_12 (XLXI_1/XLXN_12)
+     OR2:I1->O             1   0.223   0.579  XLXI_1/XLXI_4 (XLXI_1/XLXN_1)
+     FD:D                      0.102          XLXI_1/XLXI_1
+    ----------------------------------------
+    Total                      4.361ns (1.750ns logic, 2.611ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_1/XLXN_61'
+  Total number of paths / destination ports: 6 / 4
+-------------------------------------------------------------------------
+Offset:              5.021ns (Levels of Logic = 2)
+  Source:            XLXI_1/XLXI_2 (FF)
+  Destination:       leds<5> (PAD)
+  Source Clock:      XLXI_1/XLXN_61 rising
+
+  Data Path: XLXI_1/XLXI_2 to leds<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   1.221  XLXI_1/XLXI_2 (leds_1_OBUF)
+     AND3B1:I0->O          1   0.203   0.579  XLXI_1/XLXI_36 (leds_5_OBUF)
+     OBUF:I->O                 2.571          leds_5_OBUF (leds<5>)
+    ----------------------------------------
+    Total                      5.021ns (3.221ns logic, 1.800ns route)
+                                       (64.2% logic, 35.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock XLXI_1/XLXN_61
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_1/XLXN_61 |    3.699|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.74 secs
+ 
+--> 
+
+Total memory usage is 250980 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

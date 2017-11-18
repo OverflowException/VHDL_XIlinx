@@ -1,9 +1,11 @@
 iMPACT Version: 14.7
 
-iMPACT log file Started on Sun Nov 12 00:59:12 2017
+iMPACT log file Started on Tue Nov 14 21:08:31 2017
 
 Welcome to iMPACT
 iMPACT Version: 14.7
+Project: 'E:\projects\VHDL_XIlinx\lab1\\auto_project.ipf' already exists.
+Original project has been renamed to'E:\projects\VHDL_XIlinx\lab1\\auto_project_1.ipf'.
 Project: E:\projects\VHDL_XIlinx\lab1\\auto_project.ipf created.
 // *** BATCH CMD : setMode -bs
 GUI --- Auto connect to cable...
@@ -19,7 +21,7 @@ INFO:iMPACT - Digilent Plugin: Firmware Version: 0306
 INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
 INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
 Attempting to identify devices in the boundary-scan chain configuration...
-INFO:iMPACT - Current time: 2017/11/12 0:59:18
+INFO:iMPACT - Current time: 2017/11/14 21:08:36
 // *** BATCH CMD : Identify -inferir 
 PROGRESS_START - Starting Operation.
 Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx16, Version : 4
@@ -40,7 +42,7 @@ UserID read from the bitstream file = 0xFFFFFFFF.
 Data width read from the bitstream file = 1.
 INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
 ----------------------------------------------------------------------
-INFO:iMPACT - Current time: 2017/11/12 0:59:30
+INFO:iMPACT - Current time: 2017/11/14 21:08:57
 // *** BATCH CMD : Program -p 1 
 Maximum TCK operating frequency for this device chain: 0.
 Validating chain...

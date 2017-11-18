@@ -1,0 +1,102 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf
+Nexys3_Master.ucf
+
+Design file:              nx3_top.ncd
+Physical constraint file: nx3_top.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock buttons<1>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+switches<0> |   -1.338(R)|      FAST  |    3.062(R)|      SLOW  |XLXI_1/XLXN_61    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock buttons<3>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+switches<0> |   -1.374(R)|      FAST  |    3.044(R)|      SLOW  |XLXI_1/XLXN_61    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock buttons<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+leds<0>     |        12.739(R)|      SLOW  |         7.876(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<1>     |        12.604(R)|      SLOW  |         7.797(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<2>     |        12.643(R)|      SLOW  |         7.831(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<5>     |        12.637(R)|      SLOW  |         7.625(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock buttons<3> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+leds<0>     |        12.721(R)|      SLOW  |         7.912(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<1>     |        12.586(R)|      SLOW  |         7.833(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<2>     |        12.625(R)|      SLOW  |         7.867(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<5>     |        12.619(R)|      SLOW  |         7.661(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock buttons<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+buttons<1>     |    1.443|         |         |         |
+buttons<3>     |    1.443|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buttons<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+buttons<1>     |    1.443|         |         |         |
+buttons<3>     |    1.443|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat Nov 18 14:13:52 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 167 MB
+
+
+

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-LYPC::  Sun Nov 12 22:32:00 2017
+LYPC::  Tue Nov 14 21:41:13 2017
 
 par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
 

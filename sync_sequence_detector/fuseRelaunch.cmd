@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/projects/VHDL_XIlinx/sync_sequence_detector/testbench_isim_beh.exe" -prj "E:/projects/VHDL_XIlinx/sync_sequence_detector/testbench_beh.prj" "work.testbench" 

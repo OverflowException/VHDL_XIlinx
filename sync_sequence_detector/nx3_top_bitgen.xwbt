@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\projects\VHDL_XIlinx\sync_sequence_detector\nx3_top.ncd
+OUTFILE=E:\projects\VHDL_XIlinx\sync_sequence_detector\nx3_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=E:\projects\VHDL_XIlinx\sync_sequence_detector
+LICENSE=WebPack
+USER_INFO=211436108_0_0_674

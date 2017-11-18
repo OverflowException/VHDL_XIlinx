@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to E:/projects/VHDL_XIlinx/combination_lock/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: bit4_cycle_generator.prj
 
@@ -45,7 +45,7 @@ Parsing architecture <Behavioral> of entity <bit4_cycle_generator>.
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.46 secs
+Total CPU time to Xst completion: 3.30 secs
  
 --> 
 

@@ -1,0 +1,3 @@
+MODULE nx3_top
+	SUBMODULE schematic
+		INSTANCE XLXI_1

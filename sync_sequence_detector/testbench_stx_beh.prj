@@ -1,0 +1,3 @@
+vhdl isim_temp "schematic.vhf"
+vhdl isim_temp "nx3_top.vhf"
+vhdl isim_temp "stimuli.vhd"
