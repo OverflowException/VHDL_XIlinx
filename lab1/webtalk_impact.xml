@@ -3,9 +3,9 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="impact" timeStamp="Sat Nov 18 12:54:36 2017">
+<application name="impact" timeStamp="Sat Nov 18 14:21:35 2017">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="b597dda020104828a1afc63e1619aed8"/>
+<property name="ProjectID" value="dfadca80a7d04990b510c80c5f8b9c83"/>
 <property name="ProjectIteration" value="1"/>
 </section>
 <section name="iMPACT Project Info" visible="true">
@@ -25,8 +25,6 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="Part1" value="xc6slx16"/>
 </item>
 <item name="Boundary Scan Operations Statistics">
-<property name="BSCAN Operation" value="Program -p 0
-"/>
 <property name="BSCAN Operation" value="Program -p 0
 "/>
 <property name="BSCAN Operation" value="Program -p 0

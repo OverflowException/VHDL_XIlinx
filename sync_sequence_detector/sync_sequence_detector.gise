@@ -205,6 +205,8 @@
     <transform xil_pn:end_ts="1511014419" xil_pn:in_ck="-9081395861219141549" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1511014409">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="nx3_top.pcf"/>
       <outfile xil_pn:name="nx3_top_map.map"/>
