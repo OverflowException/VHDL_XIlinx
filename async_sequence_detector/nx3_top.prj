@@ -1,0 +1,6 @@
+vhdl work "Q4_schematic.vhf"
+vhdl work "Q3_schematic.vhf"
+vhdl work "Q2_schematic.vhf"
+vhdl work "Q1_schematic.vhf"
+vhdl work "overall_schematic.vhf"
+vhdl work "nx3_top.vhf"

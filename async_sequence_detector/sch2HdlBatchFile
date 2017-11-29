@@ -1,0 +1,4 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/projects/VHDL_XIlinx/async_sequence_detector/Q2_schematic.vhf,-w,E:/projects/VHDL_XIlinx/async_sequence_detector/Q2_schematic.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/projects/VHDL_XIlinx/async_sequence_detector/overall_schematic.vhf,-w,E:/projects/VHDL_XIlinx/async_sequence_detector/overall_schematic.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/projects/VHDL_XIlinx/async_sequence_detector/nx3_top.vhf,-w,E:/projects/VHDL_XIlinx/async_sequence_detector/nx3_top.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/projects/VHDL_XIlinx/async_sequence_detector/overall_schematic.vhf,-w,E:/projects/VHDL_XIlinx/async_sequence_detector/overall_schematic.sch

@@ -1,0 +1,9 @@
+MODULE overall_schematic
+	SUBMODULE Q1_schematic
+		INSTANCE XLXI_64
+	SUBMODULE Q2_schematic
+		INSTANCE XLXI_65
+	SUBMODULE Q3_schematic
+		INSTANCE XLXI_66
+	SUBMODULE Q4_schematic
+		INSTANCE XLXI_67

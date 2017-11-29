@@ -38,10 +38,13 @@
 	  --Global set/reset?
 	clk_set : process
 	begin
-		stim_buttons(1) <= '1';
-		wait for 1 ms;
-		stim_buttons(1) <= '0';
-		wait for 9 ms;
+		wait for 10 ms;
+		loop
+			stim_buttons(1) <= '1';
+			wait for 1 ms;
+			stim_buttons(1) <= '0';
+			wait for 9 ms;
+		end loop;
 	end process clk_set;
 	  
 	clk_reset : process

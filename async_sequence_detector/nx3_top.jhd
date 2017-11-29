@@ -1,0 +1,3 @@
+MODULE nx3_top
+	SUBMODULE overall_schematic
+		INSTANCE XLXI_3

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-LYPC::  Sat Nov 18 14:13:40 2017
+LYPC::  Thu Nov 23 10:58:42 2017
 
 par -w -intstyle ise -ol high -mt off nx3_top_map.ncd nx3_top.ncd nx3_top.pcf 
 
@@ -86,35 +86,35 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 4 secs 
-Finished initial Timing Analysis.  REAL time: 4 secs 
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
 
 Starting Router
 
 
-Phase  1  : 23 unrouted;      REAL time: 4 secs 
+Phase  1  : 23 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 23 unrouted;      REAL time: 4 secs 
+Phase  2  : 23 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 6 unrouted;      REAL time: 4 secs 
+Phase  3  : 6 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 6 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  4  : 6 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
 Updating file: nx3_top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
-Total REAL time to Router completion: 5 secs 
-Total CPU time to Router completion: 5 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Total REAL time to Router completion: 4 secs 
+Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -151,10 +151,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 6 secs 
-Total CPU time to PAR completion: 5 secs 
+Total REAL time to PAR completion: 4 secs 
+Total CPU time to PAR completion: 4 secs 
 
-Peak Memory Usage:  277 MB
+Peak Memory Usage:  311 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

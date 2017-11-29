@@ -1,0 +1,67 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml nx3_top.twx nx3_top.ncd -o nx3_top.twr nx3_top.pcf -ucf
+Nexys3_Master.ucf
+
+Design file:              nx3_top.ncd
+Physical constraint file: nx3_top.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+buttons<1>     |leds<0>        |   14.723|
+buttons<1>     |leds<1>        |   13.361|
+buttons<1>     |leds<2>        |   12.100|
+buttons<1>     |leds<3>        |   12.761|
+buttons<1>     |leds<5>        |   14.556|
+buttons<3>     |leds<0>        |   14.631|
+buttons<3>     |leds<1>        |   13.269|
+buttons<3>     |leds<2>        |   12.008|
+buttons<3>     |leds<3>        |   12.669|
+buttons<3>     |leds<5>        |   14.464|
+switches<0>    |leds<0>        |   11.972|
+switches<0>    |leds<1>        |   10.610|
+switches<0>    |leds<2>        |    9.349|
+switches<0>    |leds<3>        |   10.010|
+switches<0>    |leds<5>        |   11.805|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Nov 29 02:35:08 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 208 MB
+
+
+
