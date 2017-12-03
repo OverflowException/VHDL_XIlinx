@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-11-29T01:43:34</DateModified>
+  <DateModified>2017-11-29T14:11:17</DateModified>
   <ModuleName>nx3_top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/projects/VHDL_XIlinx/async_sequence_detector/iseconfig/nx3_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/projects/VHDL_XIlinx/async_sequence_detector</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/projects/VHDL_XIlinx/async_sequence_detector\</ImplementationReportsDirectory>
   <DateInitialized>2017-11-29T01:41:15</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -11,7 +11,38 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+Starting Simulation
+SD = 0 state A, Q1 Q2 Q3 = 000   T = 0
+SD = 1 state B, Q1 Q2 Q3 = 001   T = 0
+SD = 1 state C, Q1 Q2 Q3 = 010   T = 0
+SD = 0 state D, Q1 Q2 Q3 = 011   T = 0
 # restart
-# run 200ms
+# run 5.00us
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+Starting Simulation
+SD = 0 state A, Q1 Q2 Q3 = 000   T = 0
+SD = 1 state B, Q1 Q2 Q3 = 001   T = 0
+SD = 1 state C, Q1 Q2 Q3 = 010   T = 0
+SD = 0 state D, Q1 Q2 Q3 = 011   T = 0
+SD = 0 state E, Q1 Q2 Q3 = 100   T = 0
+SD = 1 state F, Q1 Q2 Q3 = 101   T = 1
+SD = 1 state C, Q1 Q2 Q3 = 010   T = 0
+SD = 1 state C, Q1 Q2 Q3 = 010   T = 0
+SD = 0 state D, Q1 Q2 Q3 = 011   T = 0
+SD = 1 state B, Q1 Q2 Q3 = 001   T = 0
+SD = 1 state C, Q1 Q2 Q3 = 010   T = 0
+SD = 0 state D, Q1 Q2 Q3 = 011   T = 0
+SD = 0 state E, Q1 Q2 Q3 = 100   T = 0
+SD = 1 state F, Q1 Q2 Q3 = 101   T = 1
+SD = 0 state A, Q1 Q2 Q3 = 000   T = 0
+SD = 1 state B, Q1 Q2 Q3 = 001   T = 0
+SD = 1 state C, Q1 Q2 Q3 = 010   T = 0
+SD = 0 state D, Q1 Q2 Q3 = 011   T = 0
+SD = 0 state E, Q1 Q2 Q3 = 100   T = 0
+SD = 0 state A, Q1 Q2 Q3 = 000   T = 0
+Starting Simulation
+SD = 0 state A, Q1 Q2 Q3 = 000   T = 0
+SD = 1 state B, Q1 Q2 Q3 = 001   T = 0
+SD = 1 state C, Q1 Q2 Q3 = 010   T = 0
+SD = 0 state D, Q1 Q2 Q3 = 011   T = 0

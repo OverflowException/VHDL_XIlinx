@@ -1,0 +1,274 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc nx3.ucf -p xc6slx16-csg324-2 nx3_top.ngc
+nx3_top.ngd
+
+Reading NGO file "E:/projects/VHDL_XIlinx/combination_lock_with_ui/nx3_top.ngc"
+...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "nx3.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switches<0>" LOC = T10>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switches<1>" LOC = T9>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switches<2>" LOC = V9>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switches<3>" LOC = M8>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switches<4>" LOC = N8>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switches<5>" LOC = U8>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switches<6>" LOC = V8>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "segments<0>" LOC = T17>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "segments<1>" LOC = T18>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "segments<2>" LOC = U17>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "segments<3>" LOC = U18>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "segments<4>" LOC = M14>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "segments<5>" LOC = N14>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "segments<6>" LOC = L14>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "segments<7>" LOC = M13>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "digit<0>" LOC = N16>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "digit<1>" LOC = N15>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "digit<2>" LOC = P18>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "digit<3>" LOC = P17>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<0>" LOC = U16>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<1>" LOC = V16>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<2>" LOC = U15>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<3>" LOC = V15>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<4>" LOC = M11>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<5>" LOC = N11>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<6>" LOC = R11>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<7>" LOC = T11>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switches<7>" LOC = T5>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "buttons<0>" LOC = C9>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "buttons<1>" LOC = D9>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "buttons<2>" LOC = A8>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "buttons<3>" LOC = C4>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "buttons<4>" LOC = B8>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "clk" LOC = V10>' could not be found and so the Locate constraint will
+   be removed.
+
+WARNING:NgdBuild:1012 - The constraint <NET "switches<0>" LOC = T10> is
+   overridden on the design object switches<0> by the constraint <NET
+   "switches<0>" LOC= "T10";> [nx3.ucf(18)].
+WARNING:NgdBuild:1012 - The constraint <NET "switches<1>" LOC = T9> is
+   overridden on the design object switches<1> by the constraint <NET
+   "switches<1>" LOC= "T9";> [nx3.ucf(19)].
+WARNING:NgdBuild:1012 - The constraint <NET "switches<2>" LOC = V9> is
+   overridden on the design object switches<2> by the constraint <NET
+   "switches<2>" LOC= "V9";> [nx3.ucf(20)].
+WARNING:NgdBuild:1012 - The constraint <NET "switches<3>" LOC = M8> is
+   overridden on the design object switches<3> by the constraint <NET
+   "switches<3>" LOC= "M8";> [nx3.ucf(21)].
+WARNING:NgdBuild:1012 - The constraint <NET "switches<4>" LOC = N8> is
+   overridden on the design object switches<4> by the constraint <NET
+   "switches<4>" LOC= "N8";> [nx3.ucf(22)].
+WARNING:NgdBuild:1012 - The constraint <NET "switches<5>" LOC = U8> is
+   overridden on the design object switches<5> by the constraint <NET
+   "switches<5>" LOC= "U8";> [nx3.ucf(23)].
+WARNING:NgdBuild:1012 - The constraint <NET "switches<6>" LOC = V8> is
+   overridden on the design object switches<6> by the constraint <NET
+   "switches<6>" LOC= "V8";> [nx3.ucf(24)].
+WARNING:NgdBuild:1012 - The constraint <NET "segments<0>" LOC = T17> is
+   overridden on the design object segments<0> by the constraint <NET
+   "segments<0>" LOC= "T17";> [nx3.ucf(4)].
+WARNING:NgdBuild:1012 - The constraint <NET "segments<1>" LOC = T18> is
+   overridden on the design object segments<1> by the constraint <NET
+   "segments<1>" LOC= "T18";> [nx3.ucf(5)].
+WARNING:NgdBuild:1012 - The constraint <NET "segments<2>" LOC = U17> is
+   overridden on the design object segments<2> by the constraint <NET
+   "segments<2>" LOC= "U17";> [nx3.ucf(6)].
+WARNING:NgdBuild:1012 - The constraint <NET "segments<3>" LOC = U18> is
+   overridden on the design object segments<3> by the constraint <NET
+   "segments<3>" LOC= "U18";> [nx3.ucf(7)].
+WARNING:NgdBuild:1012 - The constraint <NET "segments<4>" LOC = M14> is
+   overridden on the design object segments<4> by the constraint <NET
+   "segments<4>" LOC= "M14";> [nx3.ucf(8)].
+WARNING:NgdBuild:1012 - The constraint <NET "segments<5>" LOC = N14> is
+   overridden on the design object segments<5> by the constraint <NET
+   "segments<5>" LOC= "N14";> [nx3.ucf(9)].
+WARNING:NgdBuild:1012 - The constraint <NET "segments<6>" LOC = L14> is
+   overridden on the design object segments<6> by the constraint <NET
+   "segments<6>" LOC= "L14";> [nx3.ucf(10)].
+WARNING:NgdBuild:1012 - The constraint <NET "segments<7>" LOC = M13> is
+   overridden on the design object segments<7> by the constraint <NET
+   "segments<7>" LOC= "M13";> [nx3.ucf(11)].
+WARNING:NgdBuild:1012 - The constraint <NET "digit<0>" LOC = N16> is overridden
+   on the design object digit<0> by the constraint <NET "digit<0>" LOC= "N16";>
+   [nx3.ucf(13)].
+WARNING:NgdBuild:1012 - The constraint <NET "digit<1>" LOC = N15> is overridden
+   on the design object digit<1> by the constraint <NET "digit<1>" LOC= "N15";>
+   [nx3.ucf(14)].
+WARNING:NgdBuild:1012 - The constraint <NET "digit<2>" LOC = P18> is overridden
+   on the design object digit<2> by the constraint <NET "digit<2>" LOC= "P18";>
+   [nx3.ucf(15)].
+WARNING:NgdBuild:1012 - The constraint <NET "digit<3>" LOC = P17> is overridden
+   on the design object digit<3> by the constraint <NET "digit<3>" LOC= "P17";>
+   [nx3.ucf(16)].
+WARNING:NgdBuild:1012 - The constraint <NET "leds<0>" LOC = U16> is overridden
+   on the design object leds<0> by the constraint <NET "leds<0>" LOC= "U16";>
+   [nx3.ucf(33)].
+WARNING:NgdBuild:1012 - The constraint <NET "leds<1>" LOC = V16> is overridden
+   on the design object leds<1> by the constraint <NET "leds<1>" LOC= "V16";>
+   [nx3.ucf(34)].
+WARNING:NgdBuild:1012 - The constraint <NET "leds<2>" LOC = U15> is overridden
+   on the design object leds<2> by the constraint <NET "leds<2>" LOC= "U15";>
+   [nx3.ucf(35)].
+WARNING:NgdBuild:1012 - The constraint <NET "leds<3>" LOC = V15> is overridden
+   on the design object leds<3> by the constraint <NET "leds<3>" LOC= "V15";>
+   [nx3.ucf(36)].
+WARNING:NgdBuild:1012 - The constraint <NET "leds<4>" LOC = M11> is overridden
+   on the design object leds<4> by the constraint <NET "leds<4>" LOC= "M11";>
+   [nx3.ucf(37)].
+WARNING:NgdBuild:1012 - The constraint <NET "leds<5>" LOC = N11> is overridden
+   on the design object leds<5> by the constraint <NET "leds<5>" LOC= "N11";>
+   [nx3.ucf(38)].
+WARNING:NgdBuild:1012 - The constraint <NET "leds<6>" LOC = R11> is overridden
+   on the design object leds<6> by the constraint <NET "leds<6>" LOC= "R11";>
+   [nx3.ucf(39)].
+WARNING:NgdBuild:1012 - The constraint <NET "leds<7>" LOC = T11> is overridden
+   on the design object leds<7> by the constraint <NET "leds<7>" LOC= "T11";>
+   [nx3.ucf(40)].
+WARNING:NgdBuild:1012 - The constraint <NET "switches<7>" LOC = T5> is
+   overridden on the design object switches<7> by the constraint <NET
+   "switches<7>" LOC= "T5";> [nx3.ucf(25)].
+WARNING:NgdBuild:1012 - The constraint <NET "buttons<0>" LOC = C9> is overridden
+   on the design object buttons<0> by the constraint <NET "buttons<0>" LOC=
+   "C9";> [nx3.ucf(27)].
+WARNING:NgdBuild:1012 - The constraint <NET "buttons<1>" LOC = D9> is overridden
+   on the design object buttons<1> by the constraint <NET "buttons<1>" LOC=
+   "D9";> [nx3.ucf(28)].
+WARNING:NgdBuild:1012 - The constraint <NET "buttons<2>" LOC = A8> is overridden
+   on the design object buttons<2> by the constraint <NET "buttons<2>" LOC=
+   "A8";> [nx3.ucf(29)].
+WARNING:NgdBuild:1012 - The constraint <NET "buttons<3>" LOC = C4> is overridden
+   on the design object buttons<3> by the constraint <NET "buttons<3>" LOC=
+   "C4";> [nx3.ucf(30)].
+WARNING:NgdBuild:1012 - The constraint <NET "buttons<4>" LOC = B8> is overridden
+   on the design object buttons<4> by the constraint <NET "buttons<4>" LOC=
+   "B8";> [nx3.ucf(31)].
+WARNING:NgdBuild:1012 - The constraint <NET "clk" LOC = V10> is overridden on
+   the design object clk by the constraint <NET "clk" LOC= "V10";> [nx3.ucf(2)].
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  68
+
+Total memory usage is 191344 kilobytes
+
+Writing NGD file "nx3_top.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "nx3_top.bld"...

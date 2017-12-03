@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : nx3_top.vhf
--- /___/   /\     Timestamp : 11/18/2017 14:09:05
+-- /___/   /\     Timestamp : 11/29/2017 09:13:32
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -235,15 +235,17 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity nx3_top is port 
-(
-	buttons : in std_logic_vector(4 downto 0);
-	switches : in std_logic_vector(7 downto 0);
-	leds : out std_logic_vector(7 downto 0)
- );
+entity nx3_top is
+   port 
+	(
+		buttons : in std_logic_vector(4 downto 0);
+		leds : out std_logic_vector(7 downto 0);
+		switches : in std_logic_vector(7 downto 0)
+	);
 end nx3_top;
 
 architecture BEHAVIORAL of nx3_top is
+
    component schematic_MUSER_nx3_top
       port ( clk_reset : in    std_logic; 
              clk_set   : in    std_logic; 
@@ -259,9 +261,9 @@ begin
       port map (clk_reset=>buttons(3),
                 clk_set=>buttons(1),
                 SD=>switches(0),
-                Q1=>leds(0),
+                Q1=>leds(2),
                 Q2=>leds(1),
-                Q3=>leds(2),
+                Q3=>leds(0),
                 T=>leds(5));
    
 end BEHAVIORAL;

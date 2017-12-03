@@ -44,6 +44,7 @@ architecture Behavioral of nx3_top is
 	signal debounced_buttons : std_logic_vector(4 downto 0);
 	signal last_button4_status : std_logic;	--Detect button 4 state every clock rising edge. Records last state.
 	
+	
 	component led_4_display port
 	(
 		enable : in std_logic;

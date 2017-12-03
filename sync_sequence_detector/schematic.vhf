@@ -50,9 +50,9 @@ architecture BEHAVIORAL of schematic is
    signal XLXN_70   : std_logic;
    signal XLXN_71   : std_logic;
    signal XLXN_81   : std_logic;
-   signal Q1_DUMMY  : std_logic;
-   signal Q2_DUMMY  : std_logic;
-   signal Q3_DUMMY  : std_logic;
+   signal Q1_DUMMY  : std_logic := '1';
+   signal Q2_DUMMY  : std_logic := '1';
+   signal Q3_DUMMY  : std_logic := '1';
    component FD
       generic( INIT : bit :=  '0');
       port ( C : in    std_logic; 

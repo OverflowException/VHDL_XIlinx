@@ -17,7 +17,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Project ID (random number)</B></TD>
-<TD><xtag-property name="RandomID">16490fd550344607ad19f2014cdc0233</xtag-property>.<xtag-property name="ProjectID">62B837A6CBDD402E9F478DF3C1C42B91</xtag-property>.<xtag-property name="ProjectIteration">7</xtag-property></TD>
+<TD><xtag-property name="RandomID">16490fd550344607ad19f2014cdc0233</xtag-property>.<xtag-property name="ProjectID">62B837A6CBDD402E9F478DF3C1C42B91</xtag-property>.<xtag-property name="ProjectIteration">10</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Target Package:</B></TD>
 <TD><xtag-property name="TargetPackage">csg324</xtag-property></TD>
 </TR>
@@ -29,7 +29,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Date Generated</B></TD>
-<TD><xtag-property name="Date Generated">2017-11-23T10:59:38</xtag-property></TD>
+<TD><xtag-property name="Date Generated">2017-11-29T12:22:17</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Tool Flow</B></TD>
 <TD><xtag-property name="ToolFlow">ISE</xtag-property></TD>
 </TR>
@@ -103,7 +103,7 @@
 <LI><xtag-item1>NumNets_Active=15</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_BOUNCEIN=2</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_CLKPIN=1</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_DOUBLE=10</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_DOUBLE=11</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_GENERIC=10</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_IOBIN2OUT=7</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_IOBOUTPUT=7</xtag-item1></LI>
@@ -112,9 +112,9 @@
 <LI><xtag-item1>NumNodesOfType_Active_OUTPUT=5</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_PADINPUT=4</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_PADOUTPUT=3</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_PINBOUNCE=3</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_PINBOUNCE=5</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_PINFEED=23</xtag-item1></LI>
-<LI><xtag-item1>NumNodesOfType_Active_QUAD=42</xtag-item1></LI>
+<LI><xtag-item1>NumNodesOfType_Active_QUAD=41</xtag-item1></LI>
 <LI><xtag-item1>NumNodesOfType_Active_SINGLE=12</xtag-item1></LI>
 </UL>
 </xtag-group>
@@ -309,6 +309,28 @@
 <LI><xtag-cmdline>par -w -intstyle ise -ol high -mt off &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
 <LI><xtag-cmdline>trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
 <LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc6slx16-csg324-3 &lt;fname&gt;.ngc &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol high -mt off &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc6slx16-csg324-3 &lt;fname&gt;.ngc &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol high -mt off &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc6slx16-csg324-3 &lt;fname&gt;.ngc &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol high -mt off &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
 <LI><xtag-cmdline>fuse</xtag-cmdline></LI>
 </xtag-section></UL></TD></TR>
 </TABLE>
@@ -316,8 +338,8 @@
 
 <tr>
   <td><xtag-program-name>_impact</xtag-program-name></td>
-  <td><xtag-total-run-started>50</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>43</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>54</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>47</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -326,8 +348,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>bitgen</xtag-program-name></td>
-  <td><xtag-total-run-started>114</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>114</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>120</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>120</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -336,8 +358,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>map</xtag-program-name></td>
-  <td><xtag-total-run-started>134</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>117</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>142</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>125</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -356,8 +378,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>ngdbuild</xtag-program-name></td>
-  <td><xtag-total-run-started>139</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>139</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>150</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>150</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -366,8 +388,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>par</xtag-program-name></td>
-  <td><xtag-total-run-started>117</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>117</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>125</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>125</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -376,8 +398,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>trce</xtag-program-name></td>
-  <td><xtag-total-run-started>117</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>117</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>125</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>125</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -396,8 +418,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>xst</xtag-program-name></td>
-  <td><xtag-total-run-started>442</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>440</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>468</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>466</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -410,14 +432,16 @@
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=2><B>Help Statistics</B></TD></TR>
 <TR VALIGN=TOP><TD COLSPAN=2><xtag-group><B><xtag-group-name name="OpenedHelpFiles">
 Help files</xtag-group-name></B></TD></TR>
-<TR><TD><xtag-search-item>/doc/usenglish/isehelp/spartan6/libs_le_and4b1.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
-<TD><xtag-search-item>/doc/usenglish/isehelp/spartan6/libs_le_fd.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
+<TR><TD><xtag-search-item>/doc/usenglish/isehelp/spartan6/libs_le_and3b1.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
+<TD><xtag-search-item>/doc/usenglish/isehelp/spartan6/libs_le_and4b1.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
 
-</TR><TR><TD><xtag-search-item>/doc/usenglish/isehelp/spartan6/libs_le_fd16ce.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
-<TD><xtag-search-item>/doc/usenglish/isehelp/spartan6/libs_le_or2.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
+</TR><TR><TD><xtag-search-item>/doc/usenglish/isehelp/spartan6/libs_le_fd.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
+<TD><xtag-search-item>/doc/usenglish/isehelp/spartan6/libs_le_fd16ce.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
 
-</TR><TR><TD><xtag-search-item>/doc/usenglish/isehelp/spartan6/libs_le_or2l.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
-<TD><xtag-search-item>/doc/usenglish/isehelp/sse_db_obj_prop_attributes.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
+</TR><TR><TD><xtag-search-item>/doc/usenglish/isehelp/spartan6/libs_le_or2.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
+<TD><xtag-search-item>/doc/usenglish/isehelp/spartan6/libs_le_or2l.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
+
+</TR><TR><TD><xtag-search-item>/doc/usenglish/isehelp/sse_db_obj_prop_attributes.htm</xtag-search-item> ( <xtag-count-property>1</xtag-count-property> )</TD>
 </TR></xtag-group></xtag-section></TABLE>
 &nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'>
 <xtag-section name="Project Statistics">
@@ -444,7 +468,7 @@ Help files</xtag-group-name></B></TD></TR>
 </TR><TR><TD><xtag-design-property-name>PROP_intProjectCreationTimestamp</xtag-design-property-name>=<xtag-design-property-value>2017-11-17T22:46:15</xtag-design-property-value></TD>
 <TD><xtag-design-property-name>PROP_intWbtProjectID</xtag-design-property-name>=<xtag-design-property-value>62B837A6CBDD402E9F478DF3C1C42B91</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>7</xtag-process-property-value></TD>
+</TR><TR><TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>10</xtag-process-property-value></TD>
 <TD><xtag-design-property-name>PROP_intWorkingDirLocWRTProjDir</xtag-design-property-name>=<xtag-design-property-value>Same</xtag-design-property-value></TD>
 
 </TR><TR><TD><xtag-design-property-name>PROP_intWorkingDirUsed</xtag-design-property-name>=<xtag-design-property-value>No</xtag-design-property-value></TD>
@@ -577,4 +601,4 @@ Help files</xtag-group-name></B></TD></TR>
 <TD><xtag-xstoptions-param-name>-equivalent_register_removal</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>YES</xtag-xstoptions-param-value></TD>
 <TD><xtag-xstoptions-param-name>-slice_utilization_ratio_maxmargin</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>5</xtag-xstoptions-param-value></TD>
 </xtag-section></TABLE>
-&nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'><xtag-section name="ISimStatistics"><TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=1><B>ISim Statistics</B></TD></TR><TR><TD><xtag-isim-property-name>Xilinx HDL Libraries Used</xtag-isim-property-name>=<xtag-isim-property-value>ieee, unisim</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Fuse Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>686 ms, 218832 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Signals</xtag-isim-property-name>=<xtag-isim-property-value>120</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Nets</xtag-isim-property-name>=<xtag-isim-property-value>65</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Blocks</xtag-isim-property-name>=<xtag-isim-property-value>23</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Processes</xtag-isim-property-name>=<xtag-isim-property-value>26</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Simulation Time</xtag-isim-property-name>=<xtag-isim-property-value>200 ms</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>0.09375 sec, 697253 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Mode</xtag-isim-property-name>=<xtag-isim-property-value>gui</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Hardware CoSim</xtag-isim-property-name>=<xtag-isim-property-value>0</xtag-isim-property-value></TD></TR></xtag-section></TABLE></BODY></HTML>
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'><xtag-section name="ISimStatistics"><TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=1><B>ISim Statistics</B></TD></TR><TR><TD><xtag-isim-property-name>Xilinx HDL Libraries Used</xtag-isim-property-name>=<xtag-isim-property-value>ieee, unisim, std</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Fuse Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>733 ms, 225544 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Signals</xtag-isim-property-name>=<xtag-isim-property-value>120</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Nets</xtag-isim-property-name>=<xtag-isim-property-value>65</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Blocks</xtag-isim-property-name>=<xtag-isim-property-value>25</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Processes</xtag-isim-property-name>=<xtag-isim-property-value>25</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Simulation Time</xtag-isim-property-name>=<xtag-isim-property-value>5 us</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>0.09375 sec, 1016016 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Mode</xtag-isim-property-name>=<xtag-isim-property-value>gui</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Hardware CoSim</xtag-isim-property-name>=<xtag-isim-property-value>0</xtag-isim-property-value></TD></TR></xtag-section></TABLE></BODY></HTML>

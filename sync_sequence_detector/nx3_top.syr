@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: nx3_top.prj
 
@@ -165,7 +165,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit schematic_MUSER_nx3_top : the following signal(s) form a combinatorial loop: XLXN_40, XLXN_61.
+WARNING:Xst:2170 - Unit schematic_MUSER_nx3_top : the following signal(s) form a combinatorial loop: XLXN_61, XLXN_40.
 
 Optimizing unit <nx3_top> ...
 
@@ -368,11 +368,11 @@ XLXI_1/XLXN_61 |    3.699|         |         |         |
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.63 secs
+Total CPU time to Xst completion: 5.68 secs
  
 --> 
 
-Total memory usage is 285692 kilobytes
+Total memory usage is 288788 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)

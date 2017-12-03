@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Nov 14 21:41:04 2017
+Mapped Date    : Sat Dec 02 21:18:05 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -23,13 +23,13 @@ Total REAL time at the beginning of Placer: 4 secs
 Total CPU  time at the beginning of Placer: 4 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:45297ac8) REAL time: 4 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:45297ac8) REAL time: 5 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:45297ac8) REAL time: 4 secs 
+Phase 2.7  Design Feasibility Check (Checksum:45297ac8) REAL time: 5 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:45297ac8) REAL time: 4 secs 
+Phase 3.31  Local Placement Optimization (Checksum:45297ac8) REAL time: 5 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
@@ -57,15 +57,15 @@ Phase 10.5  Local Placement Optimization
 Phase 10.5  Local Placement Optimization (Checksum:1778772c) REAL time: 5 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:2c0e3234) REAL time: 5 secs 
+Phase 11.18  Placement Optimization (Checksum:2c0e3234) REAL time: 6 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:2c0e3234) REAL time: 5 secs 
+Phase 12.5  Local Placement Optimization (Checksum:2c0e3234) REAL time: 6 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:2c0e3234) REAL time: 5 secs 
+Phase 13.34  Placement Validation (Checksum:2c0e3234) REAL time: 6 secs 
 
-Total REAL time to Placer completion: 5 secs 
+Total REAL time to Placer completion: 6 secs 
 Total CPU  time to Placer completion: 5 secs 
 Running post-placement packing...
 Writing output files...
@@ -147,7 +147,7 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                1.91
 
-Peak Memory Usage:  300 MB
+Peak Memory Usage:  336 MB
 Total REAL time to MAP completion:  6 secs 
 Total CPU time to MAP completion:   6 secs 
 

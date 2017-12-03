@@ -54,9 +54,9 @@ Clock buttons<1> to Pad
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 leds<0>     |        12.739(R)|      SLOW  |         7.876(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
-leds<1>     |        12.604(R)|      SLOW  |         7.797(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
-leds<2>     |        12.643(R)|      SLOW  |         7.831(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
-leds<5>     |        12.637(R)|      SLOW  |         7.625(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<1>     |        12.776(R)|      SLOW  |         7.910(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<2>     |        12.741(R)|      SLOW  |         7.880(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<5>     |        12.631(R)|      SLOW  |         7.625(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock buttons<3> to Pad
@@ -65,9 +65,9 @@ Clock buttons<3> to Pad
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 leds<0>     |        12.721(R)|      SLOW  |         7.912(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
-leds<1>     |        12.586(R)|      SLOW  |         7.833(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
-leds<2>     |        12.625(R)|      SLOW  |         7.867(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
-leds<5>     |        12.619(R)|      SLOW  |         7.661(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<1>     |        12.758(R)|      SLOW  |         7.946(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<2>     |        12.723(R)|      SLOW  |         7.916(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
+leds<5>     |        12.613(R)|      SLOW  |         7.661(R)|      FAST  |XLXI_1/XLXN_61    |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock buttons<1>
@@ -89,14 +89,14 @@ buttons<3>     |    1.443|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Nov 23 10:58:52 2017 
+Analysis completed Wed Nov 29 12:22:03 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 205 MB
+Peak Memory Usage: 208 MB
 
 
 
