@@ -5,53 +5,53 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"E:\projects\VHDL_XIlinx\combination_lock_with_ui\counter_10.vhd" Line 59: <arg fmt="%s" index="1">set_value</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 149: <arg fmt="%s" index="1">passwd_input</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"E:\projects\VHDL_XIlinx\combination_lock_with_ui\spinbox_dec_digit_4.vhd" Line 94: <arg fmt="%s" index="1">enable</arg> should be on the sensitivity list of the process
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 142: <arg fmt="%s" index="1">passwd_input</arg> should be on the sensitivity list of the process
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 144: <arg fmt="%s" index="1">digit_selected_bus</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 151: <arg fmt="%s" index="1">digit_selected_bus</arg> should be on the sensitivity list of the process
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">switches&lt;6:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">set_prev</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">gen_inst_4_spinbox_dec_digit_1[3].inst_spinbox_dec_digit_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_segs</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">set_prev</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">gen_inst_4_spinbox_dec_digit_1[2].inst_spinbox_dec_digit_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_display_enable_bus</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">set_prev</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">gen_inst_4_spinbox_dec_digit_1[1].inst_spinbox_dec_digit_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">inst_bit4_cycle_generator/state_FSM_FFd5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">led_4_display_kr</arg>.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">set_prev</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">gen_inst_4_spinbox_dec_digit_1[0].inst_spinbox_dec_digit_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_segs</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0049</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">inst_bit4_cycle_generator/state_FSM_FFd5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">led_4_display_tkr</arg>.
 You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="3002" delta="old" >This design contains one or more registers/latches that are directly
-incompatible with the <arg fmt="%s" index="1">Spartan6</arg> architecture. The two primary causes of this is
-either a register or latch described with both an asynchronous set and
-asynchronous reset, or a register or latch described with an asynchronous
-set or reset which however has an initialization value of the opposite 
-polarity (i.e. asynchronous reset with an initialization value of 1).
- While this circuit can be built, it creates a sub-optimal implementation
-in terms of area, power and performance. For a more optimal implementation
-Xilinx highly recommends one of the following:
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[0].inst_spinbox_dec_digit_1/set_prev</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">nx3_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
 
-       1) Remove either the set or reset from all registers and latches
-          if not needed for required functionality
-       2) Modify the code in order to produce a synchronous set
-          and/or reset (both is preferred)
-       3) Ensure all registers have the same initialization value as the
-          described asynchronous set or reset polarity
-       4) Use the -async_to_sync option to transform the asynchronous
-          set/reset to synchronous operation
-          (timing simulation highly recommended when using this option)
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[1].inst_spinbox_dec_digit_1/set_prev</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">nx3_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[2].inst_spinbox_dec_digit_1/set_prev</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">nx3_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[3].inst_spinbox_dec_digit_1/set_prev</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">nx3_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">buttons_prev_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_spinbox_dec_digit_4/cmd_prev_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">buttons_prev_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">nx3_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_spinbox_dec_digit_4/cmd_prev_1&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

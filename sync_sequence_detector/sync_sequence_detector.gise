@@ -93,39 +93,37 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1511956818" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1511956818">
+    <transform xil_pn:end_ts="1512349513" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1512349513">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1511957070" xil_pn:in_ck="181667789265919639" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1511957070">
+    <transform xil_pn:end_ts="1512349513" xil_pn:in_ck="181667789265919639" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1512349513">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="stimuli.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1511956818" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4434870115928851094" xil_pn:start_ts="1511956818">
+    <transform xil_pn:end_ts="1512349513" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4434870115928851094" xil_pn:start_ts="1512349513">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1511956820" xil_pn:in_ck="7382033393379442356" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1902104842233773292" xil_pn:start_ts="1511956818">
+    <transform xil_pn:end_ts="1512349515" xil_pn:in_ck="7382033393379442356" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1902104842233773292" xil_pn:start_ts="1512349513">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="nx3_top.vhf"/>
       <outfile xil_pn:name="schematic.vhf"/>
     </transform>
-    <transform xil_pn:end_ts="1511956820" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1338316874578482469" xil_pn:start_ts="1511956820">
+    <transform xil_pn:end_ts="1512349515" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1338316874578482469" xil_pn:start_ts="1512349515">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1511958327" xil_pn:in_ck="8116369018694632919" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1511958326">
+    <transform xil_pn:end_ts="1512349515" xil_pn:in_ck="8116369018694632919" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1512349515">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="nx3_top.vhf"/>
       <outfile xil_pn:name="schematic.vhf"/>
       <outfile xil_pn:name="stimuli.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1511966641" xil_pn:in_ck="8116369018694632919" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1459423336703152140" xil_pn:start_ts="1511966634">
+    <transform xil_pn:end_ts="1512349519" xil_pn:in_ck="8116369018694632919" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1459423336703152140" xil_pn:start_ts="1512349515">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -137,7 +135,7 @@
       <outfile xil_pn:name="testbench_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1511966641" xil_pn:in_ck="7130759491340027311" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5406838117933684601" xil_pn:start_ts="1511966641">
+    <transform xil_pn:end_ts="1512349520" xil_pn:in_ck="7130759491340027311" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5406838117933684601" xil_pn:start_ts="1512349519">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>

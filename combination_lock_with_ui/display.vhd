@@ -29,13 +29,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity display_kr is
+entity display_tkr is
 	port(
 			number: in std_logic_vector(3 downto 0);
 			segs: out std_logic_vector(7 downto 0));
-end display_kr;
+end display_tkr;
 
-architecture Behavioral of display_kr is 
+architecture Behavioral of display_tkr is 
 begin
     with number Select
 		segs(7 downto 0) <= 
@@ -51,10 +51,10 @@ begin
          "10010000" when "1001",   --9
          "10001000" when "1010",   --A
          "10000011" when "1011",   --b
-         "11000110" when "1100",   --C
-         "10001001" when "1101",   --K
-         "10000110" when "1110",   --E
-         "10101111" when "1111",   --r
+         "10000111" when "1100",   --t(C)
+         "10001001" when "1101",   --K(D)
+         "10000110" when "1110",   --E(E)
+         "10101111" when "1111",   --r(F)
          "11000000" when others;   --0
 			
 end Behavioral;

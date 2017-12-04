@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: nx3_top.prj
 
@@ -108,6 +108,9 @@ Slice Utilization Ratio Delta      : 5
 Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock_with_ui\freq_divider.vhd" into library work
 Parsing entity <freq_divider>.
 Parsing architecture <Behavioral> of entity <freq_divider>.
+Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock_with_ui\spinbox_dec_digit_1.vhd" into library work
+Parsing entity <spinbox_dec_digit_1>.
+Parsing architecture <Behavioral> of entity <spinbox_dec_digit_1>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock_with_ui\pulse_generator_2hz.vhd" into library work
 Parsing entity <pulse_generator_2hz>.
 Parsing architecture <Behavioral> of entity <pulse_generator_2hz>.
@@ -118,11 +121,8 @@ Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock_with_ui\pulse_genera
 Parsing entity <pulse_generator_100hz>.
 Parsing architecture <Behavioral> of entity <pulse_generator_100hz>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock_with_ui\display.vhd" into library work
-Parsing entity <display_kr>.
-Parsing architecture <Behavioral> of entity <display_kr>.
-Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock_with_ui\counter_10.vhd" into library work
-Parsing entity <counter_10>.
-Parsing architecture <Behavioral> of entity <counter_10>.
+Parsing entity <display_tkr>.
+Parsing architecture <Behavioral> of entity <display_tkr>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock_with_ui\bit4_cycle_generator.vhd" into library work
 Parsing entity <bit4_cycle_generator>.
 Parsing architecture <Behavioral> of entity <bit4_cycle_generator>.
@@ -130,8 +130,8 @@ Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock_with_ui\spinbox_dec_
 Parsing entity <spinbox_dec_digit_4>.
 Parsing architecture <Behavioral> of entity <spinbox_dec_digit_4>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock_with_ui\led_4_display.vhd" into library work
-Parsing entity <led_4_display_kr>.
-Parsing architecture <Behavioral> of entity <led_4_display_kr>.
+Parsing entity <led_4_display_tkr>.
+Parsing architecture <Behavioral> of entity <led_4_display_tkr>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\combination_lock_with_ui\debouncer.vhd" into library work
 Parsing entity <debouncer>.
 Parsing architecture <Behavioral> of entity <debouncer>.
@@ -151,25 +151,23 @@ Elaborating entity <pulse_generator_1khz> (architecture <Behavioral>) from libra
 
 Elaborating entity <freq_divider> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <led_4_display_kr> (architecture <Behavioral>) from library <work>.
+Elaborating entity <led_4_display_tkr> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <pulse_generator_100hz> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <pulse_generator_2hz> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <display_kr> (architecture <Behavioral>) from library <work>.
+Elaborating entity <display_tkr> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <bit4_cycle_generator> (architecture <Behavioral>) from library <work>.
 INFO:HDLCompiler:679 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\bit4_cycle_generator.vhd" Line 60. Case statement is complete. others clause is never selected
 
 Elaborating entity <spinbox_dec_digit_4> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <counter_10> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\counter_10.vhd" Line 59: set_value should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\spinbox_dec_digit_4.vhd" Line 94: enable should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 142: passwd_input should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 144: digit_selected_bus should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 153. Case statement is complete. others clause is never selected
+Elaborating entity <spinbox_dec_digit_1> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 149: passwd_input should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 151: digit_selected_bus should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 164. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -186,7 +184,7 @@ Synthesizing Unit <nx3_top>.
 WARNING:Xst:647 - Input <switches<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 2-bit register for signal <state>.
     Found 5-bit register for signal <buttons_prev>.
-    Found 4x4-bit Read Only RAM for signal <display_enable_bus>
+    Found 4x12-bit Read Only RAM for signal <_n0049>
     Summary:
 	inferred   1 RAM(s).
 	inferred   7 D-type flip-flop(s).
@@ -218,11 +216,11 @@ Synthesizing Unit <freq_divider>.
 	inferred   1 Comparator(s).
 Unit <freq_divider> synthesized.
 
-Synthesizing Unit <led_4_display_kr>.
+Synthesizing Unit <led_4_display_tkr>.
     Related source file is "E:\projects\VHDL_XIlinx\combination_lock_with_ui\led_4_display.vhd".
     Summary:
 	inferred  10 Multiplexer(s).
-Unit <led_4_display_kr> synthesized.
+Unit <led_4_display_tkr> synthesized.
 
 Synthesizing Unit <pulse_generator_100hz>.
     Related source file is "E:\projects\VHDL_XIlinx\combination_lock_with_ui\pulse_generator_100hz.vhd".
@@ -236,12 +234,12 @@ Synthesizing Unit <pulse_generator_2hz>.
 	no macro.
 Unit <pulse_generator_2hz> synthesized.
 
-Synthesizing Unit <display_kr>.
+Synthesizing Unit <display_tkr>.
     Related source file is "E:\projects\VHDL_XIlinx\combination_lock_with_ui\display.vhd".
     Found 16x8-bit Read Only RAM for signal <segs>
     Summary:
 	inferred   1 RAM(s).
-Unit <display_kr> synthesized.
+Unit <display_tkr> synthesized.
 
 Synthesizing Unit <bit4_cycle_generator>.
     Related source file is "E:\projects\VHDL_XIlinx\combination_lock_with_ui\bit4_cycle_generator.vhd".
@@ -263,27 +261,25 @@ Unit <bit4_cycle_generator> synthesized.
 
 Synthesizing Unit <spinbox_dec_digit_4>.
     Related source file is "E:\projects\VHDL_XIlinx\combination_lock_with_ui\spinbox_dec_digit_4.vhd".
-    Found 4-bit register for signal <select_bus>.
+    Found 4-bit register for signal <select_mask>.
     Found 2-bit register for signal <cmd_prev>.
     Summary:
 	inferred   6 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
 Unit <spinbox_dec_digit_4> synthesized.
 
-Synthesizing Unit <counter_10>.
-    Related source file is "E:\projects\VHDL_XIlinx\combination_lock_with_ui\counter_10.vhd".
+Synthesizing Unit <spinbox_dec_digit_1>.
+    Related source file is "E:\projects\VHDL_XIlinx\combination_lock_with_ui\spinbox_dec_digit_1.vhd".
     Found 2-bit register for signal <cmd_prev>.
-    Found 1-bit register for signal <value_buf<3>>.
-    Found 1-bit register for signal <value_buf<2>>.
-    Found 1-bit register for signal <value_buf<1>>.
-    Found 1-bit register for signal <value_buf<0>>.
-    Found 4-bit adder for signal <value_buf[3]_GND_89_o_add_9_OUT> created at line 66.
-    Found 4-bit subtractor for signal <GND_89_o_GND_89_o_sub_6_OUT<3:0>> created at line 64.
+    Found 4-bit register for signal <value_buf>.
+    Found 1-bit register for signal <set_prev>.
+    Found 4-bit adder for signal <value_buf[3]_GND_89_o_add_9_OUT> created at line 75.
+    Found 4-bit subtractor for signal <GND_89_o_GND_89_o_sub_6_OUT<3:0>> created at line 73.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred   6 D-type flip-flop(s).
-	inferred   7 Multiplexer(s).
-Unit <counter_10> synthesized.
+	inferred   7 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <spinbox_dec_digit_1> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -291,31 +287,36 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 2
  16x8-bit single-port Read Only RAM                    : 1
- 4x4-bit single-port Read Only RAM                     : 1
+ 4x12-bit single-port Read Only RAM                    : 1
 # Adders/Subtractors                                   : 7
  32-bit adder                                          : 3
  4-bit addsub                                          : 4
-# Registers                                            : 31
- 1-bit register                                        : 19
+# Registers                                            : 23
+ 1-bit register                                        : 7
  2-bit register                                        : 6
  32-bit register                                       : 3
- 4-bit register                                        : 1
+ 4-bit register                                        : 5
  5-bit register                                        : 2
 # Comparators                                          : 3
  32-bit comparator equal                               : 3
-# Multiplexers                                         : 40
- 4-bit 2-to-1 multiplexer                              : 40
+# Multiplexers                                         : 16
+ 4-bit 2-to-1 multiplexer                              : 16
 # FSMs                                                 : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
 
 =========================================================================
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1710 - FF/Latch <set_prev> (without init value) has a constant value of 0 in block <gen_inst_4_spinbox_dec_digit_1[3].inst_spinbox_dec_digit_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <set_prev> (without init value) has a constant value of 0 in block <gen_inst_4_spinbox_dec_digit_1[2].inst_spinbox_dec_digit_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <set_prev> (without init value) has a constant value of 0 in block <gen_inst_4_spinbox_dec_digit_1[1].inst_spinbox_dec_digit_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <set_prev> (without init value) has a constant value of 0 in block <gen_inst_4_spinbox_dec_digit_1[0].inst_spinbox_dec_digit_1>. This FF/Latch will be trimmed during the optimization process.
 
-Synthesizing (advanced) Unit <display_kr>.
+Synthesizing (advanced) Unit <display_tkr>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segs> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
@@ -327,25 +328,29 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segs> will be implemented on LUTs ei
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <segs>          |          |
     -----------------------------------------------------------------------
-Unit <display_kr> synthesized (advanced).
+Unit <display_tkr> synthesized (advanced).
 
 Synthesizing (advanced) Unit <freq_divider>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
 Unit <freq_divider> synthesized (advanced).
 
 Synthesizing (advanced) Unit <nx3_top>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_display_enable_bus> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0049> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     aspect ratio   | 4-word x 12-bit                     |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <state>         |          |
     |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <display_enable_bus> |          |
+    |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
 Unit <nx3_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <spinbox_dec_digit_1>.
+The following registers are absorbed into counter <value_buf>: 1 register on signal <value_buf>.
+Unit <spinbox_dec_digit_1> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -353,18 +358,19 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 2
  16x8-bit single-port distributed Read Only RAM        : 1
- 4x4-bit single-port distributed Read Only RAM         : 1
-# Adders/Subtractors                                   : 4
- 4-bit addsub                                          : 4
-# Counters                                             : 3
+ 4x12-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 7
  32-bit up counter                                     : 3
-# Registers                                            : 45
- Flip-Flops                                            : 45
+ 4-bit updown counter                                  : 4
+# Registers                                            : 33
+ Flip-Flops                                            : 33
 # Comparators                                          : 3
  32-bit comparator equal                               : 3
-# Multiplexers                                         : 40
- 4-bit 2-to-1 multiplexer                              : 40
+# Multiplexers                                         : 12
+ 4-bit 2-to-1 multiplexer                              : 12
 # FSMs                                                 : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
 
 =========================================================================
 
@@ -372,7 +378,7 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <inst_led_4_display_kr/FSM_0> on signal <state[1:5]> with one-hot encoding.
+Optimizing FSM <inst_led_4_display_tkr/FSM_0> on signal <state[1:5]> with one-hot encoding.
 -------------------
  State | Encoding
 -------------------
@@ -382,44 +388,22 @@ Optimizing FSM <inst_led_4_display_kr/FSM_0> on signal <state[1:5]> with one-hot
  st_3  | 01000
  st_4  | 10000
 -------------------
-WARNING:Xst:1426 - The value init of the FF/Latch inst_bit4_cycle_generator/state_FSM_FFd5 hinder the constant cleaning in the block led_4_display_kr.
+WARNING:Xst:1426 - The value init of the FF/Latch inst_bit4_cycle_generator/state_FSM_FFd5 hinder the constant cleaning in the block led_4_display_tkr.
    You should achieve better results by setting this init to 0.
-WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
-   incompatible with the Spartan6 architecture. The two primary causes of this is
-   either a register or latch described with both an asynchronous set and
-   asynchronous reset, or a register or latch described with an asynchronous
-   set or reset which however has an initialization value of the opposite 
-   polarity (i.e. asynchronous reset with an initialization value of 1).
-    While this circuit can be built, it creates a sub-optimal implementation
-   in terms of area, power and performance. For a more optimal implementation
-   Xilinx highly recommends one of the following:
-
-          1) Remove either the set or reset from all registers and latches
-             if not needed for required functionality
-          2) Modify the code in order to produce a synchronous set
-             and/or reset (both is preferred)
-          3) Ensure all registers have the same initialization value as the
-             described asynchronous set or reset polarity
-          4) Use the -async_to_sync option to transform the asynchronous
-             set/reset to synchronous operation
-             (timing simulation highly recommended when using this option)
-
-  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
-
-  List of register instances with asynchronous set and reset:
-    value_buf_3 in unit <counter_10>
-    value_buf_0 in unit <counter_10>
-    value_buf_1 in unit <counter_10>
-    value_buf_2 in unit <counter_10>
-
 
 Optimizing unit <nx3_top> ...
 
-Optimizing unit <led_4_display_kr> ...
+Optimizing unit <led_4_display_tkr> ...
 
 Optimizing unit <spinbox_dec_digit_4> ...
 
-Optimizing unit <counter_10> ...
+Optimizing unit <spinbox_dec_digit_1> ...
+WARNING:Xst:1710 - FF/Latch <inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[0].inst_spinbox_dec_digit_1/set_prev> (without init value) has a constant value of 0 in block <nx3_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[1].inst_spinbox_dec_digit_1/set_prev> (without init value) has a constant value of 0 in block <nx3_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[2].inst_spinbox_dec_digit_1/set_prev> (without init value) has a constant value of 0 in block <nx3_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[3].inst_spinbox_dec_digit_1/set_prev> (without init value) has a constant value of 0 in block <nx3_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <buttons_prev_1> in Unit <nx3_top> is equivalent to the following FF/Latch, which will be removed : <inst_spinbox_dec_digit_4/cmd_prev_0> 
+INFO:Xst:2261 - The FF/Latch <buttons_prev_3> in Unit <nx3_top> is equivalent to the following FF/Latch, which will be removed : <inst_spinbox_dec_digit_4/cmd_prev_1> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -431,8 +415,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 146
- Flip-Flops                                            : 146
+# Registers                                            : 144
+ Flip-Flops                                            : 144
 
 =========================================================================
 
@@ -455,21 +439,21 @@ Top Level Output File Name         : nx3_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 515
+# BELS                             : 497
 #      GND                         : 1
-#      INV                         : 3
+#      INV                         : 7
 #      LUT1                        : 93
-#      LUT2                        : 113
-#      LUT3                        : 10
-#      LUT4                        : 6
-#      LUT5                        : 17
-#      LUT6                        : 64
+#      LUT2                        : 114
+#      LUT3                        : 2
+#      LUT4                        : 7
+#      LUT5                        : 8
+#      LUT6                        : 57
 #      MUXCY                       : 111
 #      VCC                         : 1
 #      XORCY                       : 96
-# FlipFlops/Latches                : 146
-#      FD                          : 132
-#      FDE                         : 14
+# FlipFlops/Latches                : 144
+#      FD                          : 124
+#      FDE                         : 20
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 26
@@ -483,16 +467,16 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             141  out of  18224     0%  
- Number of Slice LUTs:                  306  out of   9112     3%  
-    Number used as Logic:               306  out of   9112     3%  
+ Number of Slice Registers:             139  out of  18224     0%  
+ Number of Slice LUTs:                  288  out of   9112     3%  
+    Number used as Logic:               288  out of   9112     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    320
-   Number with an unused Flip Flop:     179  out of    320    55%  
-   Number with an unused LUT:            14  out of    320     4%  
-   Number of fully used LUT-FF pairs:   127  out of    320    39%  
-   Number of unique control sets:         9
+ Number of LUT Flip Flop pairs used:    294
+   Number with an unused Flip Flop:     155  out of    294    52%  
+   Number with an unused LUT:             6  out of    294     2%  
+   Number of fully used LUT-FF pairs:   133  out of    294    45%  
+   Number of unique control sets:         8
 
 IO Utilization: 
  Number of IOs:                          34
@@ -520,13 +504,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
-Clock Signal                                                                      | Clock buffer(FF name)                                               | Load  |
-----------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
-clk                                                                               | BUFGP                                                               | 136   |
-inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state        | NONE(inst_debouncer/outbtn_4)                                       | 5     |
-inst_led_4_display_kr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state| NONE(inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd1)| 5     |
-----------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+-----------------------------------------------------------------------------------+----------------------------------------------------------------------+-------+
+Clock Signal                                                                       | Clock buffer(FF name)                                                | Load  |
+-----------------------------------------------------------------------------------+----------------------------------------------------------------------+-------+
+clk                                                                                | BUFGP                                                                | 134   |
+inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state         | NONE(inst_debouncer/outbtn_4)                                        | 5     |
+inst_led_4_display_tkr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state| NONE(inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd1)| 5     |
+-----------------------------------------------------------------------------------+----------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -538,32 +522,32 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 4.368ns (Maximum Frequency: 228.937MHz)
-   Minimum input arrival time before clock: 4.361ns
-   Maximum output required time after clock: 8.494ns
-   Maximum combinational path delay: 6.539ns
+   Minimum input arrival time before clock: 6.331ns
+   Maximum output required time after clock: 8.396ns
+   Maximum combinational path delay: 6.392ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'inst_led_4_display_kr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state'
+Timing constraint: Default period analysis for Clock 'inst_led_4_display_tkr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state'
   Clock period: 1.833ns (frequency: 545.554MHz)
   Total number of paths / destination ports: 5 / 4
 -------------------------------------------------------------------------
 Delay:               1.833ns (Levels of Logic = 1)
-  Source:            inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd1 (FF)
-  Destination:       inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd4 (FF)
-  Source Clock:      inst_led_4_display_kr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state rising
-  Destination Clock: inst_led_4_display_kr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state rising
+  Source:            inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd1 (FF)
+  Destination:       inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd4 (FF)
+  Source Clock:      inst_led_4_display_tkr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state rising
+  Destination Clock: inst_led_4_display_tkr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state rising
 
-  Data Path: inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd1 to inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd4
+  Data Path: inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd1 to inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.525   0.984  inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd1 (inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd1)
-     LUT2:I0->O            1   0.250   0.000  inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd4-In1 (inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd4-In)
-     FD:D                      0.074          inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd4
+     FD:C->Q               6   0.525   0.984  inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd1 (inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd1)
+     LUT2:I0->O            1   0.250   0.000  inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd4-In1 (inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd4-In)
+     FD:D                      0.074          inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd4
     ----------------------------------------
     Total                      1.833ns (0.849ns logic, 0.984ns route)
                                        (46.3% logic, 53.7% route)
@@ -571,7 +555,7 @@ Delay:               1.833ns (Levels of Logic = 1)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 4.368ns (frequency: 228.937MHz)
-  Total number of paths / destination ports: 5086 / 133
+  Total number of paths / destination ports: 5062 / 149
 -------------------------------------------------------------------------
 Delay:               4.368ns (Levels of Logic = 8)
   Source:            inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/count_5 (FF)
@@ -618,65 +602,67 @@ Offset:              2.083ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 30 / 30
+  Total number of paths / destination ports: 24 / 22
 -------------------------------------------------------------------------
-Offset:              4.361ns (Levels of Logic = 3)
+Offset:              6.331ns (Levels of Logic = 5)
   Source:            switches<7> (PAD)
-  Destination:       inst_spinbox_dec_digit_4/gen_inst_4_counter_10[0].inst_counter_10/value_buf_3 (FF)
+  Destination:       state_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: switches<7> to inst_spinbox_dec_digit_4/gen_inst_4_counter_10[0].inst_counter_10/value_buf_3
+  Data Path: switches<7> to state_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.328   1.155  switches_7_IBUF (switches_7_IBUF)
-     LUT2:I1->O            5   0.254   1.296  inst_spinbox_dec_digit_4/enable_bus<0>1 (digit_selected_bus<0>)
-     LUT6:I0->O            1   0.254   0.000  inst_spinbox_dec_digit_4/gen_inst_4_counter_10[0].inst_counter_10/Mmux_value_buf[3]_value_buf[3]_mux_14_OUT41 (inst_spinbox_dec_digit_4/gen_inst_4_counter_10[0].inst_counter_10/value_buf[3]_value_buf[3]_mux_14_OUT<3>)
-     FD:D                      0.074          inst_spinbox_dec_digit_4/gen_inst_4_counter_10[0].inst_counter_10/value_buf_3
+     IBUF:I->O            10   1.328   1.008  switches_7_IBUF (switches_7_IBUF)
+     LUT6:I5->O            1   0.254   1.137  Reset_OR_DriverANDClockEnable2_SW0 (N0)
+     LUT6:I0->O            3   0.254   1.042  Reset_OR_DriverANDClockEnable2 (PWR_4_o_enable_input_AND_20_o1)
+     LUT6:I2->O            2   0.254   0.726  Reset_OR_DriverANDClockEnable5 (Reset_OR_DriverANDClockEnable)
+     LUT4:I3->O            1   0.254   0.000  state_1_rstpot1 (state_1_rstpot1)
+     FD:D                      0.074          state_1
     ----------------------------------------
-    Total                      4.361ns (1.910ns logic, 2.451ns route)
-                                       (43.8% logic, 56.2% route)
+    Total                      6.331ns (2.418ns logic, 3.913ns route)
+                                       (38.2% logic, 61.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 226 / 11
+  Total number of paths / destination ports: 242 / 19
 -------------------------------------------------------------------------
-Offset:              8.494ns (Levels of Logic = 4)
-  Source:            inst_spinbox_dec_digit_4/gen_inst_4_counter_10[0].inst_counter_10/value_buf_0 (FF)
+Offset:              8.396ns (Levels of Logic = 4)
+  Source:            inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[0].inst_spinbox_dec_digit_1/value_buf_0 (FF)
   Destination:       segments<5> (PAD)
   Source Clock:      clk rising
 
-  Data Path: inst_spinbox_dec_digit_4/gen_inst_4_counter_10[0].inst_counter_10/value_buf_0 to segments<5>
+  Data Path: inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[0].inst_spinbox_dec_digit_1/value_buf_0 to segments<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.525   1.463  inst_spinbox_dec_digit_4/gen_inst_4_counter_10[0].inst_counter_10/value_buf_0 (inst_spinbox_dec_digit_4/gen_inst_4_counter_10[0].inst_counter_10/value_buf_0)
-     LUT6:I0->O            1   0.254   0.790  inst_led_4_display_kr/Mmux_single_number<0>3_SW0 (N88)
-     LUT6:I4->O            7   0.250   1.365  inst_led_4_display_kr/Mmux_single_number<0>3 (inst_led_4_display_kr/single_number<0>)
-     LUT6:I0->O            1   0.254   0.681  inst_led_4_display_kr/inst_display/Mram_segs12 (segments_0_OBUF)
-     OBUF:I->O                 2.912          segments_0_OBUF (segments<0>)
+     FDE:C->Q              7   0.525   1.365  inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[0].inst_spinbox_dec_digit_1/value_buf_0 (inst_spinbox_dec_digit_4/gen_inst_4_spinbox_dec_digit_1[0].inst_spinbox_dec_digit_1/value_buf_0)
+     LUT6:I0->O            1   0.254   0.790  inst_led_4_display_tkr/Mmux_single_number<0>3_SW0 (N81)
+     LUT6:I4->O            7   0.250   1.365  inst_led_4_display_tkr/Mmux_single_number<0>3 (inst_led_4_display_tkr/single_number<0>)
+     LUT6:I0->O            1   0.254   0.681  inst_led_4_display_tkr/inst_display_tkr/Mram_segs51 (segments_5_OBUF)
+     OBUF:I->O                 2.912          segments_5_OBUF (segments<5>)
     ----------------------------------------
-    Total                      8.494ns (4.195ns logic, 4.299ns route)
-                                       (49.4% logic, 50.6% route)
+    Total                      8.396ns (4.195ns logic, 4.201ns route)
+                                       (50.0% logic, 50.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_led_4_display_kr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'inst_led_4_display_tkr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state'
   Total number of paths / destination ports: 123 / 11
 -------------------------------------------------------------------------
 Offset:              8.371ns (Levels of Logic = 4)
-  Source:            inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd4 (FF)
+  Source:            inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd4 (FF)
   Destination:       segments<5> (PAD)
-  Source Clock:      inst_led_4_display_kr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state rising
+  Source Clock:      inst_led_4_display_tkr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state rising
 
-  Data Path: inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd4 to segments<5>
+  Data Path: inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd4 to segments<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               7   0.525   1.340  inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd4 (inst_led_4_display_kr/inst_bit4_cycle_generator/state_FSM_FFd4)
-     LUT6:I1->O            1   0.254   0.790  inst_led_4_display_kr/Mmux_single_number<0>3_SW0 (N88)
-     LUT6:I4->O            7   0.250   1.365  inst_led_4_display_kr/Mmux_single_number<0>3 (inst_led_4_display_kr/single_number<0>)
-     LUT6:I0->O            1   0.254   0.681  inst_led_4_display_kr/inst_display/Mram_segs12 (segments_0_OBUF)
-     OBUF:I->O                 2.912          segments_0_OBUF (segments<0>)
+     FD:C->Q               7   0.525   1.340  inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd4 (inst_led_4_display_tkr/inst_bit4_cycle_generator/state_FSM_FFd4)
+     LUT6:I1->O            1   0.254   0.790  inst_led_4_display_tkr/Mmux_single_number<0>3_SW0 (N81)
+     LUT6:I4->O            7   0.250   1.365  inst_led_4_display_tkr/Mmux_single_number<0>3 (inst_led_4_display_tkr/single_number<0>)
+     LUT6:I0->O            1   0.254   0.681  inst_led_4_display_tkr/inst_display_tkr/Mram_segs51 (segments_5_OBUF)
+     OBUF:I->O                 2.912          segments_5_OBUF (segments<5>)
     ----------------------------------------
     Total                      8.371ns (4.195ns logic, 4.176ns route)
                                        (50.1% logic, 49.9% route)
@@ -685,20 +671,20 @@ Offset:              8.371ns (Levels of Logic = 4)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Delay:               6.539ns (Levels of Logic = 3)
+Delay:               6.392ns (Levels of Logic = 3)
   Source:            switches<7> (PAD)
-  Destination:       digit<3> (PAD)
+  Destination:       digit<2> (PAD)
 
-  Data Path: switches<7> to digit<3>
+  Data Path: switches<7> to digit<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.328   1.383  switches_7_IBUF (switches_7_IBUF)
-     LUT6:I3->O            1   0.235   0.681  inst_led_4_display_kr/digit_select<0>1 (digit_0_OBUF)
-     OBUF:I->O                 2.912          digit_0_OBUF (digit<0>)
+     IBUF:I->O            10   1.328   1.236  switches_7_IBUF (switches_7_IBUF)
+     LUT6:I3->O            1   0.235   0.681  inst_led_4_display_tkr/digit_select<2>1 (digit_2_OBUF)
+     OBUF:I->O                 2.912          digit_2_OBUF (digit<2>)
     ----------------------------------------
-    Total                      6.539ns (4.475ns logic, 2.064ns route)
-                                       (68.4% logic, 31.6% route)
+    Total                      6.392ns (4.475ns logic, 1.917ns route)
+                                       (70.0% logic, 30.0% route)
 
 =========================================================================
 
@@ -711,28 +697,28 @@ Clock to Setup on destination clock clk
 Source Clock                                                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------------------------------------------------+---------+---------+---------+---------+
 clk                                                                       |    4.368|         |         |         |
-inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state|    6.185|         |         |         |
+inst_debouncer/inst_pulse_generator_1khz/inst_freq_divider/out_pulse_state|    6.130|         |         |         |
 --------------------------------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock inst_led_4_display_kr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state
-----------------------------------------------------------------------------------+---------+---------+---------+---------+
-                                                                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------------------------------------------------+---------+---------+---------+---------+
-inst_led_4_display_kr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state|    1.833|         |         |         |
-----------------------------------------------------------------------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock inst_led_4_display_tkr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state
+-----------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------------------------------------------+---------+---------+---------+---------+
+inst_led_4_display_tkr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_state|    1.833|         |         |         |
+-----------------------------------------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.27 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.69 secs
  
 --> 
 
 Total memory usage is 284820 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    7 (   0 filtered)
-Number of infos    :    4 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

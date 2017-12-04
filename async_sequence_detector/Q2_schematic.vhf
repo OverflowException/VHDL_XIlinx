@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Q2_schematic.vhf
--- /___/   /\     Timestamp : 11/29/2017 02:33:58
+-- /___/   /\     Timestamp : 12/03/2017 22:24:37
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -67,12 +67,13 @@ architecture BEHAVIORAL of Q2_schematic is
    signal XLXN_12 : std_logic;
    signal XLXN_13 : std_logic;
    signal XLXN_14 : std_logic;
-   signal XLXN_15 : std_logic;
-   signal XLXN_16 : std_logic;
-   signal XLXN_17 : std_logic;
-   signal XLXN_18 : std_logic;
    signal XLXN_19 : std_logic;
    signal XLXN_20 : std_logic;
+   signal XLXN_21 : std_logic;
+   signal XLXN_22 : std_logic;
+   signal XLXN_23 : std_logic;
+   signal XLXN_25 : std_logic;
+   signal XLXN_26 : std_logic;
    component AND5B2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -140,14 +141,15 @@ architecture BEHAVIORAL of Q2_schematic is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   component OR4
+   component OR5
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
              I2 : in    std_logic; 
              I3 : in    std_logic; 
+             I4 : in    std_logic; 
              O  : out   std_logic);
    end component;
-   attribute BOX_TYPE of OR4 : component is "BLACK_BOX";
+   attribute BOX_TYPE of OR5 : component is "BLACK_BOX";
    
    attribute HU_SET of XLXI_7 : label is "XLXI_7_0";
 begin
@@ -177,20 +179,20 @@ begin
                 I1=>SD,
                 I2=>Q4_in,
                 I3=>Q2_in,
-                O=>XLXN_15);
+                O=>XLXN_21);
    
    XLXI_5 : AND4B2
       port map (I0=>Q4_in,
                 I1=>Q3_in,
                 I2=>Q2_in,
                 I3=>Q1_in,
-                O=>XLXN_16);
+                O=>XLXN_22);
    
    XLXI_6 : AND3B1
       port map (I0=>Q4_in,
                 I1=>SD,
                 I2=>Q2_in,
-                O=>XLXN_17);
+                O=>XLXN_23);
    
    XLXI_7 : AND6_HXILINX_Q2_schematic
       port map (I0=>clk,
@@ -199,7 +201,7 @@ begin
                 I3=>XLXN_3,
                 I4=>XLXN_2,
                 I5=>XLXN_1,
-                O=>XLXN_18);
+                O=>XLXN_25);
    
    XLXI_8 : INV
       port map (I=>Q2_in,
@@ -224,12 +226,20 @@ begin
                 I1=>XLXN_19,
                 O=>Q2_out);
    
-   XLXI_16 : OR4
-      port map (I0=>XLXN_18,
-                I1=>XLXN_17,
-                I2=>XLXN_16,
-                I3=>XLXN_15,
+   XLXI_18 : OR5
+      port map (I0=>XLXN_26,
+                I1=>XLXN_25,
+                I2=>XLXN_23,
+                I3=>XLXN_22,
+                I4=>XLXN_21,
                 O=>XLXN_20);
+   
+   XLXI_19 : AND4B2
+      port map (I0=>clk,
+                I1=>Q1_in,
+                I2=>SD,
+                I3=>Q2_in,
+                O=>XLXN_26);
    
 end BEHAVIORAL;
 

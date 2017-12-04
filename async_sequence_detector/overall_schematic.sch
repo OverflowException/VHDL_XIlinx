@@ -78,7 +78,7 @@
             <line x2="144" y1="-208" y2="-208" x1="64" />
         </blockdef>
         <blockdef name="Q1_schematic">
-            <timestamp>2017-11-29T1:46:50</timestamp>
+            <timestamp>2017-12-3T22:59:12</timestamp>
             <rect width="256" x="64" y="-384" height="384" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
@@ -89,7 +89,7 @@
             <line x2="0" y1="-96" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="Q2_schematic">
-            <timestamp>2017-11-29T1:47:25</timestamp>
+            <timestamp>2017-12-3T22:23:55</timestamp>
             <rect width="256" x="64" y="-384" height="384" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
@@ -111,7 +111,7 @@
             <line x2="0" y1="-96" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="Q4_schematic">
-            <timestamp>2017-11-29T1:47:52</timestamp>
+            <timestamp>2017-12-3T23:15:23</timestamp>
             <rect width="256" x="64" y="-384" height="384" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
@@ -150,15 +150,6 @@
             <blockpin signalname="XLXN_52" name="I1" />
             <blockpin signalname="T" name="O" />
         </block>
-        <block symbolname="Q1_schematic" name="XLXI_64">
-            <blockpin signalname="XLXN_42" name="clk" />
-            <blockpin signalname="Q1" name="Q1_in" />
-            <blockpin signalname="Q1" name="Q1_out" />
-            <blockpin signalname="Q2" name="Q2_in" />
-            <blockpin signalname="Q3" name="Q3_in" />
-            <blockpin signalname="Q4" name="Q4_in" />
-            <blockpin signalname="SD" name="SD" />
-        </block>
         <block symbolname="Q2_schematic" name="XLXI_65">
             <blockpin signalname="XLXN_42" name="clk" />
             <blockpin signalname="Q1" name="Q1_in" />
@@ -184,6 +175,15 @@
             <blockpin signalname="Q3" name="Q3_in" />
             <blockpin signalname="Q4" name="Q4_in" />
             <blockpin signalname="Q4" name="Q4_out" />
+            <blockpin signalname="SD" name="SD" />
+        </block>
+        <block symbolname="Q1_schematic" name="XLXI_68">
+            <blockpin signalname="XLXN_42" name="clk" />
+            <blockpin signalname="Q1" name="Q1_in" />
+            <blockpin signalname="Q1" name="Q1_out" />
+            <blockpin signalname="Q2" name="Q2_in" />
+            <blockpin signalname="Q3" name="Q3_in" />
+            <blockpin signalname="Q4" name="Q4_in" />
             <blockpin signalname="SD" name="SD" />
         </block>
     </netlist>
@@ -335,13 +335,13 @@
             <wire x2="2576" y1="2752" y2="2752" x1="2032" />
             <wire x2="2560" y1="2160" y2="2160" x1="2032" />
         </branch>
-        <instance x="2560" y="1088" name="XLXI_64" orien="R0">
-        </instance>
         <instance x="2560" y="1680" name="XLXI_65" orien="R0">
         </instance>
         <instance x="2560" y="2256" name="XLXI_66" orien="R0">
         </instance>
         <instance x="2576" y="2848" name="XLXI_67" orien="R0">
+        </instance>
+        <instance x="2560" y="1088" name="XLXI_68" orien="R0">
         </instance>
     </sheet>
 </drawing>

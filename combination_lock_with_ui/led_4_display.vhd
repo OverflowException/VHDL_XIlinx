@@ -33,7 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 
 
-entity led_4_display_kr is port
+entity led_4_display_tkr is port
 (	
 	enable : in std_logic_vector(3 downto 0);
 	clk : in std_logic;
@@ -42,9 +42,9 @@ entity led_4_display_kr is port
 	digit_select : out std_logic_vector(3 downto 0);
 	seg : out std_logic_vector(7 downto 0)
 );
-end led_4_display_kr;
+end led_4_display_tkr;
 
-architecture Behavioral of led_4_display_kr is
+architecture Behavioral of led_4_display_tkr is
 	--4 types of finite state machine
 	--type state_type is (st_0, st_1, st_2, st_3);
 	--signal state: state_type;
@@ -56,7 +56,7 @@ architecture Behavioral of led_4_display_kr is
 	signal flash_clk_vector : std_logic_vector(3 downto 0);
 	signal flash_mask : std_logic_vector(3 downto 0);
 
-	component display_kr port
+	component display_tkr port
 	(
 		number : in std_logic_vector(3 downto 0);          
 		segs : out std_logic_vector(7 downto 0)
@@ -102,7 +102,7 @@ begin
 	);
 
 	--A single display driver
-	inst_display: display_kr port map
+	inst_display_tkr: display_tkr port map
 	(
 		number => single_number,
 		segs => seg

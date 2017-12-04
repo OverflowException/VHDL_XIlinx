@@ -41,7 +41,7 @@ architecture Behavioral of nx3_top is
 	);
 	end component;
 
-	component led_4_display_kr port
+	component led_4_display_tkr port
 	(	
 		enable : in std_logic_vector(3 downto 0);
 		clk : in std_logic;
@@ -79,6 +79,8 @@ architecture Behavioral of nx3_top is
 	signal buttons_prev : std_logic_vector(4 downto 0);
 	signal buttons_curr : std_logic_vector(4 downto 0);
 	
+	signal enable_input : std_logic;
+	
 	type state_type is (st_input, st_ok, st_err);
 	signal state : state_type := st_input;
 	
@@ -92,7 +94,7 @@ begin
 		outbtn => debounced_buttons
 	);
 	
-	inst_led_4_display_kr : led_4_display_kr port map
+	inst_led_4_display_tkr : led_4_display_tkr port map
 	(
 		enable => display_enable_bus,
 		clk => clk,
@@ -107,7 +109,7 @@ begin
 		clk => clk,
 		enable => switches(7),
 		set => '0',
-		set_value => X"0000",
+		set_value => X"1234",
 		left => debounced_buttons(3),
 		right => debounced_buttons(1),
 		inc => debounced_buttons(2),
@@ -115,13 +117,15 @@ begin
 		digit_selected => digit_selected_bus,
 		value => passwd_input
 	);
+	
+	enable_input <= switches(7);
 
 	buttons_curr <= debounced_buttons;
 	process(clk)
 	begin
 		if rising_edge(clk) then
 			buttons_prev <= buttons_curr;
-			if(buttons_prev = "00000" and buttons_curr = "10000") then	---left pressed
+			if(buttons_prev = "10000" and buttons_curr = "00000" and enable_input = '1') then	---middle button falling edge, which means released
 				case state is 
 					when st_input =>	if(display_buf = X"3049") then
 												state <= st_ok;
@@ -136,23 +140,29 @@ begin
 		end if;
 	end process;
 	
+	
+	
+	
 	process(state)
 	begin
 		case state is
-			when st_input =>	display_buf <= passwd_input;
+			when st_input =>	display_buf <= passwd_input;			---when at input state, show spin box, leds off
 									display_enable_bus <= "1111";
 									flash_digit_bus <= digit_selected_bus;
+									leds <= (others => '0');
 									
-			when st_ok =>	display_buf <= X"000D";
+			when st_ok =>	display_buf <= X"000D";						---when at ok state, show "OK", leds on
 									display_enable_bus <= "0011";
 									flash_digit_bus <= "0000";
+									leds <= (others => '1');
 									
-			when st_err =>	display_buf <= X"0EFF";
+			when st_err =>	display_buf <= X"0EFF";						---when at err state, show "Err", leds off
 									display_enable_bus <= "0111";
 									flash_digit_bus <= "0000";
+									leds <= (others => '0');
+									
 			when others => null;
 		end case;
 	end process;
 	
-	leds <= (others => '0');
 end Behavioral;   

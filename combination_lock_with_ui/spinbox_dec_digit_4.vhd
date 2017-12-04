@@ -47,7 +47,7 @@ end spinbox_dec_digit_4;
 
 architecture Behavioral of spinbox_dec_digit_4 is
 
-	component counter_10 port
+	component spinbox_dec_digit_1 port
 	(
 		clk : in std_logic;
 		enable : in  std_logic;
@@ -59,44 +59,49 @@ architecture Behavioral of spinbox_dec_digit_4 is
 	);
 	end component;
 
-	signal enable_mask : std_logic_vector(3 downto 0);
-	signal set_mask : std_logic_vector(3 downto 0);
-	signal enable_bus : std_logic_vector(3 downto 0);	---Each bit is the 'enable' pin of each counter
-	signal select_bus : std_logic_vector(3 downto 0) := "0001";		---manual selection
+	--signal enable_bus : std_logic_vector(3 downto 0);	---Each bit is the 'enable' pin of each counter
+	signal inc_bus : std_logic_vector(3 downto 0);
+	signal dec_bus : std_logic_vector(3 downto 0);
+	signal select_mask : std_logic_vector(3 downto 0) := "0001";		---manual selection
 	signal value_buf : std_logic_vector(15 downto 0) := B"0000_0000_0000_0000";
 	signal cmd_prev : std_logic_vector(1 downto 0);
 	signal cmd_curr : std_logic_vector(1 downto 0);
 
 begin
-	enable_mask <= (others => enable);
-	set_mask <= (others => set);
-	enable_bus <= (select_bus or set_mask) and enable_mask;
-	digit_selected <= enable_bus;
+	--enable_bus <= select_mask and (enable, enable, enable, enable);
+	--digit_selected <= enable_bus;
+	digit_selected <= (enable, enable, enable, enable) and select_mask;
+	
+	inc_bus <= (inc, inc, inc, inc) and select_mask;
+	dec_bus <= (dec, dec, dec, dec) and select_mask;
 
-	gen_inst_4_counter_10 : for i in 3 downto 0 generate
-	inst_counter_10 : counter_10 port map
+	gen_inst_4_spinbox_dec_digit_1 : for i in 3 downto 0 generate
+	inst_spinbox_dec_digit_1 : spinbox_dec_digit_1 port map
 	(
 		clk => clk,
-		enable => enable_bus(i),
+		enable => enable,
 		set => set,
 		set_value => set_value((4 * i + 3) downto (4 * i)),
-		inc => inc,
-		dec => dec,
+		inc => inc_bus(i),
+		dec => dec_bus(i),
 		value => value_buf((4 * i + 3) downto (4 * i))
 	);
 	end generate;
 	
-	cmd_curr <= (left, right);
 	value <= value_buf;
+	
+	cmd_curr <= (left, right);
 	
 	process(clk)
 	begin
-		if(rising_edge(clk) and enable = '1') then
+		if rising_edge(clk) then
 			cmd_prev <= cmd_curr;
-			if(cmd_prev = "00" and cmd_curr = "10" and select_bus /= "1000") then ---left pressed, check range
-				select_bus <= std_logic_vector(unsigned(select_bus) sll 1);
-			elsif(cmd_prev = "00" and cmd_curr = "01" and select_bus /= "0001") then	---right pressed, check range
-				select_bus <= std_logic_vector(unsigned(select_bus) srl 1);
+			if(enable = '1') then
+				if(cmd_prev = "00" and cmd_curr = "10" and select_mask /= "1000") then ---left pressed, check range
+					select_mask <= std_logic_vector(unsigned(select_mask) sll 1);
+				elsif(cmd_prev = "00" and cmd_curr = "01" and select_mask /= "0001") then	---right pressed, check range
+					select_mask <= std_logic_vector(unsigned(select_mask) srl 1);
+				end if;
 			end if;
 		end if;
 	end process;

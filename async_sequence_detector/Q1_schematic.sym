@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Q1_schematic">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-11-29T1:46:49</timestamp>
+    <timestamp>2017-12-3T22:59:10</timestamp>
     <pin polarity="Input" x="0" y="-32" name="clk" />
     <pin polarity="Input" x="0" y="-352" name="Q1_in" />
     <pin polarity="Output" x="384" y="-352" name="Q1_out" />

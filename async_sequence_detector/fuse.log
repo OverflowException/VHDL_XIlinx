@@ -1,0 +1,55 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/projects/VHDL_XIlinx/async_sequence_detector/testbench_isim_beh.exe -prj E:/projects/VHDL_XIlinx/async_sequence_detector/testbench_beh.prj testbench 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/projects/VHDL_XIlinx/async_sequence_detector/Q4_schematic.vhf" into library work
+Parsing VHDL file "E:/projects/VHDL_XIlinx/async_sequence_detector/Q3_schematic.vhf" into library work
+Parsing VHDL file "E:/projects/VHDL_XIlinx/async_sequence_detector/Q2_schematic.vhf" into library work
+Parsing VHDL file "E:/projects/VHDL_XIlinx/async_sequence_detector/Q1_schematic.vhf" into library work
+Parsing VHDL file "E:/projects/VHDL_XIlinx/async_sequence_detector/overall_schematic.vhf" into library work
+Parsing VHDL file "E:/projects/VHDL_XIlinx/async_sequence_detector/nx3_top.vhf" into library work
+Parsing VHDL file "E:/projects/VHDL_XIlinx/async_sequence_detector/stimuli.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 203936 KB
+Fuse CPU Usage: 546 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture and2b1_v of entity AND2B1 [and2b1_default]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture and4b2_v of entity AND4B2 [and4b2_default]
+Compiling architecture and4b3_v of entity AND4B3 [and4b3_default]
+Compiling architecture and5b2_v of entity AND5B2 [and5b2_default]
+Compiling architecture and3b1_v of entity AND3B1 [and3b1_default]
+Compiling architecture and6_hxilinx_nx3_top_v of entity AND6_HXILINX_nx3_top [and6_hxilinx_nx3_top_default]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture or3_v of entity OR3 [or3_default]
+Compiling architecture or5_v of entity OR5 [or5_default]
+Compiling architecture behavioral of entity Q2_schematic_MUSER_nx3_top [q2_schematic_muser_nx3_top_defau...]
+Compiling architecture and5b4_v of entity AND5B4 [and5b4_default]
+Compiling architecture and3_v of entity AND3 [and3_default]
+Compiling architecture and4_v of entity AND4 [and4_default]
+Compiling architecture behavioral of entity Q3_schematic_MUSER_nx3_top [q3_schematic_muser_nx3_top_defau...]
+Compiling architecture and5b5_v of entity AND5B5 [and5b5_default]
+Compiling architecture and4b1_v of entity AND4B1 [and4b1_default]
+Compiling architecture and2_v of entity AND2 [and2_default]
+Compiling architecture and5b3_v of entity AND5B3 [and5b3_default]
+Compiling architecture or4_v of entity OR4 [or4_default]
+Compiling architecture or6_hxilinx_nx3_top_v of entity OR6_HXILINX_nx3_top [or6_hxilinx_nx3_top_default]
+Compiling architecture behavioral of entity Q4_schematic_MUSER_nx3_top [q4_schematic_muser_nx3_top_defau...]
+Compiling architecture or7_hxilinx_nx3_top_v of entity OR7_HXILINX_nx3_top [or7_hxilinx_nx3_top_default]
+Compiling architecture behavioral of entity Q1_schematic_MUSER_nx3_top [q1_schematic_muser_nx3_top_defau...]
+Compiling architecture behavioral of entity overall_schematic_MUSER_nx3_top [overall_schematic_muser_nx3_top_...]
+Compiling architecture behavioral of entity nx3_top [nx3_top_default]
+Compiling architecture behavior of entity testbench
+Time Resolution for simulation is 1ps.
+Waiting for 19 sub-compilation(s) to finish...
+Compiled 59 VHDL Units
+Built simulation executable E:/projects/VHDL_XIlinx/async_sequence_detector/testbench_isim_beh.exe
+Fuse Memory Usage: 225960 KB
+Fuse CPU Usage: 843 ms

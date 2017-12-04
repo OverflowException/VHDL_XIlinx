@@ -8,8 +8,8 @@ Parsing VHDL file "E:/projects/VHDL_XIlinx/sync_sequence_detector/nx3_top.vhf" i
 Parsing VHDL file "E:/projects/VHDL_XIlinx/sync_sequence_detector/stimuli.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 204000 KB
-Fuse CPU Usage: 796 ms
+Fuse Memory Usage: 203488 KB
+Fuse CPU Usage: 436 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -29,8 +29,8 @@ Compiling architecture behavioral of entity schematic_MUSER_nx3_top [schematic_m
 Compiling architecture behavioral of entity nx3_top [nx3_top_default]
 Compiling architecture behavior of entity testbench
 Time Resolution for simulation is 1ps.
-Waiting for 10 sub-compilation(s) to finish...
+Waiting for 9 sub-compilation(s) to finish...
 Compiled 29 VHDL Units
 Built simulation executable E:/projects/VHDL_XIlinx/sync_sequence_detector/testbench_isim_beh.exe
-Fuse Memory Usage: 225000 KB
-Fuse CPU Usage: 1030 ms
+Fuse Memory Usage: 225512 KB
+Fuse CPU Usage: 702 ms

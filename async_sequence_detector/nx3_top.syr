@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.42 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.42 secs
  
 --> Reading design: nx3_top.prj
 
@@ -106,6 +106,8 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Parsing                                  *
 =========================================================================
 Parsing VHDL file "E:\projects\VHDL_XIlinx\async_sequence_detector\Q4_schematic.vhf" into library work
+Parsing entity <OR6_HXILINX_Q4_schematic>.
+Parsing architecture <OR6_HXILINX_Q4_schematic_V> of entity <or6_hxilinx_q4_schematic>.
 Parsing entity <Q4_schematic>.
 Parsing architecture <BEHAVIORAL> of entity <q4_schematic>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\async_sequence_detector\Q3_schematic.vhf" into library work
@@ -117,38 +119,42 @@ Parsing architecture <AND6_HXILINX_Q2_schematic_V> of entity <and6_hxilinx_q2_sc
 Parsing entity <Q2_schematic>.
 Parsing architecture <BEHAVIORAL> of entity <q2_schematic>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\async_sequence_detector\Q1_schematic.vhf" into library work
-Parsing entity <OR6_HXILINX_Q1_schematic>.
-Parsing architecture <OR6_HXILINX_Q1_schematic_V> of entity <or6_hxilinx_q1_schematic>.
+Parsing entity <OR7_HXILINX_Q1_schematic>.
+Parsing architecture <OR7_HXILINX_Q1_schematic_V> of entity <or7_hxilinx_q1_schematic>.
 Parsing entity <Q1_schematic>.
 Parsing architecture <BEHAVIORAL> of entity <q1_schematic>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\async_sequence_detector\overall_schematic.vhf" into library work
 Parsing entity <OR6_HXILINX_overall_schematic>.
 Parsing architecture <OR6_HXILINX_overall_schematic_V> of entity <or6_hxilinx_overall_schematic>.
+Parsing entity <OR7_HXILINX_overall_schematic>.
+Parsing architecture <OR7_HXILINX_overall_schematic_V> of entity <or7_hxilinx_overall_schematic>.
 Parsing entity <AND6_HXILINX_overall_schematic>.
 Parsing architecture <AND6_HXILINX_overall_schematic_V> of entity <and6_hxilinx_overall_schematic>.
+Parsing entity <Q1_schematic_MUSER_overall_schematic>.
+Parsing architecture <BEHAVIORAL> of entity <q1_schematic_muser_overall_schematic>.
 Parsing entity <Q4_schematic_MUSER_overall_schematic>.
 Parsing architecture <BEHAVIORAL> of entity <q4_schematic_muser_overall_schematic>.
 Parsing entity <Q3_schematic_MUSER_overall_schematic>.
 Parsing architecture <BEHAVIORAL> of entity <q3_schematic_muser_overall_schematic>.
 Parsing entity <Q2_schematic_MUSER_overall_schematic>.
 Parsing architecture <BEHAVIORAL> of entity <q2_schematic_muser_overall_schematic>.
-Parsing entity <Q1_schematic_MUSER_overall_schematic>.
-Parsing architecture <BEHAVIORAL> of entity <q1_schematic_muser_overall_schematic>.
 Parsing entity <overall_schematic>.
 Parsing architecture <BEHAVIORAL> of entity <overall_schematic>.
 Parsing VHDL file "E:\projects\VHDL_XIlinx\async_sequence_detector\nx3_top.vhf" into library work
 Parsing entity <OR6_HXILINX_nx3_top>.
 Parsing architecture <OR6_HXILINX_nx3_top_V> of entity <or6_hxilinx_nx3_top>.
+Parsing entity <OR7_HXILINX_nx3_top>.
+Parsing architecture <OR7_HXILINX_nx3_top_V> of entity <or7_hxilinx_nx3_top>.
 Parsing entity <AND6_HXILINX_nx3_top>.
 Parsing architecture <AND6_HXILINX_nx3_top_V> of entity <and6_hxilinx_nx3_top>.
+Parsing entity <Q1_schematic_MUSER_nx3_top>.
+Parsing architecture <BEHAVIORAL> of entity <q1_schematic_muser_nx3_top>.
 Parsing entity <Q4_schematic_MUSER_nx3_top>.
 Parsing architecture <BEHAVIORAL> of entity <q4_schematic_muser_nx3_top>.
 Parsing entity <Q3_schematic_MUSER_nx3_top>.
 Parsing architecture <BEHAVIORAL> of entity <q3_schematic_muser_nx3_top>.
 Parsing entity <Q2_schematic_MUSER_nx3_top>.
 Parsing architecture <BEHAVIORAL> of entity <q2_schematic_muser_nx3_top>.
-Parsing entity <Q1_schematic_MUSER_nx3_top>.
-Parsing architecture <BEHAVIORAL> of entity <q1_schematic_muser_nx3_top>.
 Parsing entity <overall_schematic_MUSER_nx3_top>.
 Parsing architecture <BEHAVIORAL> of entity <overall_schematic_muser_nx3_top>.
 Parsing entity <nx3_top>.
@@ -162,10 +168,6 @@ Elaborating entity <nx3_top> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <overall_schematic_MUSER_nx3_top> (architecture <BEHAVIORAL>) from library <work>.
 
-Elaborating entity <Q1_schematic_MUSER_nx3_top> (architecture <BEHAVIORAL>) from library <work>.
-
-Elaborating entity <OR6_HXILINX_nx3_top> (architecture <OR6_HXILINX_nx3_top_V>) from library <work>.
-
 Elaborating entity <Q2_schematic_MUSER_nx3_top> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <AND6_HXILINX_nx3_top> (architecture <AND6_HXILINX_nx3_top_V>) from library <work>.
@@ -173,6 +175,12 @@ Elaborating entity <AND6_HXILINX_nx3_top> (architecture <AND6_HXILINX_nx3_top_V>
 Elaborating entity <Q3_schematic_MUSER_nx3_top> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <Q4_schematic_MUSER_nx3_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <OR6_HXILINX_nx3_top> (architecture <OR6_HXILINX_nx3_top_V>) from library <work>.
+
+Elaborating entity <Q1_schematic_MUSER_nx3_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <OR7_HXILINX_nx3_top> (architecture <OR7_HXILINX_nx3_top_V>) from library <work>.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -194,22 +202,9 @@ Synthesizing Unit <overall_schematic_MUSER_nx3_top>.
 	no macro.
 Unit <overall_schematic_MUSER_nx3_top> synthesized.
 
-Synthesizing Unit <Q1_schematic_MUSER_nx3_top>.
-    Related source file is "E:\projects\VHDL_XIlinx\async_sequence_detector\nx3_top.vhf".
-    Set property "HU_SET = XLXI_82_4" for instance <XLXI_82>.
-    Summary:
-	no macro.
-Unit <Q1_schematic_MUSER_nx3_top> synthesized.
-
-Synthesizing Unit <OR6_HXILINX_nx3_top>.
-    Related source file is "E:\projects\VHDL_XIlinx\async_sequence_detector\nx3_top.vhf".
-    Summary:
-	no macro.
-Unit <OR6_HXILINX_nx3_top> synthesized.
-
 Synthesizing Unit <Q2_schematic_MUSER_nx3_top>.
     Related source file is "E:\projects\VHDL_XIlinx\async_sequence_detector\nx3_top.vhf".
-    Set property "HU_SET = XLXI_7_3" for instance <XLXI_7>.
+    Set property "HU_SET = XLXI_7_16" for instance <XLXI_7>.
     Summary:
 	no macro.
 Unit <Q2_schematic_MUSER_nx3_top> synthesized.
@@ -228,9 +223,30 @@ Unit <Q3_schematic_MUSER_nx3_top> synthesized.
 
 Synthesizing Unit <Q4_schematic_MUSER_nx3_top>.
     Related source file is "E:\projects\VHDL_XIlinx\async_sequence_detector\nx3_top.vhf".
+    Set property "HU_SET = XLXI_13_15" for instance <XLXI_13>.
     Summary:
 	no macro.
 Unit <Q4_schematic_MUSER_nx3_top> synthesized.
+
+Synthesizing Unit <OR6_HXILINX_nx3_top>.
+    Related source file is "E:\projects\VHDL_XIlinx\async_sequence_detector\nx3_top.vhf".
+    Summary:
+	no macro.
+Unit <OR6_HXILINX_nx3_top> synthesized.
+
+Synthesizing Unit <Q1_schematic_MUSER_nx3_top>.
+    Related source file is "E:\projects\VHDL_XIlinx\async_sequence_detector\nx3_top.vhf".
+    Set property "HU_SET = XLXI_88_13" for instance <XLXI_88>.
+    Set property "HU_SET = XLXI_89_14" for instance <XLXI_89>.
+    Summary:
+	no macro.
+Unit <Q1_schematic_MUSER_nx3_top> synthesized.
+
+Synthesizing Unit <OR7_HXILINX_nx3_top>.
+    Related source file is "E:\projects\VHDL_XIlinx\async_sequence_detector\nx3_top.vhf".
+    Summary:
+	no macro.
+Unit <OR7_HXILINX_nx3_top> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -252,17 +268,18 @@ Found no macro
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit overall_schematic_MUSER_nx3_top : the following signal(s) form a combinatorial loop: XLXI_64/XLXN_27, XLXI_64/XLXN_20, Q1_DUMMY, XLXN_42, XLXN_40.
-WARNING:Xst:2170 - Unit overall_schematic_MUSER_nx3_top : the following signal(s) form a combinatorial loop: Q4_DUMMY, XLXI_65/XLXN_20, XLXI_67/XLXN_19, XLXI_65/XLXN_17, XLXI_67/XLXN_17, Q2_DUMMY.
-WARNING:Xst:2170 - Unit overall_schematic_MUSER_nx3_top : the following signal(s) form a combinatorial loop: XLXI_66/XLXN_21, Q3_DUMMY, XLXI_66/XLXN_23.
+WARNING:Xst:2170 - Unit overall_schematic_MUSER_nx3_top : the following signal(s) form a combinatorial loop: XLXN_42, XLXI_65/XLXN_26, XLXN_40, Q2_DUMMY, XLXI_65/XLXN_20.
+WARNING:Xst:2170 - Unit overall_schematic_MUSER_nx3_top : the following signal(s) form a combinatorial loop: XLXI_66/XLXN_23, XLXI_67/XLXN_18, Q3_DUMMY, XLXI_66/XLXN_21, XLXI_67/XLXN_12, Q4_DUMMY.
 
 Optimizing unit <nx3_top> ...
 
 Optimizing unit <overall_schematic_MUSER_nx3_top> ...
 
+Optimizing unit <AND6_HXILINX_nx3_top> ...
+
 Optimizing unit <OR6_HXILINX_nx3_top> ...
 
-Optimizing unit <AND6_HXILINX_nx3_top> ...
+Optimizing unit <OR7_HXILINX_nx3_top> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -295,25 +312,26 @@ Top Level Output File Name         : nx3_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 57
+# BELS                             : 64
 #      AND2                        : 2
 #      AND2B1                      : 1
 #      AND3                        : 2
 #      AND3B1                      : 6
 #      AND4                        : 1
-#      AND4B1                      : 5
-#      AND4B2                      : 6
+#      AND4B1                      : 6
+#      AND4B2                      : 8
 #      AND4B3                      : 2
-#      AND5B2                      : 8
-#      AND5B3                      : 2
+#      AND5B2                      : 9
+#      AND5B3                      : 3
 #      AND5B4                      : 3
 #      AND5B5                      : 1
 #      INV                         : 3
-#      LUT6                        : 2
+#      LUT2                        : 2
+#      LUT6                        : 4
 #      OR2                         : 6
 #      OR3                         : 1
-#      OR4                         : 2
-#      OR5                         : 4
+#      OR4                         : 1
+#      OR5                         : 3
 # IO Buffers                       : 8
 #      IBUF                        : 3
 #      OBUF                        : 5
@@ -325,14 +343,14 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    5  out of   9112     0%  
-    Number used as Logic:                 5  out of   9112     0%  
+ Number of Slice LUTs:                    9  out of   9112     0%  
+    Number used as Logic:                 9  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      5
-   Number with an unused Flip Flop:       5  out of      5   100%  
-   Number with an unused LUT:             0  out of      5     0%  
-   Number of fully used LUT-FF pairs:     0  out of      5     0%  
+ Number of LUT Flip Flop pairs used:      9
+   Number with an unused Flip Flop:       9  out of      9   100%  
+   Number with an unused LUT:             0  out of      9     0%  
+   Number of fully used LUT-FF pairs:     0  out of      9     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
@@ -372,7 +390,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 25.977ns
+   Maximum combinational path delay: 26.209ns
 
 Timing Details:
 ---------------
@@ -380,9 +398,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 14982 / 5
+  Total number of paths / destination ports: 24408 / 5
 -------------------------------------------------------------------------
-Delay:               25.977ns (Levels of Logic = 20)
+Delay:               26.209ns (Levels of Logic = 20)
   Source:            buttons<3> (PAD)
   Destination:       leds<5> (PAD)
 
@@ -392,27 +410,29 @@ Delay:               25.977ns (Levels of Logic = 20)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.222   0.944  buttons_3_IBUF (buttons_3_IBUF)
      AND2B1:I0->O          1   0.203   0.924  XLXI_3/XLXI_52 (XLXI_3/XLXN_40)
-     OR2:I1->O            22   0.223   1.498  XLXI_3/XLXI_53 (XLXI_3/XLXN_42)
-     AND4B3:I0->O          1   0.203   0.808  XLXI_3/XLXI_65/XLXI_4 (XLXI_3/XLXI_65/XLXN_15)
-     OR4:I3->O             1   0.339   0.944  XLXI_3/XLXI_65/XLXI_16 (XLXI_3/XLXI_65/XLXN_20)
-     OR2:I0->O            27   0.203   1.585  XLXI_3/XLXI_65/XLXI_15 (leds_2_OBUF)
-     AND4B1:I0->O          1   0.203   0.944  XLXI_3/XLXI_67/XLXI_9 (XLXI_3/XLXI_67/XLXN_17)
-     OR5:I0->O             1   0.203   0.944  XLXI_3/XLXI_67/XLXI_11 (XLXI_3/XLXI_67/XLXN_19)
-     OR2:I0->O            29   0.203   1.594  XLXI_3/XLXI_67/XLXI_12 (leds_0_OBUF)
+     OR2:I1->O            24   0.223   1.537  XLXI_3/XLXI_53 (XLXI_3/XLXN_42)
+     AND4B2:I0->O          1   0.203   0.944  XLXI_3/XLXI_65/XLXI_19 (XLXI_3/XLXI_65/XLXN_26)
+     OR5:I0->O             1   0.203   0.944  XLXI_3/XLXI_65/XLXI_18 (XLXI_3/XLXI_65/XLXN_20)
+     OR2:I0->O            31   0.203   1.622  XLXI_3/XLXI_65/XLXI_15 (leds_2_OBUF)
+     AND2:I1->O            1   0.223   0.924  XLXI_3/XLXI_67/XLXI_5 (XLXI_3/XLXI_67/XLXN_20)
+     begin scope: 'XLXI_3/XLXI_67/XLXI_13:I5'
+     LUT6:I1->O            1   0.203   0.944  O1 (O)
+     end scope: 'XLXI_3/XLXI_67/XLXI_13:O'
+     OR2:I0->O            33   0.203   1.650  XLXI_3/XLXI_67/XLXI_12 (leds_0_OBUF)
      AND4:I1->O            1   0.223   0.924  XLXI_3/XLXI_66/XLXI_9 (XLXI_3/XLXI_66/XLXN_20)
      OR5:I1->O             1   0.203   0.944  XLXI_3/XLXI_66/XLXI_12 (XLXI_3/XLXI_66/XLXN_23)
-     OR2:I0->O            27   0.203   1.468  XLXI_3/XLXI_66/XLXI_13 (leds_1_OBUF)
-     AND4B1:I2->O          1   0.320   0.944  XLXI_3/XLXI_64/XLXI_31 (XLXI_3/XLXI_64/XLXN_22)
-     begin scope: 'XLXI_3/XLXI_64/XLXI_82:I4'
-     LUT6:I0->O            1   0.203   0.944  O1 (O)
-     end scope: 'XLXI_3/XLXI_64/XLXI_82:O'
-     OR2:I0->O            36   0.203   1.577  XLXI_3/XLXI_64/XLXI_3 (leds_3_OBUF)
+     OR2:I0->O            29   0.203   1.614  XLXI_3/XLXI_66/XLXI_13 (leds_1_OBUF)
+     AND4B2:I0->O          1   0.203   0.944  XLXI_3/XLXI_68/XLXI_35 (XLXI_3/XLXI_68/XLXN_47)
+     begin scope: 'XLXI_3/XLXI_68/XLXI_89:I3'
+     LUT6:I0->O            1   0.203   0.944  O (O)
+     end scope: 'XLXI_3/XLXI_68/XLXI_89:O'
+     OR2:I0->O            41   0.203   1.648  XLXI_3/XLXI_68/XLXI_90 (leds_3_OBUF)
      AND4B2:I3->O          1   0.339   0.924  XLXI_3/XLXI_54 (XLXI_3/XLXN_52)
      OR2:I1->O             1   0.223   0.579  XLXI_3/XLXI_56 (leds_5_OBUF)
      OBUF:I->O                 2.571          leds_5_OBUF (leds<5>)
     ----------------------------------------
-    Total                     25.977ns (7.490ns logic, 18.487ns route)
-                                       (28.8% logic, 71.2% route)
+    Total                     26.209ns (7.257ns logic, 18.952ns route)
+                                       (27.7% logic, 72.3% route)
 
 =========================================================================
 
@@ -422,14 +442,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.15 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.19 secs
  
 --> 
 
-Total memory usage is 289172 kilobytes
+Total memory usage is 289620 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    7 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

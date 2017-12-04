@@ -1,0 +1,5 @@
+Starting Simulation
+SD = 0 state A, Q1 Q2 Q3 = UUU   T = U
+SD = 1 state B, Q1 Q2 Q3 = UUU   T = U
+SD = 1 state C, Q1 Q2 Q3 = UUU   T = U
+SD = 0 state D, Q1 Q2 Q3 = UUU   T = U

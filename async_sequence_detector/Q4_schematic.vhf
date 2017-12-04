@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Q4_schematic.vhf
--- /___/   /\     Timestamp : 11/29/2017 01:49:23
+-- /___/   /\     Timestamp : 12/03/2017 23:15:51
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,6 +18,29 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
+----- CELL OR6_HXILINX_Q4_schematic -----
+  
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity OR6_HXILINX_Q4_schematic is
+  
+port(
+    O  : out std_logic;
+
+    I0  : in std_logic;
+    I1  : in std_logic;
+    I2  : in std_logic;
+    I3  : in std_logic;
+    I4  : in std_logic;
+    I5  : in std_logic
+  );
+end OR6_HXILINX_Q4_schematic;
+
+architecture OR6_HXILINX_Q4_schematic_V of OR6_HXILINX_Q4_schematic is
+begin
+  O <=  (I0 or I1 or I2 or I3 or I4 or I5);
+end OR6_HXILINX_Q4_schematic_V;
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -37,17 +60,19 @@ end Q4_schematic;
 
 architecture BEHAVIORAL of Q4_schematic is
    attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
    signal XLXN_9  : std_logic;
    signal XLXN_10 : std_logic;
    signal XLXN_11 : std_logic;
    signal XLXN_12 : std_logic;
-   signal XLXN_13 : std_logic;
-   signal XLXN_14 : std_logic;
-   signal XLXN_15 : std_logic;
-   signal XLXN_16 : std_logic;
-   signal XLXN_17 : std_logic;
    signal XLXN_18 : std_logic;
    signal XLXN_19 : std_logic;
+   signal XLXN_20 : std_logic;
+   signal XLXN_21 : std_logic;
+   signal XLXN_22 : std_logic;
+   signal XLXN_23 : std_logic;
+   signal XLXN_24 : std_logic;
+   signal XLXN_26 : std_logic;
    component AND5B5
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -121,16 +146,6 @@ architecture BEHAVIORAL of Q4_schematic is
    end component;
    attribute BOX_TYPE of OR4 : component is "BLACK_BOX";
    
-   component OR5
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             I4 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR5 : component is "BLACK_BOX";
-   
    component OR2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -138,6 +153,17 @@ architecture BEHAVIORAL of Q4_schematic is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
+   component OR6_HXILINX_Q4_schematic
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             I4 : in    std_logic; 
+             I5 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_4";
 begin
    XLXI_1 : AND5B5
       port map (I0=>clk,
@@ -172,13 +198,13 @@ begin
    XLXI_5 : AND2
       port map (I0=>Q4_in,
                 I1=>Q2_in,
-                O=>XLXN_13);
+                O=>XLXN_20);
    
    XLXI_6 : AND3
       port map (I0=>Q4_in,
                 I1=>Q3_in,
                 I2=>Q1_in,
-                O=>XLXN_14);
+                O=>XLXN_21);
    
    XLXI_7 : AND5B3
       port map (I0=>clk,
@@ -186,7 +212,7 @@ begin
                 I2=>Q2_in,
                 I3=>Q3_in,
                 I4=>Q1_in,
-                O=>XLXN_15);
+                O=>XLXN_22);
    
    XLXI_8 : AND5B2
       port map (I0=>clk,
@@ -194,14 +220,14 @@ begin
                 I2=>SD,
                 I3=>Q3_in,
                 I4=>Q1_in,
-                O=>XLXN_16);
+                O=>XLXN_23);
    
    XLXI_9 : AND4B1
       port map (I0=>Q2_in,
                 I1=>clk,
                 I2=>Q4_in,
                 I3=>Q1_in,
-                O=>XLXN_17);
+                O=>XLXN_24);
    
    XLXI_10 : OR4
       port map (I0=>XLXN_12,
@@ -210,18 +236,27 @@ begin
                 I3=>XLXN_9,
                 O=>XLXN_18);
    
-   XLXI_11 : OR5
-      port map (I0=>XLXN_17,
-                I1=>XLXN_16,
-                I2=>XLXN_15,
-                I3=>XLXN_14,
-                I4=>XLXN_13,
-                O=>XLXN_19);
-   
    XLXI_12 : OR2
       port map (I0=>XLXN_19,
                 I1=>XLXN_18,
                 O=>Q4_out);
+   
+   XLXI_13 : OR6_HXILINX_Q4_schematic
+      port map (I0=>XLXN_26,
+                I1=>XLXN_24,
+                I2=>XLXN_23,
+                I3=>XLXN_22,
+                I4=>XLXN_21,
+                I5=>XLXN_20,
+                O=>XLXN_19);
+   
+   XLXI_14 : AND5B3
+      port map (I0=>Q3_in,
+                I1=>Q2_in,
+                I2=>Q1_in,
+                I3=>SD,
+                I4=>Q4_in,
+                O=>XLXN_26);
    
 end BEHAVIORAL;
 

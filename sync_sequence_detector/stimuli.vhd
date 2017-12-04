@@ -49,11 +49,11 @@
 			stim_buttons(1) <= '1';
 			wait for 20 ns;
 			stim_buttons(1) <= '0';
-			wait for 80 ns;
+			wait for 180 ns;
 			stim_buttons(3) <= '1';
 			wait for 20 ns;
 			stim_buttons(3) <= '0';
-			wait for 80 ns;
+			wait for 180 ns;
 		end loop;
 	end process clk;
 	
@@ -68,7 +68,7 @@
 		wait for 100 ns;
 		loop
 			write(line_buffer, "Starting Simulation");
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 		
 			stim_switches(0) <= '0';
 			wait for 200 ns;
@@ -78,7 +78,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '1';
 			wait for 200 ns;
@@ -88,7 +88,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '1';
 			wait for 200 ns;
@@ -98,7 +98,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '0';
 			wait for 200 ns;
@@ -108,7 +108,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '0';
 			wait for 200 ns;
@@ -118,7 +118,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '1';
 			wait for 200 ns;
@@ -128,7 +128,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '1';
 			wait for 200 ns;
@@ -138,7 +138,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '1';
 			wait for 200 ns;
@@ -148,7 +148,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '0';
 			wait for 200 ns;
@@ -158,7 +158,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '1';
 			wait for 200 ns;
@@ -168,7 +168,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '1';
 			wait for 200 ns;
@@ -178,7 +178,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '0';
 			wait for 200 ns;
@@ -188,7 +188,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '0';
 			wait for 200 ns;
@@ -198,7 +198,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '1';
 			wait for 200 ns;
@@ -208,7 +208,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 		
 			stim_switches(0) <= '0';
 			wait for 200 ns;
@@ -218,7 +218,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '1';
 			wait for 200 ns;
@@ -228,7 +228,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '1';
 			wait for 200 ns;
@@ -238,7 +238,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '0';
 			wait for 200 ns;
@@ -248,7 +248,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 			stim_switches(0) <= '0';
 			wait for 200 ns;
@@ -258,7 +258,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 		
 			stim_switches(0) <= '0';
 			wait for 200 ns;
@@ -268,7 +268,7 @@
 			write(line_buffer, stim_leds(2 downto 0));
 			write(line_buffer, "   T = ");
 			write(line_buffer, stim_leds(5));
-			writeline(output, line_buffer);
+			writeline(log_file, line_buffer);
 			
 		end loop;
 	end process sd;

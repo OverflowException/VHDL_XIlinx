@@ -1,8 +1,0 @@
-select figure at 2772 849 8 -branches -sn=1
-select figure at 3171 819 8 -branches -sn=1
-add instance muxf5 992 1408 R0 -sn=1
-add instance muxf8 1024 1808 R0 -sn=1
-undo
-undo
-undo
-undo
