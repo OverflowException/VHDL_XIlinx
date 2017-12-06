@@ -34,13 +34,13 @@ entity spinbox_dec_digit_4 is port
 ( 
 	clk : in std_logic;
 	enable : in std_logic;
-	set : in std_logic;	---force set output value to set_value when set = '1'
+	set : in std_logic;		---force set output value to set_value when 'set' changes
 	set_value : in std_logic_vector(15 downto 0);
 	left : in  std_logic;
    right : in  std_logic;
    inc : in  std_logic;
    dec : in  std_logic;
-	digit_selected : out std_logic_vector(3 downto 0);	---indicates which digit is currently selected
+	cursor_pos : out std_logic_vector(3 downto 0);	---indicates which digit is currently selected
    value : out  std_logic_vector(15 downto 0)
 );
 end spinbox_dec_digit_4;
@@ -59,18 +59,14 @@ architecture Behavioral of spinbox_dec_digit_4 is
 	);
 	end component;
 
-	--signal enable_bus : std_logic_vector(3 downto 0);	---Each bit is the 'enable' pin of each counter
 	signal inc_bus : std_logic_vector(3 downto 0);
 	signal dec_bus : std_logic_vector(3 downto 0);
 	signal select_mask : std_logic_vector(3 downto 0) := "0001";		---manual selection
-	signal value_buf : std_logic_vector(15 downto 0) := B"0000_0000_0000_0000";
 	signal cmd_prev : std_logic_vector(1 downto 0);
 	signal cmd_curr : std_logic_vector(1 downto 0);
 
 begin
-	--enable_bus <= select_mask and (enable, enable, enable, enable);
-	--digit_selected <= enable_bus;
-	digit_selected <= (enable, enable, enable, enable) and select_mask;
+	cursor_pos <= (enable, enable, enable, enable) and select_mask;
 	
 	inc_bus <= (inc, inc, inc, inc) and select_mask;
 	dec_bus <= (dec, dec, dec, dec) and select_mask;
@@ -84,11 +80,9 @@ begin
 		set_value => set_value((4 * i + 3) downto (4 * i)),
 		inc => inc_bus(i),
 		dec => dec_bus(i),
-		value => value_buf((4 * i + 3) downto (4 * i))
+		value => value((4 * i + 3) downto (4 * i))
 	);
 	end generate;
-	
-	value <= value_buf;
 	
 	cmd_curr <= (left, right);
 	

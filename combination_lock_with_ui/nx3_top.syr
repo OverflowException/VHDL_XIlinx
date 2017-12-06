@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: nx3_top.prj
 
@@ -165,9 +165,9 @@ INFO:HDLCompiler:679 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\bit4_cy
 Elaborating entity <spinbox_dec_digit_4> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <spinbox_dec_digit_1> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 149: passwd_input should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 151: digit_selected_bus should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 164. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 164: passwd_input should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 166: digit_selected_bus should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "E:\projects\VHDL_XIlinx\combination_lock_with_ui\nx3_top.vhd" Line 179. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -711,12 +711,12 @@ inst_led_4_display_tkr/inst_pulse_generator_100hz/inst_freq_divider/out_pulse_st
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.69 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.07 secs
  
 --> 
 
-Total memory usage is 284820 kilobytes
+Total memory usage is 284052 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   12 (   0 filtered)

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-04T21:40:57</DateModified>
+  <DateModified>2017-12-05T23:35:25</DateModified>
   <ModuleName>nx3_top</ModuleName>
-  <SummaryTimeStamp>2017-12-02T22:24:39</SummaryTimeStamp>
+  <SummaryTimeStamp>2017-12-04T23:45:07</SummaryTimeStamp>
   <SavedFilePath>E:/projects/VHDL_XIlinx/combination_lock_with_ui/iseconfig/nx3_top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>E:/projects/VHDL_XIlinx/combination_lock_with_ui\</ImplementationReportsDirectory>
   <DateInitialized>2017-12-02T22:24:32</DateInitialized>

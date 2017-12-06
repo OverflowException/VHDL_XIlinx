@@ -62,7 +62,7 @@ architecture Behavioral of nx3_top is
 		right : in  std_logic;
 		inc : in  std_logic;
 		dec : in  std_logic;
-		digit_selected : out std_logic_vector(3 downto 0);
+		cursor_pos : out std_logic_vector(3 downto 0);
 		value : out  std_logic_vector(15 downto 0)
 	);
 	end component;
@@ -114,7 +114,7 @@ begin
 		right => debounced_buttons(1),
 		inc => debounced_buttons(2),
 		dec => debounced_buttons(0),
-		digit_selected => digit_selected_bus,
+		cursor_pos => digit_selected_bus,
 		value => passwd_input
 	);
 	
@@ -141,6 +141,21 @@ begin
 	end process;
 	
 	
+--	--multiplexers that support latches
+--	display_buf <=	passwd_input	when state = st_input else
+--						X"000D"		 	when state = st_ok else
+--						X"0EFF"			when state = st_err;	
+--	
+--	display_enable_bus <=	"1111"	when state = st_input else
+--									"0011"	when state = st_ok else
+--									"0111"	when state = st_err;
+--									
+--	flash_digit_bus <=	digit_selected_bus	when state = st_input else
+--								"0000";
+--	
+--	with state select
+--	leds <=	(others => '1')	when st_ok,
+--				(others => '0')	when others;
 	
 	
 	process(state)
