@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    22:45:54 11/10/2017 
+-- Create Date:    22:13:21 12/07/2017 
 -- Design Name: 
--- Module Name:    debouncer - Behavioral 
+-- Module Name:    signal_comparator_digit_4 - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,35 +29,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity debouncer is port 
+entity signal_comparator_digit_1 is port 
 ( 
-	clk : in std_logic;
-	inbtn : in  std_logic_vector (4 downto 0);
-	outbtn : out  std_logic_vector (4 downto 0)
+	sig_1 : in  std_logic_vector (3 downto 0);
+	sig_2 : in  std_logic_vector (3 downto 0);
+	equal : out  std_logic
 );
-end debouncer;
+end signal_comparator_digit_1;
 
-architecture Behavioral of debouncer is
-	signal debounce_clk : std_logic := '0';
-	component pulse_generator_100hz port
-	(
-		in_clk : in std_logic;
-		out_clk : out std_logic
-	);
-	end component;
+architecture Behavioral of signal_comparator_digit_1 is
+
 begin
-
-	inst_pulse_generator_100hz : pulse_generator_100hz port map
-	(
-		in_clk => clk,
-		out_clk => debounce_clk
-	);
-	process(debounce_clk)
-	begin
-		if rising_edge(debounce_clk) then
-			outbtn <= inbtn;
-		end if;
-	end process;
+	equal <= '1' when sig_1 = sig_2 else
+				'0';
 
 end Behavioral;
-
